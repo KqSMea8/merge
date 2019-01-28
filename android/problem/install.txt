@@ -1,0 +1,35 @@
+解压后放入sdk中，即和其中的extra文件夹合并。
+
+一、新建或者导入项目出现"building gradle project info"一直卡住的解决方法
+在以下目录中
+C:\Users\Administrator\.gradle\wrapper\dists\gradle-3.0-all\6v8c6qg2jpi8twyfv2a5s9mii
+出现.lck和.part后缀的文件。
+
+查看所需gradle版本：打开C:\Users\用户名\.gradle\wrapper\dists\gradle-x.xx-all\xxxxxxxxxxxx，如果里面的gradle-xx-all.zip不完整（如0KB），则说明下载不成功，需要下载离线包放置到该目录下。
+
+二、gradle版本与gradle plugin版本不一致。
+
+gradle各个版本下载位置：
+http://services.gradle.org/distributions/
+
+gradle plugin               require gradle
+1.0.0-1.1.3                 2.2.1-2.3
+1.2.0-1.3.1                 2.2.1-2.9
+1.5.0                       2.2.1+
+2.0.0-2.1.2                 2.10-2.13
+2.1.3+                      2.14.1+
+2.3.0+                      3.3+
+
+项目中
+gradle plugin版本路径查看   app\build.gradle中
+gradle版本路径查看          app\gradle\wrapper\gradle-wrapper.properties(Service版本)
+
+如：下载gradle-3.3-all.zip之后，此配置为service版本。推荐选择为service版本，默认的选择是本地版本。
+放置到\.gradle\wrapper\dists\gradle-x.xx-all\xxxxxxxxxxxx目录下，然后在控制台Terminal执行gradlew。
+
+配置gradle路径，此配置为配置本地版本。
+gradle下载包下载后放置到AndroidStudio\gradle目录中，并解压。
+Settings -> Build,Execution,Deployment -> Build Tools -> Gradle,选择Gradle home路径。
+
+有时提示当前gradle plugin有问题，需要Settings -> Build,Execution,Deployment -> Instant Run中禁用Enable Instant Run to hot ...
+
