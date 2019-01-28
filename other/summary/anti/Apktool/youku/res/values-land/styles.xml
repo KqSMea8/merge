@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">center</item>
+    </style>
+    <style name="homepagegridtext" parent="@style/FontB">
+        <item name="android:textColor">@color/text_color_gray_9</item>
+    </style>
+    <style name="homepagegridtitle" parent="@style/FontC">
+        <item name="android:textColor">#ff515151</item>
+    </style>
+</resources>

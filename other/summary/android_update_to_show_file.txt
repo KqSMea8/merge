@@ -1,0 +1,14 @@
+D:\demo\AudioRecorderDemo-master
+D:\MyCollection
+D:\work\resource
+
+
+    public void notifySystemToScan(String filePath) {
+        Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File file = new File(filePath);
+
+        Uri uri = Uri.fromFile(file);
+        intent.setData(uri);
+        getApplication().sendBroadcast(intent);
+    }
+

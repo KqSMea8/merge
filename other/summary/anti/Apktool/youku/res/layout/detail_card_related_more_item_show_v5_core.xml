@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_item_video_more_height_core" android:minHeight="@dimen/detail_card_item_video_more_height_core"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_card_video_more_margintop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/detail_card_item_bofangliang_size" android:textColor="#ff2692ff" android:ellipsize="end" android:id="@id/textview_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/detail_card_recommend_more_text_margin_right" android:text="查看更多视频" android:maxLines="1" />
+        <ImageView android:layout_width="@dimen/detail_card_item_video_more_arrow_v5" android:layout_height="@dimen/detail_card_item_video_more_arrow_v5" android:src="@drawable/rectangle" />
+    </LinearLayout>
+</RelativeLayout>

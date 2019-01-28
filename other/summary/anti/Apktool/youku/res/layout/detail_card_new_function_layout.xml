@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <ImageView android:visibility="gone" android:layout_width="@dimen/detail_card_series_more_right_v5" android:layout_height="@dimen/detail_card_series_more_right_v5" android:src="@drawable/detail_icon_card_subscripts" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_related_part_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/detail_card_title_v5" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/related_part_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_more_right_v5" android:text="周边" />
+        </LinearLayout>
+        <ImageView android:id="@id/more" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/detail_card_series_more_right_v5" android:src="@drawable/zhankaijiantou" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/detail_card_new_function_one" android:layout="@layout/detail_card_new_function_one" android:inflatedId="@id/detail_card_new_function_view_one" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_new_function_card_height" />
+        <ViewStub android:id="@id/detail_card_new_function_two" android:layout="@layout/detail_card_new_function_two" android:inflatedId="@id/detail_card_new_function_view_two" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_new_function_card_height" />
+        <ViewStub android:id="@id/detail_card_new_function_more" android:layout="@layout/detail_card_new_function_more" android:inflatedId="@id/detail_card_new_function_view_more" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+    </FrameLayout>
+</LinearLayout>

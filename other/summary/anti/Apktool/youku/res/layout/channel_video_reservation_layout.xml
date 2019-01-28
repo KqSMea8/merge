@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/channel_reservation_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_40px" android:layout_marginBottom="@dimen/home_personal_movie_40px">
+        <ImageView android:id="@id/channel_reservation_icon" android:layout_width="@dimen/channel_unpopular_28px" android:layout_height="@dimen/channel_unpopular_28px" android:layout_marginLeft="@dimen/channel_game_18px" android:src="@drawable/channel_left_commen_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/channel_game_32px" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/channel_reservation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_game_18px" android:lines="1" android:maxEms="15" android:layout_toRightOf="@id/channel_reservation_icon" android:layout_toEndOf="@id/channel_reservation_icon" />
+        <TextView android:textSize="@dimen/home_card_item_title_tag_textsize" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/channel_reservation_title_for_me" android:paddingLeft="@dimen/home_card_item_title_tag_paddingleftright" android:paddingRight="@dimen/home_card_item_title_tag_paddingleftright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的预约" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/channel_reservation_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/channel_reservation_label" />
+</RelativeLayout>

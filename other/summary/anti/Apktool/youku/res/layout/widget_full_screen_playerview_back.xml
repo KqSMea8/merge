@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/smallscreen_topmask" android:paddingLeft="@dimen/home_personal_movie_10px" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_100px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left" android:id="@id/hotspot_player_toolbar_back" android:background="@drawable/player_view_toolbar_back" android:padding="@dimen/home_personal_movie_30px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/home_personal_movie_font_34px" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/hotspot_player_toolbar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_personal_movie_10px" android:lines="1" />
+</LinearLayout>

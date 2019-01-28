@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeHistorySubTitleFont">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="HomeHistoryTitleFont">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">#ff606060</item>
+    </style>
+    <style name="home_card_one_item_title">
+        <item name="android:textSize">@dimen/home_card_one_item_title_first_textsize</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="home_hot_vv_style" />
+    <style name="HomeHistoryFont">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

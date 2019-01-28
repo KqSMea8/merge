@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_00" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_01" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_02" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_03" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_04" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_05" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_06" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_07" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_08" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_09" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_10" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_11" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_12" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_13" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_14" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_15" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_16" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_17" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_18" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_19" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_20" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_21" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_22" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_23" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_24" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_25" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_26" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_27" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_28" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_29" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_31" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_32" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_33" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_34" />
+    <item android:duration="16" android:drawable="@drawable/buffering_circle_35" />
+</animation-list>

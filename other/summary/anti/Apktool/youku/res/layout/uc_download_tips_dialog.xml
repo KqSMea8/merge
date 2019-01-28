@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/uc_corners_bg" android:layout_width="@dimen/uc_download_dialog_width" android:layout_height="@dimen/uc_download_dialog_height" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/detail_card_collection_small_list_item_text_size" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_tips_download" android:layout_width="@dimen/uc_download_dialog_tv_tips_download_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uc_download_dialog_tv_tips_download_margintop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+        <RelativeLayout android:id="@id/tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uc_download_dialog_tv_tips_download_text" android:layout_below="@id/tv_tips_download" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/image_tips" android:layout_width="@dimen/uc_download_dialog_image_tips" android:layout_height="@dimen/uc_download_dialog_image_tips" android:src="@drawable/uc_download_tips" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/uc_download_dialog_tips_text" android:textColor="#ff888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uc_download_dialog_image_tips_margin_right" android:text="手机网络下会消耗流量" android:layout_toRightOf="@id/image_tips" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uc_download_dialog_tv_tips_download_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/cancel_layout" android:background="@drawable/uc_dowloand_cancel_button_bg" android:layout_width="@dimen/uc_download_dialog_install_uc_layout_width" android:layout_height="@dimen/uc_download_dialog_install_uc_layout_height">
+                <TextView android:textSize="@dimen/uc_download_dialog_tv_tips_download_text" android:textColor="#ff2692ff" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/install_uc_layout" android:background="@drawable/uc_dowloand_install_button_bg" android:layout_width="@dimen/uc_download_dialog_install_uc_layout_width" android:layout_height="@dimen/uc_download_dialog_install_uc_layout_height" android:layout_marginLeft="@dimen/uc_download_dialog_tv_tips_download_text">
+                <TextView android:textSize="@dimen/uc_download_dialog_tv_tips_download_text" android:textColor="#ffffffff" android:id="@id/tv_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即安装" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

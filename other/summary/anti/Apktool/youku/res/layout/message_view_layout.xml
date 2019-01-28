@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/user_msg_top_margin_line" android:background="@color/home_bottom_deliver_line_bg" android:layout_width="fill_parent" android:layout_height="@dimen/home_card_item_bottom_line_height" />
+        <ViewFlipper android:id="@id/home_msg_flipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/home_msg_in_from_bottom" android:outAnimation="@anim/home_msg_out_to_top" android:flipInterval="3000" />
+    </LinearLayout>
+</merge>

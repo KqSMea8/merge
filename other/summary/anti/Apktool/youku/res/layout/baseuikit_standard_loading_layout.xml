@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_view" android:background="@drawable/baseuikit_standard_loading_bg" android:paddingLeft="@dimen/baseuikit_dialog_padding" android:paddingTop="@dimen/baseuikit_dialog_padding" android:paddingRight="@dimen/baseuikit_dialog_padding" android:paddingBottom="@dimen/baseuikit_dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150.0dip" android:minHeight="140.0dip">
+        <com.youku.widget.Loading android:id="@id/newLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/no_result_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/tipTextView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_padding_bigger" android:text="@string/base_uikit_process_tips" />
+    </LinearLayout>
+</LinearLayout>

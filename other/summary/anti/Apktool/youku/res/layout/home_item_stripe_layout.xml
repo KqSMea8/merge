@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/channel_item_stripe_middle_layout" android:background="@drawable/home_waist_seal" android:layout_width="fill_parent" android:layout_height="@dimen/channel_video_item_stripe_text_mask_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/home_personal_movie_20px" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom|center|right" android:id="@id/channel_item_stripe_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_square_gridview_spacing" android:layout_marginRight="@dimen/channel_square_gridview_spacing" android:layout_marginBottom="@dimen/channel_square_gridview_spacing" android:singleLine="true" android:shadowColor="#90000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" style="@style/homepage_item_middle_stripe" />
+</FrameLayout>

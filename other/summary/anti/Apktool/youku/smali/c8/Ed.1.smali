@@ -1,0 +1,132 @@
+.class public Lc8/Ed;
+.super Ljava/lang/Object;
+.source "FloatingActionButton.java"
+
+# interfaces
+.implements Lc8/ge;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc8/Gd;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "ShadowDelegateImpl"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lc8/Gd;
+
+
+# direct methods
+.method constructor <init>(Lc8/Gd;)V
+    .locals 0
+
+    .prologue
+    .line 814
+    iput-object p1, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 815
+    return-void
+.end method
+
+
+# virtual methods
+.method public getRadius()F
+    .locals 2
+
+    .prologue
+    .line 819
+    iget-object v0, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    invoke-virtual {v0}, Lc8/Gd;->getSizeDimension()I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    div-float/2addr v0, v1
+
+    return v0
+.end method
+
+.method public isCompatPaddingEnabled()Z
+    .locals 1
+
+    .prologue
+    .line 836
+    iget-object v0, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget-boolean v0, v0, Lc8/Gd;->mCompatPadding:Z
+
+    return v0
+.end method
+
+.method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+    .param p1, "background"    # Landroid/graphics/drawable/Drawable;
+
+    .prologue
+    .line 831
+    iget-object v0, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    invoke-static {v0, p1}, Lc8/Gd;->access$001(Lc8/Gd;Landroid/graphics/drawable/Drawable;)V
+
+    .line 832
+    return-void
+.end method
+
+.method public setShadowPadding(IIII)V
+    .locals 5
+    .param p1, "left"    # I
+    .param p2, "top"    # I
+    .param p3, "right"    # I
+    .param p4, "bottom"    # I
+
+    .prologue
+    .line 824
+    iget-object v0, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget-object v0, v0, Lc8/Gd;->mShadowPadding:Landroid/graphics/Rect;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;->set(IIII)V
+
+    .line 825
+    iget-object v0, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget-object v1, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget v1, v1, Lc8/Gd;->mImagePadding:I
+
+    add-int/2addr v1, p1
+
+    iget-object v2, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget v2, v2, Lc8/Gd;->mImagePadding:I
+
+    add-int/2addr v2, p2
+
+    iget-object v3, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget v3, v3, Lc8/Gd;->mImagePadding:I
+
+    add-int/2addr v3, p3
+
+    iget-object v4, p0, Lc8/Ed;->this$0:Lc8/Gd;
+
+    iget v4, v4, Lc8/Gd;->mImagePadding:I
+
+    add-int/2addr v4, p4
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Lc8/Gd;->setPadding(IIII)V
+
+    .line 827
+    return-void
+.end method

@@ -1,0 +1,24 @@
+一、解析
+解析json主要是基本类型如Number、boolean等，与数组Array。
+
+基本类型的解析直接调用JSONObject对象的getXxx(key)方法，如果获取字符串则getString(key)，布尔值则getBoolean(key)，以此类推。
+
+数组的解析稍微麻烦一点，需要通过JSONObject对象的getJSONArray(key)方法获取到一个JSONArray对象，再调用JSONArray对象的get(i)方法获取数组元素，i为索引值。
+
+--------------------------------------------------------------
+二、构建
+拼接普通字符串
+JSONObject j = new JSONObject();
+j.put("", "");
+
+拼接数组
+JSONArray jArray = new JSONArray();
+jArray.put(j);
+
+------------------------------------------------------------
+{"channel":[{"id":1,"channelName":"aaa","createUserName":"a1"},{"id":2,"channelName":"bbb","createUserName":"a2"},{"id":3,"channelName":"ccc","createUserName":"a3"}]}
+
+-----------------------------------------------------------------
+[{"audioImg":0,"filePath":"/storage/emulated/0/wtwd/intercom/BLX6/tourist-2000def-0.amr","headImg":0,"name":"tourist","timeLong":100,"type":2}]
+解析出来后得到的是一个类型的数组。
+

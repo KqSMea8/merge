@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/chao_mask" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chao_item_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_personal_movie_2px" android:src="@drawable/chao_img_default" android:scaleType="matrix" />
+    <RelativeLayout android:id="@id/chao_info_mask" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/chao_item_intro_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_personal_movie_30px" android:layout_marginBottom="@dimen/home_personal_movie_30px" android:src="@drawable/chao_arrow" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/home_personal_movie_28px" android:gravity="right" android:id="@id/chao_item_title" android:layout_width="@dimen/home_personal_movie_252px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/home_personal_movie_40px" android:minWidth="@dimen/home_personal_movie_252px" android:text="测试\n测试\n测" android:maxLines="3" android:width="@dimen/home_personal_movie_252px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_mask" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/top_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <View android:background="#ffffffff" android:layout_width="@dimen/home_personal_movie_2px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

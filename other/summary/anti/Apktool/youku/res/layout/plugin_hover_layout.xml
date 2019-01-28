@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff222222" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/portraitLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/plugin_hover_30dp">
+            <TextView android:textSize="@dimen/plugin_hover_text_small" android:textColor="#aaffffff" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/time1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:maxEms="18" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/plugin_hover_text_big" android:textColor="@color/plugin_hover_btn_bg" android:id="@id/playBtn1" android:background="@drawable/plugin_hover_btn_big_shape" android:layout_width="@dimen/plugin_hover_big_btn_width" android:layout_height="@dimen/plugin_hover_big_btn_height" android:text="立即播放" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/landLayout" android:visibility="visible" android:layout_width="@dimen/plugin_hover_land_width" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/plugin_hover_text_small" android:textColor="#ffeb3f2d" android:id="@id/time2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/plugin_hover_text_small" android:textColor="#33ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 秒后播放" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_hover_desc_height" android:layout_marginTop="@dimen/plugin_hover_8dp" android:layout_marginBottom="@dimen/plugin_hover_6dp">
+            <ImageView android:id="@id/descImg" android:background="@color/plugin_hover_img_bg" android:layout_width="@dimen/plugin_hover_img_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/plugin_hover_6dp" android:src="@drawable/hover_def_img" android:scaleType="center" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/plugin_hover_text_big" android:textColor="#aaffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@id/descText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/playBtn2" android:layout_toRightOf="@id/descImg" android:layout_centerVertical="true" />
+            <Button android:textSize="@dimen/plugin_hover_text_big" android:textColor="@color/plugin_hover_btn_bg" android:layout_gravity="center" android:id="@id/playBtn2" android:background="@drawable/plugin_hover_btn_shape" android:layout_width="@dimen/plugin_hover_btn_width" android:layout_height="@dimen/plugin_hover_btn_height" android:layout_marginLeft="@dimen/plugin_hover_30dp" android:text="立即播放" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#33ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/plugin_hover_17dp" />
+        <TextView android:textSize="@dimen/plugin_hover_text_small" android:textColor="#4cffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/plugin_hover_8dp" android:text="更多精彩推荐" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/plugin_hover_2.5dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/img1" android:background="@color/plugin_hover_img_bg" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_hover_img_height" android:src="@drawable/hover_def_img" android:scaleType="center" />
+                <TextView android:id="@id/text1" android:layout_marginTop="@dimen/plugin_hover_4dp" style="@style/plugin_hover_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/plugin_hover_2.5dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/img2" android:background="@color/plugin_hover_img_bg" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_hover_img_height" android:src="@drawable/hover_def_img" android:scaleType="center" />
+                <TextView android:id="@id/text2" android:layout_marginTop="@dimen/plugin_hover_4dp" style="@style/plugin_hover_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img3" android:background="@color/plugin_hover_img_bg" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_hover_img_height" android:src="@drawable/hover_def_img" android:scaleType="center" />
+                <TextView android:id="@id/text3" android:layout_marginTop="@dimen/plugin_hover_4dp" style="@style/plugin_hover_text_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bg" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_left" android:layout_marginTop="@dimen/detail_card_series_top" android:layout_marginRight="@dimen/detail_card_series_left" android:layout_marginBottom="@dimen/detail_card_series_top">
+        <TextView android:textSize="@dimen/detail_card_series_text_size_core" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_num" android:background="@drawable/detail_card_series_grid_item_core_radius" android:layout_width="@dimen/detail_card_series_vertical_num_height_core" android:layout_height="@dimen/detail_card_series_vertical_num_height_core" />
+        <ImageView android:id="@id/series_item_trailer_img" android:layout_width="@dimen/series_item_trailer_img_width_core" android:layout_height="@dimen/series_item_trailer_img_width_core" android:layout_marginLeft="1.0px" android:layout_marginTop="1.0px" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_state" android:visibility="visible" android:layout_width="@dimen/series_item_trailer_img_width_core" android:layout_height="@dimen/series_item_trailer_img_width_core" android:layout_marginRight="1.0px" android:layout_marginBottom="1.0px" />
+    </FrameLayout>
+</LinearLayout>

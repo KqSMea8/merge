@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/hotspot_dislike_item_corner_radius" android:topRightRadius="@dimen/hotspot_dislike_item_corner_radius" android:bottomLeftRadius="@dimen/hotspot_dislike_item_corner_radius" android:bottomRightRadius="@dimen/hotspot_dislike_item_corner_radius" />
+    <solid android:color="#ff2692ff" />
+</shape>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_collection_small_list_item_new_height" android:minHeight="@dimen/detail_card_collection_small_list_item_new_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/detail_card_smallimage_margin" android:paddingRight="@dimen/detail_card_smallimage_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <FrameLayout android:id="@id/showcircle_img_layout" android:layout_width="@dimen/detail_card_new_function_card_img_size" android:layout_height="@dimen/detail_card_new_function_card_img_size" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/showcircle_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/detail_rukoumengceng_perfect_circle" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/side_slip_card_side_slip_card_topic_abstract_tv_top" android:layout_toRightOf="@id/showcircle_img_layout" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/long_douban_more_title_tv_size" android:textColor="#ff333333" android:id="@id/showcircle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/preload_layout_text_size_cache" android:textColor="#ff999999" android:id="@id/showcircle_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_card_new_function_card_index_padding" android:layout_below="@id/showcircle_title" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/showcircle_layout" android:background="@drawable/uc_dowloand_cancel_button_bg" android:layout_width="@dimen/detail_card_new_function_card_button_width" android:layout_height="@dimen/detail_card_new_function_card_button_height" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/detail_card_new_function_card_button_text_size" android:textColor="#ff2692ff" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="逛星球" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

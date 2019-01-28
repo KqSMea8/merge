@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/detail_gv_series_rl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.youku.widget.YoukuRecyclerView android:id="@id/detail_gv_series_recycler" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@drawable/detail_card_shadow" android:layout_width="@dimen/detail_card_series_list_shadow" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <include android:layout_gravity="center" android:id="@id/review_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/side_slip_card_douban_more_small_height" android:layout_weight="1.0" android:layout_centerInParent="true" layout="@layout/side_slip_douban_single_item" />
+        <include android:layout_gravity="center" android:id="@id/topic_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/side_slip_card_douban_more_small_height" android:layout_weight="1.0" android:layout_centerInParent="true" layout="@layout/side_slip_topic_single_item" />
+        <include android:layout_gravity="center" android:id="@id/news_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/side_slip_card_douban_more_small_height" android:layout_weight="1.0" android:layout_centerInParent="true" layout="@layout/side_slip_news_single_item" />
+        <include android:layout_gravity="center" android:id="@id/layout_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/side_slip_card_douban_more_small_height" android:layout_centerInParent="true" layout="@layout/detail_card_no_result_small" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview2" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/side_slip_card_douban_more_small_height" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+        </LinearLayout>
+        <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/next_loading2" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/channel_tag_link_container" android:layout_width="wrap_content" android:layout_height="@dimen/home_personal_movie_70px" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/channel_game_20px" android:paddingRight="@dimen/channel_game_8px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/channel_game_rank_item_tab_layout" android:layout_width="fill_parent" android:layout_height="@dimen/channel_game_72px">
+        <View android:id="@id/channel_game_rank_item_tab_midle_line" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/channel_game_32px" android:id="@id/channel_game_rank_item_tab_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/channel_game_58px" android:layout_toLeftOf="@id/channel_game_rank_item_tab_midle_line" />
+        <TextView android:textSize="@dimen/channel_game_32px" android:id="@id/channel_game_rank_item_tab_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_game_58px" android:layout_toRightOf="@id/channel_game_rank_item_tab_midle_line" />
+        <View android:id="@id/channel_game_rank_item_tabbar" android:background="@drawable/shape_rect_tab_bar_" android:visibility="gone" android:layout_width="@dimen/channel_game_30px" android:layout_height="@dimen/channel_game_8px" android:layout_marginTop="@dimen/channel_game_6px" android:layout_below="@id/channel_game_rank_item_tab_day" />
+        <TextView android:textSize="@dimen/channel_game_18px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/channel_game_rank_item_tips" android:background="@drawable/channel_game_rank_tab_tips_bg" android:layout_width="wrap_content" android:layout_height="@dimen/channel_game_32px" android:layout_marginLeft="@dimen/channel_game_16px" android:layout_marginTop="2.0dip" android:text="每周日更新" android:layout_toRightOf="@id/channel_game_rank_item_tab_week" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/channel_game_rank_item_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/channel_game_rank_item_tab_layout" />
+    <RelativeLayout android:id="@id/channel_game_rank_item_expansion_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_game_80px" android:layout_below="@id/channel_game_rank_item_recyclerview">
+        <TextView android:textSize="@dimen/channel_game_24px" android:textColor="#ff2b2b2b" android:id="@id/channel_game_rank_item_expansion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/channel_game_rank_item_expansion_icon" android:layout_width="@dimen/channel_game_15px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_game_18px" android:src="@drawable/channel_game_rank_down" android:layout_toRightOf="@id/channel_game_rank_item_expansion_text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

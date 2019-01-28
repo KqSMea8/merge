@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:dither="true" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#c0000000" android:endColor="@android:color/transparent" android:angle="90.0" />
+    <corners android:bottomLeftRadius="@dimen/home_waist_corner_size" />
+</shape>

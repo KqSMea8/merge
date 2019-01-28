@@ -1,0 +1,16 @@
+1.哪怕是两个状态，尽量用用1,2表示，避免使用true，false表示，即使true,false可以直接判断。
+踩坑：true，false必然有一个命中，可能在不经意间做出响应；而1,2可以避免无形中对应了初值0，防止在不经意间进行错误响应。
+例如：状态男女，避免使用true，false判断，使用1,2进行判断，这样有一个初值0可以在无形中表示未初始化。
+
+2.可用状态用1表示，初始化状态用0表示，其他状态依次递增，后期比较好更改和判断。
+public static final int NONE = 0;
+public static final int CONNECTED = 1;
+public static final int DISCONNECTED = 2;
+public static final int CONNECTING = 3;
+public static final int DISCONNECTING = 4;
+如上：
+0可以表示未初始化，未连接等。
+1表示已连接，可用。
+2表示已断开，可作后续处理。
+3,4为补充状态，可作辅助处理。
+

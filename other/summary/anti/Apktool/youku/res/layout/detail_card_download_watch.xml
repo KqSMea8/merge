@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/subscirbe_guide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/download_tips" android:visibility="gone" android:layout_width="@dimen/download_watch_popupwindows_width" android:layout_height="@dimen/download_watch_popupwindows_height" />
+        <ImageView android:id="@id/downloading_tips" android:visibility="gone" android:layout_width="@dimen/downloading_watch_popupwindows_width" android:layout_height="@dimen/downloading_watch_popupwindows_height" />
+        <TextView android:textSize="@dimen/download_watch_text_size" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/subscribe_guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

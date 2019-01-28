@@ -1,0 +1,43 @@
+查询设备分辨率大小：
+adb shell wm size
+
+ldpi		320*240		1dp=0.75px		120
+
+mdpi		480*320		1dp=1.0px		160
+
+hdpi		800*480		1dp=1.5px		240
+
+xhdpi		1280*720	1dp=2.0px		320
+
+xxhdpi		1920*1080	1dp=3px			480
+
+DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+Log.e("wtx_test","Density is " + displayMetrics.density + " densityDpi is "
+		+ displayMetrics.densityDpi + " height: " + displayMetrics.heightPixels
+		+ " width: " + displayMetrics.widthPixels);
+
+以这种方式获取到的值，已经经过了density的相乘处理了
+float x = getResources().getDimension(R.dimen.t_10dp);
+如displayMetrics.density为3.0， R.dimen.t_10dp设置为10，x的值即为30.
+
+可见，在dimen中应该设置(实际的像素值 / displayMetrics.density)，即dimen中的值一定要经过密度处理，其在不同分辨率中显示大小不同。
+在以getResources().getDimension(R.dimen.t_10dp)获取值后，在设置像素高度时，可直接使用。
+		
+----------------------------------------------------------------------------------------
+		
+TextView和EditText的高度设置值一致，但实际显示可能不同，此时需设置EditText的背景，如背景设置为白色。
+
+-----------------------------------------------------------------------------------------
+在网上搜了下，发现TextView在布局上占用的高度和属性textSize的大小不一样，实际占用的要比textSize更大（比如textSize="12dp"，实际的高度大概有16dp），仔细看的话会发现文字的上方和下发留有空白。
+
+getTextSize()和getMeasureHeight()获取的值不一致。
+
+在安卓文档中发现一个TextView属性：
+
+android:includeFontPadding 为上标和下标留出足够的空间，以取代字体上下标。默认为 true。.
+
+原来是TextView默认留下了上下的padding，是为了显示上标和下标。
+
+解决办法：
+设置：android:includeFontPadding="false"
+------------------------------------------------------------------------------------------

@@ -1,0 +1,21 @@
+
+event.getRawX()/event.getRawY()	: 	获取触点在屏幕上的坐标点。
+event.getX()/event.getY()		:	获取触点在控件上的坐标点。(即event.getRawX - 控件横坐标)
+
+第一个条目的位置，只要能看到该条目
+int mFirstPosition = ((LinearLayoutManager) getLayoutManager())
+		.findFirstVisibleItemPosition();
+第一个能完整看到的条目的位置，只能看到一半的不算。往往比mFirstPosition大1。
+int firstPosition = ((LinearLayoutManager) getLayoutManager())
+		.findFirstCompletelyVisibleItemPosition();
+		
+getChildCount()	获取组件中的直接子View数目，如RecyclerView中会重用View，即该数量为可见的View数量(包括半可见)。
+
+getChildAt(int position)
+获取该位置上的View，RecyclerView使用时需要注意使用(当前postion - 第一个position)
+
+getHitRect(Rect outRect)
+找到控件占据的矩形区域的矩形坐标，一个应用：判断是否点击到该控件上。
+
+ViewConfiguration.get(context).getScaledTouchSlop()
+是一个距离，表示滑动的时候，手的移动要大于这个距离才开始移动控件。如果小于这个距离就不触发移动控件，如viewpager就是用这个距离来判断用户是否翻页

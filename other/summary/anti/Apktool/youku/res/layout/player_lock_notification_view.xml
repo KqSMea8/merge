@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/notify_layout" android:background="#e6ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lock_notify_icon" android:layout_width="@dimen/audio_play_notify_logo_width" android:layout_height="@dimen/audio_play_notify_logo_width" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/lockplay_notify_logo_margin_left" android:layout_marginRight="@dimen/lockplay_notify_logo_margin_left" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/audio_play_notify_title_size" android:textColor="#ff333333" android:id="@id/lock_notify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/audio_play_notify_title_bottom_margin" android:text="aa" android:singleLine="true" />
+        <TextView android:textSize="@dimen/audio_play_notify_seq_size" android:textColor="#ffa8a8a8" android:id="@id/lock_notify_seq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/control_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/lock_play_btn" android:layout_marginRight="@dimen/lockplay_notify_img_margin_right" android:src="@drawable/lock_pause_btn" style="@style/lockplay_notify_control_ico" />
+        <ImageView android:id="@id/notify_fav_btn" android:background="@drawable/transparent_bg" android:visibility="gone" android:layout_marginRight="@dimen/lockplay_notify_img_margin_right" android:src="@drawable/collect_pressed" style="@style/lockplay_notify_control_ico" />
+        <ImageView android:id="@id/notify_close_btn" android:layout_marginRight="@dimen/lockplay_notify_img_margin_right" android:src="@drawable/lock_close" style="@style/lockplay_notify_control_ico" />
+    </LinearLayout>
+</LinearLayout>

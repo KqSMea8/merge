@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tool_bar_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/home_tool_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_tool_bar_right_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/home_tool_bar_margin_bottom" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_tool_bar_search_frame" android:background="@drawable/home_tool_bar_search_frame_bg" android:layout_width="fill_parent" android:layout_height="@dimen/home_tool_bar_search_frame_height" android:layout_marginLeft="@dimen/home_tool_bar_search_frame_margin_left" android:layout_marginRight="@dimen/home_tool_bar_search_frame_margin_right" android:layout_toLeftOf="@id/home_tool_bar_right_container" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_tool_bar_frame_search" android:scaleType="center" />
+        <TextView android:textSize="@dimen/home_tool_bar_search_text_size" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/tool_bar_hot_word" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/home_tool_bar_search_text_margin_left" android:text="电视剧" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

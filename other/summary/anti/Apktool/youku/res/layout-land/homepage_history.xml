@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/home_ic_history_line" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:background="@drawable/home_bg_history" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/home_history_height" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/history_container1" android:background="@drawable/home_bg_history_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/img1_layout" android:layout_width="@dimen/home_history_image_height" android:layout_height="@dimen/home_history_image_width" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_not_loaded_width" android:layout_height="@dimen/icon_not_loaded_width" android:src="@drawable/home_card_default_img_70" />
+                <ImageView android:id="@id/img1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/HomeHistoryTitleFont" android:ellipsize="end" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/home_history_title_margin_top" android:maxLines="2" android:layout_toRightOf="@id/img1_layout" />
+            <TextView android:textAppearance="@style/HomeHistorySubTitleFont" android:gravity="center" android:id="@id/progress1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="19.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:id="@id/layout_play1" android:layout_width="@dimen/home_history_image_height" android:layout_height="@dimen/home_history_image_width" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/myouku_video_name_tuh_size" android:textColor="@color/history_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_play1" android:background="@drawable/history_text_selector2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/play_continue" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/myouku_video_name_tuh_size" android:textColor="@color/history_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_play_next1" android:background="@drawable/history_text_selector3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/play_next" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/history_container2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/img2_layout" android:layout_width="@dimen/home_history_image_height" android:layout_height="@dimen/home_history_image_width" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_not_loaded_width" android:layout_height="@dimen/icon_not_loaded_width" android:src="@drawable/home_card_default_img_70" />
+                <ImageView android:id="@id/img2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/HomeHistoryTitleFont" android:ellipsize="end" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/home_history_title_margin_top" android:maxLines="2" android:layout_toRightOf="@id/img2_layout" />
+            <TextView android:textAppearance="@style/HomeHistorySubTitleFont" android:gravity="center" android:id="@id/progress2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="19.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:id="@id/layout_play2" android:layout_width="@dimen/home_history_image_height" android:layout_height="@dimen/home_history_image_width" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/myouku_video_name_tuh_size" android:textColor="@color/history_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_play2" android:background="@drawable/history_text_selector2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/play_continue" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/myouku_video_name_tuh_size" android:textColor="@color/history_text_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_play_next2" android:background="@drawable/history_text_selector3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/play_next" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/history_page_container" android:background="#ff2bb5fc" android:layout_width="80.0dip" android:layout_height="fill_parent">
+            <TextView android:textAppearance="@style/HomeHistoryFont" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="观\n看\n记\n录" android:drawableTop="@drawable/home_ic_history" android:drawablePadding="6.0dip" android:layout_centerInParent="true" android:lineSpacingExtra="-3.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

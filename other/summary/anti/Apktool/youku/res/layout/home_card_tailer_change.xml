@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center|right" android:id="@id/home_card_tailer_change_jump" android:layout_width="0.0dip" android:layout_height="@dimen/home_personal_movie_40px" android:layout_weight="1.0">
+        <TextView android:id="@id/home_card_tailer_change_jump_text" android:paddingRight="@dimen/home_personal_movie_80px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/tailer_arrow" android:drawablePadding="@dimen/home_personal_movie_6px" style="@style/home_card_item_tail_txt" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center|left" android:id="@id/home_card_tailer_change" android:layout_width="0.0dip" android:layout_height="@dimen/home_personal_movie_40px" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/home_card_tailer_change_txt" android:paddingLeft="@dimen/home_personal_movie_80px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_card_tailer_change" android:layout_centerInParent="true" style="@style/home_card_item_tail_txt" />
+        <ImageView android:id="@id/home_card_tailer_change_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_personal_movie_6px" android:src="@drawable/tailer_change" android:layout_toRightOf="@id/home_card_tailer_change_txt" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

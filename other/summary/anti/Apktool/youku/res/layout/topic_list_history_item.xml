@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/topic_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/topic_item_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <View android:background="@color/black50unalpha" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/home_personal_movie_font_34px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/topic_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_personal_movie_20px" android:text="这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题这是标题" android:maxLines="1" android:maxEms="15" android:layout_above="@id/topic_item_desc" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/home_personal_movie_font_26px" android:textColor="#99ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/topic_item_desc" android:paddingLeft="@dimen/home_personal_movie_30px" android:paddingRight="@dimen/home_personal_movie_30px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="得不到的永远在骚动被偏爱的都有恃无恐，玫瑰的红，容易受伤的梦，握在手中却流失于指缝，又落空" android:maxLines="2" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_34px" android:layout_below="@id/topic_item_desc" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/home_personal_movie_font_26px" android:textColor="#99ffffff" android:gravity="right" android:id="@id/topic_item_video_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_personal_movie_16px" android:text="个视频" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/home_personal_movie_font_26px" android:textColor="#99ffffff" android:gravity="left" android:id="@id/topic_item_created_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_personal_movie_14px" android:text="创建时间" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

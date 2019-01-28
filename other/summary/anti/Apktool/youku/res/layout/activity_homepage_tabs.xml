@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/homepage_tab_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_home" android:background="@drawable/main_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/text_home" android:text="@string/homepage_tab_home" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/homepage_tab_text_selected" />
+        <ImageView android:id="@id/img_home" android:src="@drawable/home_animation14" android:layout_above="@id/text_home" android:layout_centerHorizontal="true" style="@style/homepage_tab_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_hotspot" android:background="@drawable/main_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/text_hotspot" android:text="@string/homepage_tab_hotspot" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/homepage_tab_text_unselected" />
+        <ImageView android:id="@id/img_hotspot" android:src="@drawable/navbar_icon_hotspot_normal_new" android:layout_above="@id/text_hotspot" android:layout_centerHorizontal="true" style="@style/homepage_tab_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_vip" android:background="@drawable/main_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/text_vip" android:text="@string/homepage_tab_vip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/homepage_tab_text_unselected" />
+        <ImageView android:id="@id/img_vip" android:src="@drawable/navbar_icon_vip_normal_new" android:layout_above="@id/text_vip" android:layout_centerHorizontal="true" style="@style/homepage_tab_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_subscribe" android:background="@drawable/main_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/text_subscribe" android:text="@string/homepage_tab_plant" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/homepage_tab_text_unselected" />
+        <ImageView android:id="@id/img_subscribe" android:src="@drawable/navbar_icon_star_normal_new" android:layout_above="@id/text_subscribe" android:layout_centerHorizontal="true" style="@style/homepage_tab_image" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_user" android:background="@drawable/main_tab_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/text_user" android:text="@string/homepage_tab_user" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/homepage_tab_text_unselected" />
+        <ImageView android:id="@id/img_user" android:src="@drawable/navbar_icon_user_normal_new" android:layout_above="@id/text_user" android:layout_centerHorizontal="true" style="@style/homepage_tab_image" />
+    </RelativeLayout>
+</LinearLayout>

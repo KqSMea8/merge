@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.youku.phone.cmscomponent.view.ChaoGalleryView android:id="@id/chao_gallery_container" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_270px" android:layout_marginBottom="@dimen/home_personal_movie_48px" />
+    <LinearLayout android:background="@drawable/chao_right_mask" android:layout_width="@dimen/home_personal_movie_34px" android:layout_height="@dimen/home_personal_movie_270px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.89" />
+</RelativeLayout>

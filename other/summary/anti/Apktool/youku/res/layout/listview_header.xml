@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/header_container" android:background="@color/refresh_header_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.taobao.uikit.extend.feature.view.TUrlImageView android:layout_gravity="bottom" android:id="@id/bg_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:paddingTop="@dimen/refresh_header_margin_bottom" android:paddingBottom="@dimen/refresh_header_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/listview_header_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/homepage_arrow_bottom_margin" android:src="@drawable/header_arrowdown" />
+        <TextView android:textSize="@dimen/home_personal_movie_font_24px" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:id="@id/listview_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

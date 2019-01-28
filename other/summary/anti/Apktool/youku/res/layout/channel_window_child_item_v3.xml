@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/channel_window_child_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/channel_window_child_item_icon" android:layout_width="@dimen/channel_window_160px" android:layout_height="@dimen/channel_window_160px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/channel_window_28px" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/channel_window_child_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_window_20px" android:layout_marginTop="@dimen/channel_window_12px" android:layout_marginRight="@dimen/channel_window_20px" android:lines="1" android:maxLength="4" />
+    <TextView android:textSize="@dimen/channel_window_22px" android:textStyle="bold" android:textColor="#99ffffff" android:ellipsize="end" android:id="@id/channel_window_child_item_subTitle" android:layout_width="@dimen/channel_window_150px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_window_20px" android:layout_marginTop="@dimen/channel_window_6px" android:layout_marginRight="@dimen/channel_window_20px" android:maxLines="2" android:layout_below="@id/channel_window_child_item_title" />
+</RelativeLayout>

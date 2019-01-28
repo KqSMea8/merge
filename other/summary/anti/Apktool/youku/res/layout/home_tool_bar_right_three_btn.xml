@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/home_tool_bar_right_two_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/home_tool_bar_three_btn_margin_left" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/home_tool_bar_history" android:background="@drawable/toolbar_menu_bg" android:layout_width="@dimen/home_tool_bar_icon_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_tool_bar_three_btn_img_margin_right" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:paddingBottom="@dimen/home_tool_bar_img_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_tool_bar_history_selector" android:scaleType="center" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/home_tool_bar_download" android:background="@drawable/toolbar_menu_bg" android:layout_width="@dimen/home_tool_bar_icon_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_tool_bar_three_btn_img_margin_right" android:layout_toLeftOf="@id/home_tool_bar_history">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_tool_bar_download_selector" android:scaleType="center" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/home_tool_bar_msg" android:background="@drawable/toolbar_menu_bg" android:layout_width="@dimen/home_tool_bar_icon_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_tool_bar_padding_left" android:layout_toLeftOf="@id/home_tool_bar_download">
+        <ImageView android:id="@id/home_tool_bar_msg_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_tool_bar_msg_selector" android:scaleType="center" android:layout_centerInParent="true" />
+        <View android:id="@id/home_tool_bar_msg_red_point" android:background="@drawable/home_tool_bar_red_point" android:visibility="invisible" android:layout_width="@dimen/home_tool_bar_msg_red_point_size" android:layout_height="@dimen/home_tool_bar_msg_red_point_size" android:layout_marginLeft="@dimen/home_tool_bar_msg_margin_left" android:layout_alignTop="@id/home_tool_bar_msg_icon" android:layout_alignRight="@id/home_tool_bar_msg_icon" />
+    </RelativeLayout>
+</merge>

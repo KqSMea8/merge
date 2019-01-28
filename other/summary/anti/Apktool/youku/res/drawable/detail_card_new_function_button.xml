@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/detail_card_new_function_card_button_round_radius" />
+    <stroke android:width="@dimen/detail_card_new_function_card_stroke_width" android:color="@color/detail_card_new_function_index_color" />
+    <size android:height="@dimen/detail_card_new_function_card_button_height" android:width="@dimen/detail_card_new_function_card_button_width" />
+</shape>

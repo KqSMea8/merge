@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/schedule_title_layout" android:layout_width="fill_parent" android:layout_height="@dimen/channel_schedule_230px">
+        <ImageView android:id="@id/schedule_icon" android:layout_width="@dimen/channel_unpopular_28px" android:layout_height="@dimen/channel_unpopular_28px" android:layout_marginLeft="@dimen/channel_game_18px" android:layout_marginTop="@dimen/channel_schedule_45px" android:src="@drawable/channel_left_commen_icon" />
+        <TextView android:textSize="@dimen/channel_schedule_32px" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/schedule_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_schedule_18px" android:layout_marginTop="@dimen/channel_schedule_40px" android:includeFontPadding="false" android:layout_toRightOf="@id/schedule_icon" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_schedule_18px" android:layout_marginTop="@dimen/channel_schedule_40px" android:layout_marginRight="@dimen/channel_schedule_18px" android:layout_below="@id/schedule_title">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv1" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="一" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv2" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="二" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv3" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="三" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv4" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="四" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv5" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="五" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv6" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="六" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff000000" android:gravity="center" android:id="@id/week_tv7" android:layout_width="@dimen/channel_schedule_84px" android:layout_height="@dimen/channel_schedule_40px" android:text="日" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/schedule_bottom_layout" android:layout_width="fill_parent" android:layout_height="@dimen/channel_schedule_360px" android:layout_below="@id/schedule_title_layout">
+        <RelativeLayout android:gravity="center" android:id="@id/empty_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_schedule_112px" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/empty_image" android:layout_width="@dimen/channel_schedule_160px" android:layout_height="@dimen/channel_schedule_160px" android:src="@drawable/channel_schedule_empty_img" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/channel_schedule_28px" android:textColor="#ff666666" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小编今天偷懒了，看看昨天更新的吧" android:layout_toRightOf="@id/empty_image" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/channel_skip_rl" android:paddingTop="@dimen/channel_schedule_40px" android:layout_width="wrap_content" android:layout_height="@dimen/channel_schedule_90px" android:layout_below="@id/schedule_bottom_layout" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/channel_schedule_24px" android:textColor="#ff2b2b2b" android:gravity="center" android:id="@id/channel_schedule_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多排片表" />
+            <ImageView android:layout_width="@dimen/channel_game_15px" android:layout_height="@dimen/channel_game_15px" android:layout_marginLeft="@dimen/channel_game_18px" android:src="@drawable/channel_multi_tab_rank_more_right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/schedule_recyclerview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_schedule_195px" />
+</RelativeLayout>

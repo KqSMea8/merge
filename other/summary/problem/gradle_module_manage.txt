@@ -1,0 +1,106 @@
+
+修改项目名称
+1.找到项目文件夹，修改该文件夹名称
+2.重新打开AndroidStudio，移除源项目，重新打开改名后的项目，提示改名，OK。
+
+修改包名，需要修改模块gradle、清单文件以及各个类中的包名。
+简便方法：在AndroidManifest.xml文件中，包名之上shift+F6键直接修改包名。
+
+-----------------------------------------------------------------------------------------
+AndroidStudio中创建多个module：
+
+1.File -> New -> New Module... -> Android Library -> 设置library名称和module名称。
+
+library名称是该模块下AndroidManifext.xml中android:label的值。
+module name如设置为testlib，需要在引用该模块的配置中添加依赖。
+	(1)此时子模块中/build/outputs/aar/文件夹下只会生成对应的debug文件。
+
+2.在主模块的gradle配置中添加依赖：
+
+dependencies {
+	...
+	compile project(path: ':testlib');
+}
+	(2)在主模块中添加依赖后子模块中/build/outputs/aar/文件夹下会生成对应的和debug和release文件。
+
+3.在需要用到子模块中方法的地方import方法的包名即可。
+
+方法1和2等同于：
+File -> project structure -> 所选模块Dependencies -> 右上角+ -> Module dependency.
+
+可能错误：
+Error:Execution failed for task ':app:processDebugManifest'.
+> Manifest merger failed : Attribute application@label value=(@string/app_name) from AndroidManifest.xml:9:9-41
+	is also present at [TestLib:thirdlib:unspecified] AndroidManifest.xml:13:9-32 value=(ttttttt).
+	Suggestion: add 'tools:replace="android:label"' to <application> element at AndroidManifest.xml:6:5-21:19 to override.
+原因如下：
+如果子模块中android:label的值被改变，
+主模块application标签中需要添加：tools:replace="android:label"
+manifest标签中需要添加：xmlns:tools="http://schemas.android.com/tools"
+
+
+---------------------------------------------------------------------------------
+如果只使用aar文件：
+在子module中的/build/outputs/aar/文件夹下，有如testlib.aar文件，可只使用该文件而不使用整个module。
+1.将该文件复制到使用该其的主模块下app/libs文件夹下。
+
+2.配置主模块gradle：
+repositories {
+    flatDir {  dirs 'libs' }
+}
+
+dependencies {
+    compile(name: 'testlib', ext: 'aar')
+}
+
+
+-----------------------------------------------------------------------------------
+生成Jar包。
+
+1.创建子模块。
+
+2.配置该子模块gradle：
+在该子模块gradle中添加(与dependencies同级):
+// 修改jar名字+将指定jar生成的地方
+task makeJar(type:Copy) {
+    // 删除已存在的
+    delete 'build/libs/test.jar'
+    // 设置拷贝的文件，注意路径可能变化，找到classes.jar文件
+    from('build/intermediates/bundles/default')
+    // 打进jar包后的文件目录
+    into('build/libs')
+    // 将classes.jar放入build/libs/目录下
+    // include, exclude参数来设置过滤
+    include('classes.jar')
+    // 重命名
+    rename('classes.jar', 'test.jar')
+}
+
+makeJar.dependsOn(build)
+
+3.Terminal -> 命令行运行gradlew makeJar，即可在该模块build/目录下生成libs/test.jar
+
+
+-----------------------------------------------------------------------------------------
+添加其他模块进项目。
+
+1.File -> New -> Import New Module... -> 选择所要添加的子模块。
+
+2.File -> Project Structure -> app(项目主模块，或其他需要用到子模块的地方) -> Dependencies 
+	-> 右上角"+" -> Module dependency -> 选择添加进来的子模块。 -> OK
+	
+------------------------------------------------------------------------------------------
+删除项目中的模块。
+
+1.File -> Project Structure -> 选择所要删除子模块 -> 左上角"-" -> OK
+
+2.项目中删除该模块内容。
+
+-----------------------------------------------------------------------------------------------
+合并多个模块。
+1.File -> New -> New Module -> Android Library, 填写合并模块的名称libname和包libpackage。
+2.File -> Project Structure,调整对应模块的设置，消除报错。
+3.复制libname模块中的代码、gradle配置和清单文件。
+4.其他附加的gradle文件也复制过来。
+5.最低支持版本统一。
+6.clean。

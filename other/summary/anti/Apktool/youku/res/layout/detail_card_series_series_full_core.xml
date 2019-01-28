@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/detail_fragment_title_bar" />
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/detail_card_content_text_size" android:textColor="#ff009cff" android:gravity="center_vertical" android:id="@id/zhengpian" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/detail_card_series_title_bar_height" android:layout_marginLeft="@dimen/detail_card_video_detail_title_marginleft" android:layout_marginRight="@dimen/detail_card_series_cache_text_marginRight" android:text="正片" />
+        <GridView android:id="@id/detail_gv_series" android:background="@android:color/transparent" android:paddingLeft="@dimen/detail_card_video_detail_detail_full_top_core" android:paddingRight="@dimen/detail_card_video_detail_detail_full_top_core" android:scrollbars="none" android:fadingEdgeLength="@dimen/detail_boder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="@dimen/detail_card_video_detail_detail_full_verticalspacing_core" />
+        <ListView android:id="@id/detail_gv_series_list" android:background="@android:color/transparent" android:scrollbars="none" android:fadingEdgeLength="@dimen/detail_boder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/detail_card_detail_gv_series_list_left" android:layout_marginTop="@dimen/detail_card_detail_gv_series_list_left" android:layout_marginBottom="@dimen/detail_card_detail_gv_series_list_left" android:divider="@color/transparent" android:dividerHeight="@dimen/detail_card_series_small_detail_gv_series_recycler_left" />
+        <include android:id="@id/layout_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/detail_card_no_result" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_loading_height" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/next_loading" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffc9c9c9" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_ico_height">33.0px</dimen>
+    <dimen name="actionbar_img_height">40.0px</dimen>
+    <dimen name="actionbar_img_height_half">20.0px</dimen>
+    <dimen name="actionbar_vip_img_height">16.0px</dimen>
+    <dimen name="dialog_activity_total_width">290.0dip</dimen>
+    <dimen name="operator_logo_height">112.0dip</dimen>
+    <dimen name="operator_logo_width">792.0dip</dimen>
+    <dimen name="filter_cancel_height">27.0dip</dimen>
+    <dimen name="filter_cancel_width">55.0dip</dimen>
+    <dimen name="fullscreen_player_setting__checkbox_padding">22.0dip</dimen>
+    <dimen name="fullscreen_player_header_download_padding">13.0dip</dimen>
+    <dimen name="fullscreen_player_header_height">32.0dip</dimen>
+    <dimen name="fullscreen_player_header_padding">1.0dip</dimen>
+    <dimen name="fullscreen_player_header_return_width">13.0dip</dimen>
+    <dimen name="fullscreen_player_header_setting_padding">13.0dip</dimen>
+    <dimen name="fullscreen_player_volume_progress_length">122.0dip</dimen>
+    <dimen name="fullscreen_player_setting__light_bar_width">265.0dip</dimen>
+    <dimen name="fullscreen_player_setting__radio_margin_left">5.0dip</dimen>
+    <dimen name="fullscreen_player_setting__width">400.0dip</dimen>
+    <dimen name="fullscreen_player_setting__head_text_size">19.0sp</dimen>
+    <dimen name="fullscreen_player_setting__height">242.0dip</dimen>
+    <dimen name="fullscreen_player_setting__margin_left_right">15.0dip</dimen>
+    <dimen name="fullscreen_player_setting__normal_text_size">18.0sp</dimen>
+    <dimen name="fullscreen_player_setting__swith_tab_height">27.0dip</dimen>
+    <dimen name="fullscreen_player_setting__titile_height">30.0dip</dimen>
+</resources>

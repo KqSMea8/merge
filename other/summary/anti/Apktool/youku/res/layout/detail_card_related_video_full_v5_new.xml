@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/detail_fragment_title_bar" />
+        <RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#fffafafa" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/activity_myyouku_gridview_verticalspacing" android:verticalSpacing="@dimen/activity_myyouku_gridview_verticalspacing" android:numColumns="@integer/myyouku_gridview_numColumns" android:divider="#ffebebeb" android:dividerHeight="0.0px" />
+            <include android:id="@id/layout_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_loading_height" layout="@layout/detail_card_no_result" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_loading_height">
+                <ProgressBar android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/next_loading" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

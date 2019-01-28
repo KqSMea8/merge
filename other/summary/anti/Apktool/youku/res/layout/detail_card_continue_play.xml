@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/layout_title" android:layout_width="fill_parent" android:layout_height="@dimen/detail_small_card_title_height_v5">
+            <ImageView android:visibility="gone" android:layout_width="@dimen/detail_card_series_more_right_v5" android:layout_height="@dimen/detail_card_series_more_right_v5" android:src="@drawable/detail_icon_card_subscripts" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_related_part_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/detail_card_title_v5" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_more_right_v5" android:text="花絮" android:maxLines="1" android:maxEms="14" />
+            </LinearLayout>
+            <ImageView android:id="@id/more" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/detail_card_series_more_right_v5" android:src="@drawable/zhankaijiantou" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/detail_card_sideslip_card_subtitle_size" android:textColor="#ff9b9b9b" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/sub_title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="啊啊啊啊啊啊啊" android:maxLines="1" android:maxEms="4" android:layout_toLeftOf="@id/more" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/detail_continue_play_card_item_height" android:layout_marginLeft="@dimen/detail_card_item_sideslip_card_left_blank">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/listview_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.youku.phone.detail.widget.ContentRecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#fff2f2f2" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_loading_height">
+                <ProgressBar android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/next_loading" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

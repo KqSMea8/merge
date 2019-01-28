@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_bigwords_card" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_loading_height">
+        <ProgressBar android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/next_loading" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+    <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bigwords_card_blank" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_bigwords_blank" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="@dimen/detail_card_bigwords_button_height" android:layout_below="@id/bigwords_card_blank" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/detail_card_bigwords_button_height" android:layout_marginTop="@dimen/detail_card_bigwords_button_gap" android:layout_below="@id/linearLayout1" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_bigwords_blank" android:layout_below="@id/linearLayout2" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout_intro" android:background="@drawable/chao_intro_mask" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/chao_intro_img" android:layout_width="@dimen/home_personal_movie_46px" android:layout_height="@dimen/home_personal_movie_46px" android:layout_marginTop="@dimen/home_personal_movie_50px" android:layout_marginBottom="@dimen/home_personal_movie_14px" android:src="@drawable/chao_intro_arrow" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/home_personal_movie_32px" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/chao_intro_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_personal_movie_14px" android:text="更多精彩" />
+        <TextView android:textSize="@dimen/home_personal_movie_20px" android:textColor="#ffffffff" android:id="@id/chao_intro_more_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想 变 得 更 潮 吗 ？" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/vip_product_layout_item_first" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/activity_vip_product_layout_item" />
+        <View android:background="#ffe4e4e4" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/vip_product_layout_paddingright" />
+        <include android:id="@id/vip_product_layout_item_second" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/activity_vip_product_layout_item" />
+    </LinearLayout>
+    <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/vip_product_layout_paddingright" android:layout_marginRight="@dimen/vip_product_layout_paddingright" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/vip_product_layout_item_third" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/activity_vip_product_layout_item" />
+        <View android:background="#ffe4e4e4" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/vip_product_layout_paddingright" />
+        <include android:id="@id/vip_product_layout_item_fourth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/activity_vip_product_layout_item" />
+    </LinearLayout>
+</LinearLayout>

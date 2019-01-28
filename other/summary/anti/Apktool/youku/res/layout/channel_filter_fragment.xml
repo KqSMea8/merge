@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.youku.widget.XRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/channel_filter_recyclerview" android:background="@color/white" android:scrollbars="vertical" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="@dimen/channel_home_gridview_spacing" />
+    <FrameLayout android:id="@id/channel_video_filter_state_container" android:background="#f7ffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/channel_video_filter_state_height">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/channel_video_filter_state_layout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:background="#0f000000" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/channel_video_filter_float_layout" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.youku.phone.cmscomponent.view.ChannelFilterSelectView android:id="@id/channel_video_filter_float_view" android:paddingLeft="@dimen/home_personal_movie_18px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.youku.widget.ResultEmptyView android:id="@id/noresult_emptyview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

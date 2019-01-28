@@ -1,0 +1,4 @@
+在使用单例模式设计数据库时，一定要注意传入的Context不能为null。
+java.lang.NullPointerException: Attempt to invoke virtual method 'android.database.sqlite.SQLiteDatabase android.content.Context.openOrCreateDatabase(java.lang.String, int, android.database.sqlite.SQLiteDatabase$CursorFactory, android.database.DatabaseErrorHandler)' on a null object reference
+
+

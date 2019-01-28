@@ -1,0 +1,20 @@
+方法一：
+30天评估期已结束：
+windows的话你只要把beyond Compare 4文件夹下面的BCUnrar.dll文件删掉就行了
+
+如果方法一不管用，
+方法二：
+打开命令行
+
+1. 查看当前用户的SID
+
+whoami /user  
+
+2. 从注册表删除CacheId
+
+reg delete "HKEY_USERS\<SID>\Software\Scooter Software\Beyond Compare 4" /v CacheId /f  
+
+
+用Step1的SID替换,然后运行。
+
+reg delete "HKEY_USERS\S-1-5-21-2960553862-3435270844-3328604508-500\Software\Scooter Software\Beyond Compare 4" /v CacheId /f

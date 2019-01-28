@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/smallscreen_topmask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/home_personal_movie_100px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/home_personal_movie_font_34px" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/feed_card_player_toolbar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_personal_movie_24px" android:layout_marginRight="@dimen/home_personal_movie_24px" android:lines="1" />
+</LinearLayout>

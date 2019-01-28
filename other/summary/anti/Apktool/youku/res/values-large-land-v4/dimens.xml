@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myyouku_list_item_second_textsize">20.0px</dimen>
+    <dimen name="myyouku_list_item_third_textsize">20.0px</dimen>
+</resources>

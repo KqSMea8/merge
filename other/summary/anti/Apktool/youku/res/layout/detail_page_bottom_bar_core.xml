@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/bottom_bar_view" android:background="#ffffffff" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line1" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <RelativeLayout android:gravity="center_vertical" android:paddingRight="@dimen/detail_card_comment_header_text_padding_left_v5" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height">
+        <TextView android:textSize="@dimen/detail_card_item_title_size_v5" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/bottom_bar_comment" android:background="@drawable/bottom_bar_comment_bg" android:paddingLeft="@dimen/topic_tv_padding_left_and_right" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_icon_width" android:layout_marginLeft="@dimen/bottom_bar_comment_margin_left" android:layout_marginRight="@dimen/bottom_bar_text_margin_left" android:text="  写评论聊看点槽点" android:layout_toLeftOf="@id/bottom_bar_comment_button" />
+        <FrameLayout android:id="@id/bottom_bar_comment_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_adcard_sign_paddingLeft" android:layout_toLeftOf="@id/bottom_bar_activity">
+            <ImageView android:id="@id/bottom_bar_comment_img" android:layout_width="@dimen/channel_list_item_notification_icon_main_width" android:layout_height="@dimen/channel_list_item_notification_icon_main_width" android:src="@drawable/detail_card_title_bar_no_comment" />
+            <TextView android:textSize="@dimen/detail_card_button_bar_comment_text_size" android:textStyle="bold" android:textColor="#ff666666" android:layout_gravity="bottom|center|right" android:id="@id/bottom_bar_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_comment_header_text_padding_left_v5" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/bottom_bar_activity" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_comments_counts_text_width" android:layout_marginTop="@dimen/detail_adcard_sign_paddingLeft" android:layout_toLeftOf="@id/bottom_bar_fun">
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/bottom_bar_red_point" android:background="@drawable/bottom_bar_red_point" android:visibility="gone" android:layout_width="@dimen/bottom_bar_red_point" android:layout_height="@dimen/bottom_bar_red_point" />
+            <ImageView android:id="@id/bottom_bar_activity_img" android:layout_width="@dimen/channel_list_item_notification_icon_main_width" android:layout_height="@dimen/channel_list_item_notification_icon_main_width" android:src="@drawable/bottom_bar_act_ic_core" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/bottom_bar_fun" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_comments_counts_text_width" android:layout_marginTop="@dimen/detail_adcard_sign_paddingLeft" android:layout_toLeftOf="@id/icon_tag">
+            <ImageView android:id="@id/bottom_bar_fun_icon" android:layout_width="@dimen/channel_list_item_notification_icon_main_width" android:layout_height="@dimen/channel_list_item_notification_icon_main_width" android:src="@drawable/bottom_bar_fun_ic_core" />
+        </FrameLayout>
+        <ImageView android:id="@id/icon_tag" android:layout_width="0.100000024dip" android:layout_height="0.100000024dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

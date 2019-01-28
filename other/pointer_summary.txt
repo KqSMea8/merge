@@ -1,0 +1,81 @@
+char *p;
+*p	:	指针所指向的值，这个值变化，指针的地址并不会变化。
+p 	:	指针所指向的地址，这个地址变化，指针所指向的值就会变化，即内容改变。
+&p	:	指针本身的地址，这个值变化，相当于重新弄了一个指针，原来的指针丢失。
+
+int fun(char *file) {
+	char *fileData = calloc();
+	fread(fileData, file_len, fp);
+	file = fileData;
+	
+	file:		-507019952
+	*file_data:	1
+	fileData:	-507019952
+}
+char *data = NULL;
+fun(data);
+
+data: 0
+此时data的所保存的地址值还是为0。因为file指针接收data的所保存的地址之后，file指针又重新赋值了fileData的地址，相当于丢失掉了data的地址。此后的操作与data无关。
+----------------------------------------
+int fun(char **file) {
+	char *fileData = calloc();
+	fread(fileData, file_len, fp);
+	*file = fileData;
+
+	file : 		781381480
+	*file : 	581377360
+	fileData:	581377360
+}
+
+char *data = NULL;
+fun(&data);
+
+data : 581377360
+此时data能拿到fileData的地址值。因为file拿到了data指针本身的地址，改变了*file的值，即使改变了data指针指向的地址。
+
+总结：
+在需要对指针进行函数赋值操作时，如通过函数分配地址和保存值时。函数需要接收指针本身的地址，通过对指针本身的地址所指向的值(即指针所指向的地址)进行赋值，改变指针所指向的地址。
+即拿到指针本身的地址(这个地址不能改变)，从而改变指针所指向的地址，达到给该指针传递指向地址的目的。
+
+-----------------------------------------------------------------------------
+
+void *memset(void *s,int c,size_t n)
+
+作用：将已开辟内存空间s的首n个字节的值设为值c。
+strcpy只能拷贝字符串，它遇到'/0'就结束拷贝；
+
+char buffer[] = "Hello world/n";
+printf("Buffer before memset: %s/n", buffer);
+memset(buffer, '*', strlen(buffer) );
+printf("Buffer after memset: %s/n", buffer);
+
+int main()
+{
+　　char *s="Golden Global View";
+ 
+　　clrscr();
+　　memset(s,'G',6);//貌似这里有点问题
+	//程序根本就无法运行，这里s指向的是一段只读内存，而memset又试图修改它，所以运行时要出错，修改办法：char *s修改为char s[]。
+　　printf("%s",s);
+　　getchar();
+　　return 0;
+}
+
+----------------------------------------------------------------------------
+#include<string.h>
+void *memcpy(void *dest, const void *src, size_t n);
+功能：从源src所指的内存地址的起始位置开始拷贝n个字节到目标dest所指的内存地址的起始位置中.
+
+int memcmp(const void *str1, const void *str2, size_t n))
+把存储区 str1 和存储区 str2 的前 n 个字节进行比较。
+如果返回值 < 0，则表示 str1 小于 str2。
+如果返回值 > 0，则表示 str2 小于 str1。
+如果返回值 = 0，则表示 str1 等于 str2。
+
+
+
+
+
+
+

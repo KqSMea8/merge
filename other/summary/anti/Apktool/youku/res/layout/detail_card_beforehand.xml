@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_befor_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/detail_card_befor_tip_tv_left" android:textColor="#ff666666" android:id="@id/detail_card_befor_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_befor_tip_tv_left" android:layout_marginTop="@dimen/detail_card_befor_tip_tv_left" android:text="@string/detail_card_befor_tip" />
+    <ImageView android:id="@id/detail_card_befor_tip_iv" android:layout_width="@dimen/detail_card_befor_tip_tv_left" android:layout_height="@dimen/detail_card_befor_tip_tv_left" android:layout_marginLeft="@dimen/detail_card_befor_tip_iv_left" android:layout_marginTop="@dimen/detail_card_befor_tip_tv_left" android:src="@drawable/detail_card_befor_tip_iv" android:layout_toRightOf="@id/detail_card_befor_tip_tv" />
+    <FrameLayout android:id="@id/detail_card_befor_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_card_befor_tip_tv_left" android:layout_marginRight="@dimen/detail_card_befor_switch_right" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/detail_card_befor_switch_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_card_befor_switch_close" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+RecyclerView中更新数据时，如果传入的mList改变了指向，会导致RecyclerView更新数据后依然显示空白。
+
+如果发现RecyclerView的显示空白，第一查看mList是否改变了指向，第二查看布局是否是match_parent，导致列表条目过长，显示在下方，此时拉动可以看到条目。
+
+
+
+

@@ -1,0 +1,83 @@
+RelativeLayout控件之填满
+--------------------------------------------------------------------------
+上下填满
+已知三个控件上下排列，第一个与第三个控件高度确定，中间第二个控件高度要填满剩下的空间
+利用android:layout_below上面的控件和android:layout_above下面控件，中间控件高度直接match_parent
+<android:id="@+id/id1" />
+
+<	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/id2"
+	android:layout_below="@id/id1"
+	android:layout_above="@id/id3" />
+
+<android:id="@+id/id3" />
+--------------------------------------------------------------------------
+
+左右填满
+android:layout_toEndOf="@id/id_1" 在id_1的右边
+android:layout_toStartOf="@id/id_2" 在id_2的左边
+---------------------------------------------------------------------------
+
+设置为”wrap_content”但实际显示为match_parent：
+RelativeLayout 设置 layout_height=”wrap_content” 时，子控件的位置是 ALIGN_PARENT_BOTTOM 等相对父控件的设置时，导致wrap_content 的问题。
+
+#############################################################################################
+
+LinearLayout控件之填满
+上下填满
+<LinearLayout 
+	android:orientation="vertical"/>
+	<
+		android:layout_weight="1"
+        android:layout_width="0dp" />
+		
+LinearLayout中设置android:gravity="right"会导致其中的TextView显示不全，如微信聊天中右方显示TextView加ImageView。
+已验证可行的方法是：LinearLayout设置水平显示，TextView作为第一个子控件，ImageView设置layout_marginEnd。
+<LinearLayout
+	android:id="@+id/trans_src_container"
+	android:layout_marginTop="5dp"
+	android:orientation="horizontal"
+	android:background="@drawable/ic_message_me"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<TextView
+		android:id="@+id/trans_src_text"
+		android:gravity="start"
+		android:textSize="23sp"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:layout_weight="1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content" />
+	<ImageView
+		android:id="@+id/trans_src_img"
+		android:layout_marginEnd="15dp"
+		android:layout_gravity="center"
+		android:background="@drawable/animation_list_voice_play"
+		android:layout_width="20dp"
+		android:layout_height="20dp" />
+</LinearLayout>
+如上所示：TextView的android:layout_weight="1" android:layout_width="0dp"必须这样设置，否则TextView过长时会导致
+ImageView显示不出。
+		
+#############################################################################################
+
+		
+以下大部为用在RelativeLayout中的一些参数： 
+android:layout_above 将该控件的底部至于给定ID的控件之上,但不会左对齐，默认置于父窗口最左边，会覆盖最左边的控件
+
+android:layout_below 将该控件的顶部至于给定ID的控件之下,但不会左对齐，默认置于父窗口最左边，会覆盖最左边的控件 
+
+android:layout_toLeftOf 将该控件的右边缘和给定ID的控件的左边缘对齐，默认置于父窗口最上面，会覆盖最上面的控件
+
+android:layout_toRightOf 将该控件的左边缘和给定ID的控件的右边缘对齐，默认置于父窗口最上面，会覆盖最上面的控件
+
+android:alignParentBottom 如果该值为true，则将该控件的底部和父控件的底部对齐，默认置于父窗口最左下，会覆盖最左下的控件 android:layout_alignParentLeft 如果该值为true，则将该控件的左边与父控件的左边对齐，默认置于父窗口最左上，会覆盖最左上的控件 android:layout_alignParentRight 如果该值为true，则将该控件的右边与父控件的右边对齐，默认置于父窗口最右上，会覆盖最右上的控件 android:layout_alignParentTop 如果该值为true，则将控件的顶部与父控件的顶部对齐，默认置于父窗口最左上，会覆盖最左上的控件
+
+android:layout_alignBaseline该控件的baseline和给定ID的控件的baseline对齐，并置于父窗口最左边，会覆盖最左边的控件 
+android:layout_alignBottom 将该控件的底部边缘与给定ID控件的底部边缘对齐，并置于父窗口最左边，会覆盖最左边的控件
+
+android:layout_alignLeft 将该控件的左边缘与给定ID控件的左边缘对齐，并置于父窗口最上边，会覆盖最上边的控件 
+android:layout_alignRight 将该控件的右边缘与给定ID控件的右边缘对齐，并置于父窗口最上边，会覆盖最上边的控件 
+android:layout_alignTop 将给定控件的顶部边缘与给定ID控件的顶部对齐，并置于父窗口最左边，会覆盖最左边的控件

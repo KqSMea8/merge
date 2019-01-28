@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/special_topic_three_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_20px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/channel_item_three_first" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/home_video_portait_item" />
+    <View android:layout_width="@dimen/home_personal_movie_10px" android:layout_height="fill_parent" />
+    <include android:id="@id/channel_item_three_second" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/home_video_portait_item" />
+    <View android:layout_width="@dimen/home_personal_movie_10px" android:layout_height="fill_parent" />
+    <include android:id="@id/channel_item_three_third" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/home_video_portait_item" />
+</LinearLayout>

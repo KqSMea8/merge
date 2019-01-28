@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preload_cache_layout" android:background="@color/white" android:paddingRight="@dimen/preload_layout_margin_top" android:layout_width="fill_parent" android:layout_height="@dimen/preload_layout_weight" android:layout_below="@id/shadow_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/preload_layout_text_size" android:gravity="center_vertical" android:id="@id/preload_cache_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/preload_layout_margin_top" android:text="更新后WiFi下自动缓存" />
+    <ImageView android:id="@id/preload_cache_explain" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/preload_layout_explain_margin_left" android:src="@drawable/preload_cache_explain" android:layout_toRightOf="@id/preload_cache_text" android:layout_centerVertical="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_toggle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <FrameLayout android:id="@id/layout_toggle_off" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preload_cache_toggle_off" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_off" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progress_bar" android:indeterminateBehavior="repeat" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_toggle_on" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preload_cache_toggle_on" />
+            <ProgressBar android:layout_gravity="right" android:id="@id/progress_on" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/preload_cache_loading" android:indeterminateBehavior="repeat" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

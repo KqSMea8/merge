@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/yyz_first_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/yyz_item_1" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_2" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_1" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_3" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_2" layout="@layout/channel_component_yyz_item_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/yyz_second_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_yiyangzhi_5px" android:layout_below="@id/yyz_first_ll">
+        <include android:id="@id/yyz_item_4" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_5" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_4" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_6" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_5" layout="@layout/channel_component_yyz_item_layout" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/yyz_third_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_yiyangzhi_5px" android:layout_below="@id/yyz_second_ll">
+        <include android:id="@id/yyz_item_7" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_8" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_7" layout="@layout/channel_component_yyz_item_layout" />
+        <include android:id="@id/yyz_item_9" android:layout_width="@dimen/channel_yiyangzhi_246px" android:layout_height="@dimen/channel_yiyangzhi_436px" android:layout_marginLeft="@dimen/channel_yiyangzhi_6px" android:layout_toRightOf="@id/yyz_item_8" layout="@layout/channel_component_yyz_item_layout" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baseproject.basecard.widget.WithCornerMaskImageView android:id="@id/channel_item_img" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_60px" layout="@layout/home_item_stripe_layout" />
+    </FrameLayout>
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/channel_item_bottom_title_layout" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/home_personal_movie_20px" android:paddingRight="@dimen/home_personal_movie_20px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/channel_tag_link_zone" android:layout_width="fill_parent" android:layout_height="@dimen/channel_taglink_container_height">
+        <com.youku.phone.cmscomponent.view.ChannelHomeTextLinkView android:orientation="horizontal" android:id="@id/channel_tag_link_container" android:layout_width="wrap_content" android:layout_height="@dimen/home_personal_movie_70px" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

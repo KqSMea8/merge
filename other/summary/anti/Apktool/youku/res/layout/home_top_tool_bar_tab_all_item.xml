@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/home_tab_all_item_icon" android:layout_width="@dimen/home_card_scg_22px" android:layout_height="@dimen/home_card_scg_22px" android:layout_marginLeft="@dimen/home_tool_bar_filter_text_padding" android:layout_marginRight="@dimen/home_tool_bar_filter_img_margin_right" android:src="@drawable/home_top_tool_filter_icon_light_3x" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/home_tool_bar_filter_text_size" android:textColor="#ccffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/home_tab_item_all_textview" android:background="@drawable/toolbar_menu_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

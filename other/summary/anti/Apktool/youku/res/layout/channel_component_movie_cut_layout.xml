@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_movie_cut_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/channel_movie_cut_28px" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left" android:id="@id/tv_channel_movie_cut_middle_title" android:paddingLeft="@dimen/channel_movie_cut_54px" android:paddingRight="@dimen/channel_movie_cut_54px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_movie_cut_20px" android:maxLines="1" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/home_card_scg_24px" android:textColor="#ff999999" android:ellipsize="end" android:gravity="left" android:id="@id/tv_channel_movie_cut_middle_desc" android:paddingLeft="@dimen/channel_movie_cut_54px" android:paddingRight="@dimen/channel_movie_cut_54px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_movie_cut_10px" android:maxLines="1" android:includeFontPadding="false" />
+</LinearLayout>

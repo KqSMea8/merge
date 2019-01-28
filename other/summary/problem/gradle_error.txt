@@ -1,0 +1,194 @@
+######################################################################################
+问题1
+Error:Execution failed for task ':app:transformNativeLibsWithMergeJniLibsForDebug'.
+> com.android.build.api.transform.TransformException: com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK lib/x86/libandroid_platform.so
+	File1: C:\Users\Administrator\.android\build-cache\d2d9688380b094848f2bd70ee82cbaca23270670\output\jni
+	File2: D:\work\Translator\wtx\20180110_A8_To_YunPingTai\WtTransDemo\wtwdenginesmicro\build\intermediates\bundles\default\jni
+	
+出现这种问题DuplicateFileException的原因：重复的文件
+
+解决办法：
+在报错的模块中：
+android {
+    ...
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+######################################################################################
+问题2
+Error:A problem occurred configuring project ':app'.
+> Could not resolve all dependencies for configuration ':app:_debugApkCopy'.
+   > Could not find :enginesservice-micro.1.0.0:.
+     Required by:
+         project :app > project :wtwdenginesmicro
+		 
+		 
+#######################################################################################
+问题3
+Information:Gradle tasks [:app:assembleDebug]
+Error:Uncaught translation error: java.lang.IllegalArgumentException: already added: Landroid/arch/core/internal/SafeIterableMap;
+Error:Uncaught translation error: java.lang.IllegalArgumentException: already added: Landroid/arch/core/internal/SafeIterableMap$Entry;
+Error:Uncaught translation error: java.lang.IllegalArgumentException: already added: Landroid/arch/core/internal/SafeIterableMap$ListIterator;
+Error:3 errors; aborting
+Error:Execution failed for task ':app:transformClassesWithDexForDebug'.
+> com.android.build.api.transform.TransformException: com.android.ide.common.process.ProcessException: java.util.concurrent.ExecutionException: com.android.ide.common.process.ProcessException: Return code 1 for dex process
+Information:BUILD FAILED
+
+解决办法：
+android8.0更新内容，已包含，所以already added.
+注释掉app的gradle中的依赖：
+    compile 'android.arch.lifecycle:runtime:1.0.0-alpha1'
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha1'
+    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
+为：
+//    compile 'android.arch.lifecycle:runtime:1.0.0-alpha1'
+//    compile 'android.arch.lifecycle:extensions:1.0.0-alpha1'
+//    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
+
+#######################################################################################
+问题4
+gradle version 2.2 isrequired。current version is 3.3
+
+解决办法：
+Terminal窗口中输入gradlew，下载相应gradle。
+
+#######################################################################################
+问题5
+com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK lib/mips/xxx.so
+在lib库项目中引用到了其他aar文件，导致出现重复的so文件，即使排除掉所有重复so文件，安装app后闪退，提示找不到so文件。
+
+原因：
+在合并demo和lib时，由于lib的gradle文件是生成aar的配置，所以导致在项目中生成了临时文件夹，从而产生重复。
+
+解决办法：
+1.删除掉工程中生成的对应文件夹。
+2.去除掉apply from:'xxx' 等打包行。
+
+#######################################################################################
+问题6
+Error:Failed to resolve: :xxxx:
+
+原因：xxxx是lib模块中引用到的libs中的aar文件。此aar文件不仅子模块中需要compile，主模块中也需要添加：
+repositories {
+    flatDir {
+        dirs 'libs', '../enginesservice/libs'
+    }
+}
+
+dependencies {
+    compile(name:'xxxx',ext:'aar')
+}
+
+#######################################################################################
+问题7
+AndroidStudio中调试java代码输出中文乱码：
+相应模块的gradle文件中添加：
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+#######################################################################################
+问题8
+Error:Execution failed for task ':app:javaPreCompileDebug'.
+> Annotation processors must be explicitly declared now.  The following dependencies on the compile classpath are found to contain annotation processor.  Please add them to the annotationProcessor configuration.
+    - butterknife-7.0.1.jar (butterknife-7.0.1.jar)
+  Alternatively, set android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true to continue with previous behavior.  Note that this option is deprecated and will be removed in the future.
+  See https://developer.android.com/r/tools/annotation-processor-error-message.html for more details.
+
+在app的gradle文件中添加：
+apply plugin: 'com.android.application'
+android {
+	。。。
+    defaultConfig {
+		。。。
+		javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+	}
+}
+即在android{defaultConfig{}}中添加如上内容。
+
+#######################################################################################
+问题9
+Error:A problem occurred configuring project ':app'. > All flavors must now belong to a named flavor
+
+Android Studio升级到3.0之后，运行的时候会报错
+
+解决这个问题的办法是在主app的build.gradle里面的
+
+ defaultConfig {
+    targetSdkVersion：***
+    minSdkVersion ：***
+    versionCode：***
+    versionName ：***
+    //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+    flavorDimensions "versionCode"
+}
+
+#######################################################################################
+问题10
+Caused by: java.lang.RuntimeException: Unknown animation name: cn.pedant.SweetAlert.Rotate3dAnimatio
+
+参考：https://stackoverflow.com/questions/47195517/android-studio-3-0-error-with-sweet-alert-dialog-library
+Android Studio 3.0，Gradle 4.1，升级之后SweetAlertDialog错误，java.lang.RuntimeException: Unknown animation name: cn.pedant.SweetAlert.Rotate3dAnimation error:nul：
+1.我原来用的是compile 'cn.pedant.sweetalert:library:1.3'
+2.改成
+compile 'com.github.f0ris.sweetalert:library:1.5.1'
+就好了。
+
+#######################################################################################
+问题11 Error:All flavors must now belong to a named flavor dimension. Learn more at https://d.android.com
+
+这个一个错误，意思是：所有的flavors都必须属于同一个风格。
+Plugin 3.0.0之后有一种自动匹配消耗库的机制，便于debug variant 自动消耗一个库，然后就是必须要所有的flavor 都属于同一个维度。
+为了避免flavor 不同产生误差的问题，应该在所有的库模块都使用同一个foo尺寸。
+= 。=还是懵逼。说一堆依然不是很理解。
+但是我们从中已经知道解决方案了：
+在主app的build.gradle里面的
+ defaultConfig {
+ targetSdkVersion：***
+minSdkVersion ：***
+versionCode：***
+ versionName ：***
+//版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+flavorDimensions "versionCode"
+}
+
+就直接解决这个问题。然后app 就可以happy的运行起来了。
+
+#######################################################################################
+问题12 app'. Resolved versions for app (26.1.0) and test app (27.1.1) differ.
+在build.gradle文件中添加如下代码可完美解决
+android{
+...}
+configurations.all {
+resolutionStrategy.force 'com.android.support:support-annotations:27.+'
+}
+
+#######################################################################################
+问题13 
+Program type already present: okio.AsyncTimeout$2
+Message{kind=ERROR, text=Program type already present: okio.AsyncTimeout$2, sources=[Unknown source file], tool name=Optional.of(D8)}
+这时由于依赖包okio重复导致的。
+在app的build.gradle中添加：
+dependencies {
+	configurations {
+        all*.exclude group:'com.squareup.okio', module: 'okio'
+    }
+}
+
+对于com.squareup.okio:okio:1.13.0
+group : 'com.squareup.okio'
+module : 'okio'
+version : 1.13.0
+
+
+
+

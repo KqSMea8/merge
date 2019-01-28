@@ -1,0 +1,14 @@
+关于onCharacteristicChanged回调需要注意几点：
+
+1、在创建某个特征值A时，一定记得设置该特征值为PROPERTY_NOTIFY；
+
+2、在中心设备上在发现A特征值时要设置：bluetoothGatt.setCharacteristicNotification(A,,true);表示该特征值可以接收通知；
+
+3、在外设中，当A的值改变时要设置bluetoothGattServer.notifyCharacteristicChanged(device,A,false)表示要发送通知；可以在onNotificationSend中查看通知是否发送成功；
+
+4.最后在中心设备的onCharacteristicChanged中查看是否有回调；
+
+获取蓝牙自身设备地址。
+String macAddress = android.provider.Settings.Secure.getString(mContext.getContentResolver(), "bluetooth_address");
+
+当你要手动断开时调用disconnect方法，然后在onConnectionStateChange的状态回调中调用close方法。如果在disconnect后直接调用close，会导致不走onConnectionStateChange这里的。

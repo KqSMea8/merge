@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+    <item android:top="140.0dip">
+        <bitmap android:gravity="center|top" android:src="@drawable/logo_center" />
+    </item>
+    <item android:bottom="15.0dip">
+        <bitmap android:gravity="bottom|center" android:src="@drawable/logo_bottom" />
+    </item>
+</layer-list>

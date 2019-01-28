@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="8.0dip" />
+    <gradient android:startColor="#ffffffff" android:endColor="#ffffffff" android:angle="90.0" />
+    <padding android:left="@dimen/upassword_dialog_show_video_total_padding_left_top_right" android:top="@dimen/upassword_dialog_show_video_total_padding_left_top_right" android:right="@dimen/upassword_dialog_show_video_total_padding_left_top_right" android:bottom="@dimen/upassword_dialog_show_video_total_padding_bottom" />
+</shape>

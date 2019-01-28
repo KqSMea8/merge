@@ -1,0 +1,22 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: youku.apk
+compressionType: false
+doNotCompress: null
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '19'
+sharedLibrary: false
+unknownFiles:
+  'null': '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '146'
+  versionName: 7.0.2

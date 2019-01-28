@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_mutli_tab_rank_tab_layout" android:background="#14ffffff" android:paddingTop="@dimen/channel_game_38px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <com.youku.phone.cmscomponent.widget.ChannelTitleTabIndicator android:id="@id/tab_multi_tab_layout" android:paddingTop="@dimen/home_card_scg_8px" android:paddingBottom="@dimen/channel_game_38px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <View android:background="#20ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tab_multi_tab_layout" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_mutli_tab_rank_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_mutli_tab_rank_tab_layout" />
+    <View android:id="@id/view_multi_tab_line" android:background="#19ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/home_personal_movie_20px" android:layout_marginRight="@dimen/home_personal_movie_20px" android:layout_below="@id/recycler_mutli_tab_rank_tab_layout" />
+    <LinearLayout android:gravity="center" android:id="@id/ll__multi_tab_all" android:paddingTop="@dimen/home_personal_movie_40px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_multi_tab_line">
+        <TextView android:textSize="@dimen/channel_multi_tab_rank_botm_text_size" android:textColor="#ff2b2b2b" android:id="@id/tv_multi_tab_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/channel_game_18px" android:text="@string/channel_multi_tab_rank_botm_str" android:includeFontPadding="false" />
+        <ImageView android:layout_width="@dimen/channel_game_15px" android:layout_height="@dimen/channel_game_15px" android:src="@drawable/channel_multi_tab_rank_more_right_arrow" />
+    </LinearLayout>
+</RelativeLayout>

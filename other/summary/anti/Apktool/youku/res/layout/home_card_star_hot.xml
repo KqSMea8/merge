@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_card_star" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_home_card_star_title_layout" android:background="#fffffff0" android:paddingLeft="@dimen/home_personal_movie_20px" android:paddingRight="@dimen/home_personal_movie_20px" android:layout_width="fill_parent" android:layout_height="@dimen/home_card_star_title_height">
+        <TextView android:textSize="@dimen/home_personal_movie_34px" android:textColor="#ff333333" android:gravity="center|left" android:id="@id/home_card_star_title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+        <TextView android:textSize="@dimen/home_card_item_title_tag_textsize" android:textColor="#ff666666" android:gravity="center|left" android:id="@id/home_card_star_title_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_card_item_title_tag_paddingleftright" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/home_card_star_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_card_topic_recommend_content_bottom_margin" />
+</LinearLayout>

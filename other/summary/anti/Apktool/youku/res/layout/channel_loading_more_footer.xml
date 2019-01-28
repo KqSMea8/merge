@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/channel_footer_view_line" android:background="@color/twenty_percent_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/line" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/channel_footer_view_text_height">
+        <View android:layout_gravity="center_vertical" android:background="@color/channel_footer_view_line" android:layout_width="@dimen/channel_footer_view_line_width" android:layout_height="@dimen/line" />
+        <TextView android:textSize="@dimen/channel_footer_view_text_size" android:textColor="@color/channel_footer_view_text_none" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/channel_footer_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_footer_view_text_margin" android:layout_marginRight="@dimen/channel_footer_view_text_margin" android:text="@string/channel_footer_view_text_none" android:maxLines="1" />
+        <View android:layout_gravity="center_vertical" android:background="@color/channel_footer_view_line" android:layout_width="@dimen/channel_footer_view_line_width" android:layout_height="@dimen/line" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_footer_view_logo" android:layout_width="wrap_content" android:layout_height="@dimen/channel_footer_view_logo_height" android:src="@drawable/footer_img" android:scaleType="centerInside" android:contentDescription="@null" />
+</LinearLayout>

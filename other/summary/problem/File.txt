@@ -1,0 +1,51 @@
+1.权限
+不仅在清单文件中需要配置权限，还需要动态获取、动态获取、动态获取。
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+2.目录
+if (!fileParent.exists()) {
+	if (fileParent.mkdirs()) {
+		Log.i(TAG, "fileParent.mkdirs() success.");
+	}
+	else {
+		Log.e(TAG, "fileParent.mkdirs() failed.");
+	}
+}
+
+3.文件
+if (!file.exists()) {
+	try {
+		if (file.createNewFile()) {
+			Log.i(TAG, "file.createNewFile() success.");
+		}
+		else {
+			Log.e(TAG, "file.createNewFile() failed.");
+		}
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+}
+----------------------------------------------------------------------------
+Google已经提供了最佳的外部存储方案,那就是统一路径为:
+/Android/data/< package name >/files/… (该路径通常挂载在/mnt/sdcard/下)
+外部存储路径调用方法是:context.getExternalFilesDir(dir).getAbsolutePath() //通过context调用,参数dir为自自定义文件夹.
+
+内部存储的路径是: /data/data/< package name >/files/…
+(该路径挂载在在手机自身存储目录)
+内部存储路径调用方法是:context().getCacheDir().getAbsolutePath() //通过context调用
+
+
+ external storage 
+ 外部存储	
+Environment.getExternalStorageDirectory()	SD根目录:/mnt/sdcard/ (6.0后写入需要用户授权)
+
+context.getExternalFilesDir(dir)			路径为:/mnt/sdcard/Android/data/< package name >/files/… 
+context.getExternalCacheDir()				路径为:/mnt/sdcard//Android/data/< package name >/cach/…
+以上AndroidManifest.xml配置读写权限了,就不需要用户再授权了。
+
+internal storage
+ 内部存储	
+context.getFilesDir()						路径是:/data/data/< package name >/files/…
+context.getCacheDir()						路径是:/data/data/< package name >/cach/…
+

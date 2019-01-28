@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/detail_card_collection_small_list_item_new_margin_left" android:layout_marginBottom="@dimen/detail_card_collection_small_list_item_new_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_bg" android:background="@drawable/detail_card_collection_small_list_item_new_bg" android:layout_width="@dimen/detail_card_continue_small_list_item_new_width" android:layout_height="@dimen/detail_card_continue_small_list_item_new_height" android:layout_marginLeft="@dimen/detail_card_video_detail_desc_margin_left" android:layout_marginRight="@dimen/detail_card_video_detail_desc_margin_left" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/detail_card_item_title_size" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:paddingLeft="@dimen/detail_card_video_detail_title_marginleft_v5" android:paddingRight="@dimen/detail_card_video_detail_title_marginleft_v5" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_continue_small_list_item_new_height" android:maxLines="2" android:lineSpacingExtra="@dimen/detail_card_collection_small_list_item_line_space_extra" />
+    </RelativeLayout>
+</RelativeLayout>

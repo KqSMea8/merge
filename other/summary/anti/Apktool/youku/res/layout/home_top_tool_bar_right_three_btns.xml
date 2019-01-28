@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/home_tool_bar_right_btns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/home_tool_bar_history" android:background="@drawable/home_top_tool_corner_bg" android:visibility="gone" android:layout_width="@dimen/home_personal_movie_52px" android:layout_height="@dimen/home_personal_movie_52px" android:layout_marginRight="@dimen/home_personal_movie_24px">
+        <ImageView android:layout_gravity="center" android:id="@id/home_tool_bar_history_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_top_tool_history_icon_light_3x" android:scaleType="center" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/home_tool_bar_download" android:background="@drawable/home_top_tool_corner_bg" android:layout_width="@dimen/home_personal_movie_52px" android:layout_height="@dimen/home_personal_movie_52px" android:layout_marginRight="@dimen/home_personal_movie_24px">
+        <ImageView android:layout_gravity="center" android:id="@id/home_tool_bar_download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_top_tool_down_icon_light_3x" android:scaleType="center" />
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/home_tool_bar_msg" android:background="@drawable/home_top_tool_corner_bg" android:layout_width="@dimen/home_personal_movie_52px" android:layout_height="@dimen/home_personal_movie_52px" android:layout_marginRight="@dimen/home_personal_movie_30px">
+        <ImageView android:id="@id/home_tool_bar_msg_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_top_tool_msg_icon_light_3x" android:scaleType="center" android:layout_centerInParent="true" />
+        <View android:id="@id/home_tool_bar_msg_red_point" android:background="@drawable/home_top_tool_bar_white_point" android:visibility="invisible" android:layout_width="@dimen/home_tool_bar_msg_red_point_size" android:layout_height="@dimen/home_tool_bar_msg_red_point_size" android:layout_marginTop="@dimen/home_card_scg_10px" android:layout_marginRight="@dimen/home_personal_movie_6px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

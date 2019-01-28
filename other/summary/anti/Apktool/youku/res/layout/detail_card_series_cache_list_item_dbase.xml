@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/detail_card_series_list_both_sides" android:paddingRight="@dimen/detail_card_series_list_both_sides" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bg" android:background="@drawable/other_person_gridview_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_vertical_series_list_height_v5">
+        <ImageView android:id="@id/iv_state" android:background="@null" android:visibility="gone" android:layout_width="@dimen/detail_card_series_state_icon_size" android:layout_height="@dimen/detail_card_series_state_icon_size" android:src="@drawable/series_item_select_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_state" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_type_icon_margin_left" android:layout_toLeftOf="@id/iv_state">
+                <ImageView android:id="@id/iv_type" android:background="@null" android:visibility="gone" android:layout_width="@dimen/detail_card_series_type_icon_size" android:layout_height="@dimen/detail_card_series_type_icon_size" android:layout_marginRight="@dimen/detail_card_series_type_icon_margin_right" android:src="@drawable/series_item_select_img" />
+                <TextView android:textSize="@dimen/detail_function_big_title_size" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_num" android:paddingRight="@dimen/detail_card_video_detail_title_marginleft_v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_text_margin_left" android:text="1" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_video_detail_title_marginleft_v5_db" android:layout_marginTop="@dimen/detail_card_series_total_icon_margin_top">
+                <ImageView android:id="@id/bofangliang" android:layout_width="@dimen/explore_page_view_count_icon" android:layout_height="@dimen/explore_page_view_count_icon" android:src="@drawable/bofangliang" />
+                <TextView android:textSize="@dimen/detail_card_title_comment_textsize" android:textColor="#ffb5b7b9" android:gravity="center_vertical" android:id="@id/total_pv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_series_cache_icon_marginRight_v5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:background="#80bebebe" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="1.0px" />
+</LinearLayout>

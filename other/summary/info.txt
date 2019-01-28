@@ -1,0 +1,17 @@
+win系统下：
+sdk路径：C:\Users\Administrator\AppData\Local\Android\sdk
+
+添加gradle路径：C:\Users\Administrator\.gradle\wrapper\dists
+gradle下载后放置在C:\Program Files\AS\gradle下，并解压。
+配置该路径：
+File -> Setting -> Build,Execution,Deployment -> Gradle -> Gradle home:选择解压文件夹
+
+gradle编译工具版本：
+C:\Program Files\AS\gradle\m2repository\com\android\tools\build\gradle\2.3.3
+工程下的build.gradle中
+dependencies {
+	classpath 'com.android.tools.build:gradle:2.3.3'
+}
+对应的就是该目录下的文件名2.3.3，而不是gradle版本，这是编译工具的版本。
+
+-----------------------------------------------------------------------------------------

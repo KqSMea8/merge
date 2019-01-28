@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_210px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/home_personal_movie_10px" android:src="@drawable/xrecycleview_footer_more" android:scaleType="center" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/xrecycleview_footer_logo" android:scaleType="center" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/home_trumpet_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/home_personal_movie_24px" android:paddingRight="@dimen/home_personal_movie_32px" android:layout_width="fill_parent" android:layout_height="@dimen/home_trumpet_view_height">
+        <ImageView android:id="@id/user_trumpet_view_img" android:layout_width="@dimen/home_personal_movie_32px" android:layout_height="@dimen/home_personal_movie_32px" android:layout_marginRight="@dimen/home_personal_movie_30px" android:src="@drawable/home_trumpet_msg" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/user_trumpet_view_go_icon" android:padding="@dimen/home_personal_movie_12px" android:layout_width="@dimen/home_personal_movie_40px" android:layout_height="@dimen/home_personal_movie_40px" android:src="@drawable/home_trumpet_close" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/home_personal_movie_28px" android:textColor="#ff2b2b2b" android:ellipsize="end" android:gravity="center|left" android:id="@id/user_trumpet_view_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_notice_img_right_margin" android:singleLine="true" android:layout_toLeftOf="@id/user_trumpet_view_go_icon" android:layout_toRightOf="@id/user_trumpet_view_img" />
+    </RelativeLayout>
+</LinearLayout>

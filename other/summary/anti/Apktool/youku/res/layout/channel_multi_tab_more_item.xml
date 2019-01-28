@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rank_item_container" android:layout_width="@dimen/channel_multi_tab_rank_218px" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/img_channel_multi_tab_more_item" android:background="@drawable/channel_multi_tab_rank_item_more_bg" android:layout_width="@dimen/channel_multi_tab_rank_218px" android:layout_height="@dimen/channel_multi_tab_rank_327px" android:layout_marginTop="@dimen/channel_game_10px" android:src="@drawable/home_card_default_img_70" android:scaleType="center" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/channel_multi_tab_rank_botm_text_size" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/channel_game_10px" android:text="@string/channel_multi_tab_rank_item_more_str" android:includeFontPadding="false" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/channel_game_15px" android:layout_height="@dimen/channel_game_15px" android:src="@drawable/channel_multi_more_white_arrow" />
+    </LinearLayout>
+</RelativeLayout>

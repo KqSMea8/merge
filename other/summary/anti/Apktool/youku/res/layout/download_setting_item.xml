@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rootview" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_cache_setting_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/detail_card_cache_setting_item_size" android:textColor="#ff666666" android:gravity="center" android:id="@id/detail_cache_card_setting_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/detail_cache_card_1080" android:layout_width="wrap_content" android:layout_height="@dimen/detail_card_cache_setting_item_height">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/detail_card_cache_setting_vip_item_width" android:layout_height="@dimen/detail_card_cache_setting_vip_item_height" android:src="@drawable/detail_card_cache_vip_icon" />
+        <TextView android:textSize="@dimen/detail_card_cache_setting_item_size" android:textColor="#ff666666" android:gravity="center" android:id="@id/detail_cache_card_setting_vip_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/detail_cache_card_setting_vip_text_left" />
+    </LinearLayout>
+</LinearLayout>

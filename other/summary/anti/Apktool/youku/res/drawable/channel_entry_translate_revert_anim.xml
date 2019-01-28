@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r1" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r2" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r3" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r4" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r5" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r6" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r7" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r8" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r9" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r10" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r11" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r12" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r13" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r14" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r15" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r16" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r17" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r18" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r19" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r20" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r21" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r22" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r23" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r24" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r25" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r26" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r27" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r28" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r29" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r30" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r31" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r32" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r33" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r34" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r35" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r36" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r37" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r38" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r39" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r40" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r41" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r42" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r43" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r44" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r45" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r46" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r47" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r48" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r49" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r50" />
+    <item android:duration="31" android:drawable="@drawable/channnel_entry_translate_r51" />
+</animation-list>

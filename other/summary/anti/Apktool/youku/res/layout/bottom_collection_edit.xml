@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/favorite_bottom_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="@dimen/favorite_item_view_line_height" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/tab_indicator_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/favorite_bottom_layout_textsize" android:textColor="#ff333333" android:gravity="center" android:id="@id/select_all" android:background="@drawable/other_person_gridview_item_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="全选" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:background="#fff0f0f0" android:layout_width="@dimen/favorite_item_view_line_height" android:layout_height="@dimen/favorite_main_between_line_height" />
+        <TextView android:textSize="@dimen/favorite_bottom_layout_textsize" android:textColor="#88fa533d" android:gravity="center" android:id="@id/delete" android:background="@color/tab_indicator_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

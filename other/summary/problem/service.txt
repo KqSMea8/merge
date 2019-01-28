@@ -1,0 +1,86 @@
+1.startservice -> startservice -> .... -> stopservice:
+constructure -> onCreate -> onStartCommand -> 
+onStartCommand -> ... -> 再次startservice调用onStartCommand方法。
+onDestory.
+
+2.bindservice -> bindservice -> ... -> unbindservice:
+
+constructure -> onCreate -> onBind -> 
+再次bindservice无效果。
+onUnbind -> onDestory.
+
+
+3.先bindservice，后startservice，此时stopservice调用不到Service的OnDestory方法。只能用unbindservice调用onDestory。
+
+4.先startservice，后bindservice，此时stopservice还是调用不到Service的OnDestory方法。只能用unbindservice调用onDestory。
+
+**********************************************************************************************
+java.lang.ClassCastException: android.os.BinderProxy cannot be cast to xxxx
+所绑定的服务是远程服务，不能直接拿到MyBind对象，需要使用stub对象。
+
+在AndroidStudio中，直接用Shift+F6来修改Aidl文件名，文件内的名称不会自动改变，需要手动修改。
+
+远程服务RemoteService:
+1.服务端aidl文件ForService，添加远程服务所需提供的方法。
+2.定义远程服务，android:process=":remoteprocessxxx"
+RemoteService.Stub stub = new RemoteService.Stub() {
+	...
+}
+3.客户端调用。
+public void onServiceConnected(ComponentName name, IBinder service) {
+	RemoteService remoteService = RemoteService.Stub.asInterface(service);
+	try {
+		remoteService.print();
+	} catch (RemoteException e) {
+		e.printStackTrace();
+	}
+}
+
+-------------------------------------------------------------------------------
+
+ServiceConnection类中的两个方法非别在服务连接成功时、不成功时调用。
+其中onServiceDisconnected()方法在连接正常关闭的情况下是 
+不会被调用 
+不会被调用 
+不会被调用 的, 该方法只在Service 被破坏了或者被杀死的时候调用。
+在使用service时，尤其是使用了监听回调时，如果注册监听时在OnServiceConnected()中进行的，那么注销监听在onServiceDisconnected()中可能不会被触发，此时需要进行额外的注销操作。
+
+注册服务后一定要记得清理和注销服务，同样的注册监听后一定要记得注销监听。
+
+-------------------------------------------------------------------------------
+远程服务RemoteServiceCallback和对象序列化。
+
+aidl文件：
+1.对象类DataInfo.aidl
+parcelable DataInfo;
+
+2.ForRemoteCallback.aidl
+import com.example.kafuly.myapplication.DataInfo;
+
+interface ForRemoteCallback {
+    /**
+     * Demonstrates some basic types that you can use as parameters
+     * and return values in AIDL.
+     */
+    void getResult(int res);
+    void getDataInfo(in DataInfo dataInfo);
+}
+
+3.RemoteCallback.aidl
+import com.example.kafuly.myapplication.ForRemoteCallback;
+
+interface ForRemoteService {
+    /**
+     * Demonstrates some basic types that you can use as parameters
+     * and return values in AIDL.
+     */
+
+    void registerCallback(ForRemoteCallback callback);
+
+    void unregisterCallback(ForRemoteCallback callback);
+
+    void setValue(int val);
+}
+
+对象类的aidl文件和类文件同名。
+

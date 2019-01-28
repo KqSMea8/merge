@@ -1,0 +1,51 @@
+AlarmManager 定时短于5秒会变得非常不准确。
+
+System.currentTimeMillis()  系统时间，也就是日期时间，可以被系统设置修改，然后值就会发生跳变。
+通常在比较小的时间里，（毫秒级，秒级）一般不会有什么问题，系统时间可能不会改变。但是如果时间很长的话，那就保证不了了。
+当返回值的时间单位是毫秒时，值的粒度取决于底层操作系统，并且粒度可能更大。例如，许多操作系统以几十毫秒为单位测量时间。
+
+System.nanoTime() 返回最准确的可用系统计时器的当前值，以毫微秒(纳秒)为单位。此方法只能用于测量已过的时间，与系统或钟表时间的其他任何时间概念无关。返回值表示从
+某一固定但任意的时间算起
+的毫微秒数（或许从以后算起，所以该值可能为负）
+例如，测试某些代码执行的时间长度：
+long startTime = System.nanoTime();
+// ... the code being measured ...
+long estimatedTime = System.nanoTime() - startTime;
+
+
+long t0 = System.nanoTime();
+// ...
+long t1 = System.nanoTime();
+long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
+System.out.println(String.format("sequential sort took: %d ms", millis));
+
+
+SystemClock.currentThreadTimeMillis(); //当前线程运行了多少时间(毫秒值，不含thread或systemclock.sleep的值)
+
+//推荐使用值
+SystemClock.elapsedRealtime();//系统启动后过了多长时间(毫秒值，含系统深度睡眠时间)
+
+SystemClock.elapsedRealtimeNanos();//系统启动后过了多长时间(纳秒值，含系统深度睡眠时间)
+
+SystemClock.uptimeMillis();//系统启动后过了多长时间(毫秒值，不含系统深度睡眠时间)
+
+--------------------------------------------------------------------------------------------
+Calendar和Date的相互转化
+Calendar -> Date
+Calendar cal = Calendar.getInstance();
+Date date = cal.getTime();
+
+Date -> Calendar
+Date date = new Date();
+Calendar cal = Calendar.getInstance();
+cal.setTime(date);
+
+获取当前设置的时区：
+public static String getCurrentTimeZone() {
+	TimeZone tz = TimeZone.getDefault();
+	String strTz = tz.getDisplayName(false, TimeZone.SHORT);
+	return strTz;
+}
+
+http://www.360doc.com/content/10/1029/21/178014_65111512.shtml
+

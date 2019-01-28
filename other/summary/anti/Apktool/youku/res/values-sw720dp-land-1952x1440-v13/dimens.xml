@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="replay_full_replay_videos_height">550.0dip</dimen>
+    <dimen name="replay_full_replay_videos_item_height">275.0dip</dimen>
+    <dimen name="replay_full_replay_videos_width">705.0dip</dimen>
+    <dimen name="tab_guess_videos_reason_margin_top">98.0dip</dimen>
+    <dimen name="tab_guess_videos_reason_margin_top_header">185.0dip</dimen>
+    <dimen name="tab_guess_videos_title_padding_v">7.0dip</dimen>
+    <dimen name="tab_guess_videos_title_padding_v_header">20.0dip</dimen>
+    <dimen name="item_paid_ticket_single_text_padding">3.0dip</dimen>
+    <dimen name="item_paid_ticket_single_text_padding_left">3.0dip</dimen>
+    <dimen name="item_paid_ticket_single_type_width">40.0dip</dimen>
+    <dimen name="item_paid_ticket_add_icon_width">22.0dip</dimen>
+    <dimen name="item_paid_ticket_add_logo_width">60.0dip</dimen>
+    <dimen name="item_paid_ticket_add_textsize">20.0sp</dimen>
+    <dimen name="item_paid_ticket_height">100.0dip</dimen>
+    <dimen name="item_paid_ticket_single_code_sign_textsize">16.0sp</dimen>
+    <dimen name="item_paid_ticket_single_exp_sign_textsize">14.0sp</dimen>
+    <dimen name="item_paid_ticket_single_text_heoght">35.0dip</dimen>
+    <dimen name="item_paid_ticket_single_type_linespace">1.0dip</dimen>
+    <dimen name="item_paid_ticket_single_type_textsize">20.0sp</dimen>
+    <dimen name="play_controller_fullscreen_vertical_btn_marginbottom">120.0dip</dimen>
+    <dimen name="plugin_full_screen_bubble_margin_bottom">180.0dip</dimen>
+    <dimen name="plugin_small_bubble_margin_bottom">80.0dip</dimen>
+    <dimen name="popup_menu_height">95.0dip</dimen>
+    <dimen name="popup_menu_image_size">35.0dip</dimen>
+    <dimen name="popup_menu_layout_marginLeft">20.0dip</dimen>
+    <dimen name="popup_menu_width">180.0dip</dimen>
+    <dimen name="replay_full_replay_videos_item_width">235.0dip</dimen>
+    <dimen name="bubble_tipsub_margin_left">470.0dip</dimen>
+</resources>

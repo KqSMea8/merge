@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/topinc_button_bg" android:paddingLeft="@dimen/topic_tv_padding_left_and_right" android:paddingRight="@dimen/topic_tv_padding_left_and_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/detail_card_title_playtimes_text_size" android:textColor="#ff999999" android:gravity="center" android:id="@id/tv_topic" android:layout_width="wrap_content" android:layout_height="@dimen/topic_tv_layout_height" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/image_topic_arrow" android:layout_width="@dimen/detail_card_marginbottom_land" android:layout_height="@dimen/detail_card_marginbottom_land" android:layout_marginLeft="@dimen/detail_card_title_tag_width_v5" android:src="@drawable/detail_video_topic_arrow" android:layout_toRightOf="@id/tv_topic" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/channel_item_title_layout" android:paddingLeft="@dimen/home_personal_movie_14px" android:paddingRight="@dimen/home_personal_movie_14px" android:paddingBottom="@dimen/home_personal_movie_36px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/home_personal_movie_28px" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/channel_item_title_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_20px" android:text="这是视频标题" android:maxLines="1" style="@style/home_item_title_first" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_4px" android:layout_below="@id/channel_item_title_first">
+        <ImageView android:id="@id/channel_item_play_count_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_personal_movie_10px" android:src="@drawable/home_video_land_item_play_count" android:minWidth="@dimen/home_video_land_item_playcount_height" android:minHeight="@dimen/home_video_land_item_playcount_height" />
+        <TextView android:textSize="@dimen/home_personal_movie_24px" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/channel_item_title_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是视频副标题" android:maxLines="1" android:layout_weight="1.0" style="@style/homepage_item_title_second" />
+    </LinearLayout>
+</RelativeLayout>

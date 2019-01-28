@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="replay_full_replay_videos_height">213.0dip</dimen>
+    <dimen name="replay_full_replay_videos_item_height">106.5dip</dimen>
+    <dimen name="replay_full_replay_videos_width">330.0dip</dimen>
+    <dimen name="replay_small_replay_videos_margin_top">0.0dip</dimen>
+</resources>

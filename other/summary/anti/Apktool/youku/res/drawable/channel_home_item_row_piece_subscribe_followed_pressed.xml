@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:dither="true" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/row_piece_subscribe_radius" />
+    <solid android:color="@color/row_piece_subscribe_followed_pressed" />
+    <stroke android:width="@dimen/row_piece_subscribe_stroke" android:color="@color/row_piece_subscribe_text" />
+</shape>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/card_title_0" />
+    <item android:duration="60" android:drawable="@drawable/card_title_1" />
+    <item android:duration="60" android:drawable="@drawable/card_title_2" />
+    <item android:duration="60" android:drawable="@drawable/card_title_3" />
+    <item android:duration="60" android:drawable="@drawable/card_title_4" />
+    <item android:duration="60" android:drawable="@drawable/card_title_5" />
+    <item android:duration="60" android:drawable="@drawable/card_title_6" />
+    <item android:duration="60" android:drawable="@drawable/card_title_7" />
+    <item android:duration="60" android:drawable="@drawable/card_title_8" />
+    <item android:duration="60" android:drawable="@drawable/card_title_9" />
+    <item android:duration="60" android:drawable="@drawable/card_title_10" />
+    <item android:duration="60" android:drawable="@drawable/card_title_11" />
+    <item android:duration="60" android:drawable="@drawable/card_title_12" />
+    <item android:duration="60" android:drawable="@drawable/card_title_13" />
+    <item android:duration="60" android:drawable="@drawable/card_title_14" />
+    <item android:duration="60" android:drawable="@drawable/card_title_15" />
+    <item android:duration="60" android:drawable="@drawable/card_title_16" />
+    <item android:duration="60" android:drawable="@drawable/card_title_17" />
+    <item android:duration="60" android:drawable="@drawable/card_title_18" />
+    <item android:duration="60" android:drawable="@drawable/card_title_19" />
+    <item android:duration="60" android:drawable="@drawable/card_title_20" />
+    <item android:duration="60" android:drawable="@drawable/card_title_21" />
+    <item android:duration="60" android:drawable="@drawable/card_title_22" />
+    <item android:duration="60" android:drawable="@drawable/card_title_23" />
+    <item android:duration="60" android:drawable="@drawable/card_title_24" />
+</animation-list>

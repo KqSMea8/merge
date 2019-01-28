@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_ico_height">25.0px</dimen>
+    <dimen name="actionbar_img_height">30.0px</dimen>
+    <dimen name="actionbar_img_height_half">15.0px</dimen>
+    <dimen name="actionbar_item_extra_width">60.0px</dimen>
+    <dimen name="actionbar_vip_img_height">12.0px</dimen>
+    <dimen name="app_agreement_popwindow_center_scrollview_height">200.0dip</dimen>
+</resources>

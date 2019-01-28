@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myouku_video_layout_width">152.0dip</dimen>
+    <dimen name="myyouku_list_item_second_textsize">14.0px</dimen>
+    <dimen name="myyouku_list_item_third_textsize">14.0px</dimen>
+    <dimen name="plugin_detail_play_pause_pandding">0.0dip</dimen>
+    <dimen name="home_history_height">100.0dip</dimen>
+    <dimen name="home_history_image_height">133.0dip</dimen>
+    <dimen name="home_history_image_width">74.0dip</dimen>
+    <dimen name="home_history_title_margin_top">14.0dip</dimen>
+</resources>

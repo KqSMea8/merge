@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_star_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/detail_star_card_title_height">
+        <ImageView android:visibility="invisible" android:layout_width="@dimen/detail_icon_card_subscripts_radius" android:layout_height="@dimen/detail_icon_card_subscripts_radius" android:src="@drawable/detail_icon_card_subscripts" />
+        <TextView android:textSize="@dimen/detail_card_video_detail_title_size_v5" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center|left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_star_card_title" android:singleLine="true" />
+    </LinearLayout>
+    <com.youku.widget.YoukuRecyclerView android:id="@id/recyclerView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_star_title" />
+</RelativeLayout>

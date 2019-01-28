@@ -1,0 +1,19 @@
+ Visual Studio IDE:
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
+ 下载缓存：
+ C:\ProgramData\Microsoft\VisualStudio\Packages
+ 共享组件、工具和SDK：
+ C:\Program Files (x86)\Microsoft Visual Studio\Shared
+ 
+ 
+ OpenCV的官网（http://opencv.org/）
+ 安装完毕之后，在其安装目录下可以看到两个文件夹：build和sources,其中build是OpenCV使用时要用到的一些库文件，而sources中则是OpenCV为我们提供的一些demo示范源码。
+ 64位系统的需要在path添加“;opencv安装路径\build\x64\vc14\bin
+ Win下配置了环境变量不需要重启就可以生效的，打开命令提示符执行：echo %PATH%，就可以刷新它了。
+ 补充：vc8 = Visual Studio 2005，vc9 = Visual Studio 2008，vc10 = Visual Studio 2010，vc11 = Visual Studio 2012，vc12 = Visual Studio 2013，vc14 = Visual Studio 2015
+ 
+ ---------------------------------------------------------------
+ 当前页面的脚本发生错误。
+  \Common7\IDE\PrivateAssemblies\plugin.vs.js		1074 13， 1299 17， 5285 9， 5339 13， 5351 9, 5463 缺少: 
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Platform\DiagnosticsHub\WebViews\UnsupportedBrowser.html
+  

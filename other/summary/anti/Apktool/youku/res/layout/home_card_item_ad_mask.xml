@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@id/home_card_item_ad_mask" android:visibility="gone" android:layout_width="@dimen/detail_banner_sign_width" android:layout_height="@dimen/detail_banner_sign_height" android:src="@drawable/home_card_ad_mask_image" android:contentDescription="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

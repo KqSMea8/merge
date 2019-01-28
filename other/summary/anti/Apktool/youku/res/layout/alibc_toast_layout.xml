@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/custom_toast_container" android:background="@drawable/alibc_toast_shape" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="22.0dip" android:src="@drawable/tip_icon" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="左滑关闭橙色小按钮" />
+</LinearLayout>

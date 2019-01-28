@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/actorsViewStub" android:layout_width="130.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.youku.widget.CircleImageView android:layout_gravity="center|left" android:id="@id/home_vide_land_item_wide_actors_head1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/user_icon_default_avatar" />
+    <com.youku.widget.CircleImageView android:layout_gravity="center_vertical" android:id="@id/home_vide_land_item_wide_actors_head2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/user_icon_default_avatar" />
+    <com.youku.widget.CircleImageView android:layout_gravity="center|right" android:id="@id/home_vide_land_item_wide_actors_head3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/user_icon_default_avatar" />
+</FrameLayout>

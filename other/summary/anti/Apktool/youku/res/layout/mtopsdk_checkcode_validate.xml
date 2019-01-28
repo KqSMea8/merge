@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/mtopsdk_checkcode_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="300.0dip">
+            <ImageView android:id="@id/mtopsdk_checkcode_logo_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mtopsdk_checkcode_logo" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/mtopsdk_checkcode_imageview" android:layout_width="150.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:layout_gravity="center" android:id="@id/mtopsdk_change_checkcode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/mtopsdkChangeCheckCode" android:layout_alignParentRight="true" style="@style/mtopsdk_checkcode_button_style" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:textSize="18.0sp" android:textColor="@color/mtopsdk_checkcode_edit_text_Color" android:id="@id/mtopsdk_checkcode_input_edittxt" android:background="@drawable/mtopsdk_checkcode_button_normal" android:layout_width="150.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:maxLength="128" android:layout_alignParentLeft="true" android:inputType="textVisiblePassword" />
+            <Button android:layout_gravity="center" android:id="@id/mtopsdk_confirm_checkcode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/mtopsdkConfirmCheckCode" android:layout_alignParentRight="true" style="@style/mtopsdk_checkcode_button_style" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

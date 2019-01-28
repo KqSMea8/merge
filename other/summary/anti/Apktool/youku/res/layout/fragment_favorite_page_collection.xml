@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/favorite_page_container" android:background="@color/my_collection_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.youku.widget.CompatSwipeRefreshLayout android:id="@id/mSwipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.youku.phone.collection.widget.CustomListView android:id="@id/myfavorite_gridview" android:background="@color/my_collection_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" custom:rightViewWidth="@dimen/my_collections_swipe_list_right_width" />
+    </com.youku.widget.CompatSwipeRefreshLayout>
+    <include android:id="@id/favorte_loading_view" android:visibility="gone" layout="@layout/detail_loading" />
+</FrameLayout>

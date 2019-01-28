@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/home_card_scg_354px" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:channelcell="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.baseproject.basecard.widget.WithCornerMaskImageView android:id="@id/home_video_land_item_img" android:background="@color/home_image_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home_card_default_img_70" android:scaleType="centerCrop" />
+        <TextView android:ellipsize="end" android:gravity="bottom|center|right" android:id="@id/home_video_land_item_stripe_middle" android:background="@drawable/stripe_middle" android:paddingLeft="@dimen/gap_card_sides" android:paddingRight="@dimen/gap_item_corner_sides" android:paddingBottom="@dimen/home_personal_movie_18px" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_60px" android:singleLine="true" android:shadowColor="#90000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignBottom="@id/home_video_land_item_img" style="@style/item_girdle_title" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/home_video_land_item_img">
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_8px" layout="@layout/home_card_binge_watch_progress_bar" />
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="top" android:id="@id/home_video_land_item_title_first" android:paddingLeft="@dimen/gap_card_sides" android:paddingRight="@dimen/gap_card_sides" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_16px" android:maxLines="1" android:layout_below="@id/home_video_land_item_img" android:lineSpacingMultiplier="1.2" style="@style/item_main_title" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_video_land_item_title_first">
+            <TextView android:ellipsize="end" android:gravity="start" android:id="@id/home_video_land_item_title_second" android:paddingLeft="@dimen/gap_card_sides" android:paddingRight="@dimen/gap_card_sides" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@style/item_sub_title" />
+            <ImageView android:id="@id/home_card_binge_watch_item_feedback_icon" android:paddingRight="@dimen/gap_card_sides" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_more" android:cropToPadding="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/home_binge_watch_item_feedback_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/home_binge_watch_feedback_blur_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#34000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_personal_movie_24px" android:src="@drawable/home_binge_watch_dislike" />
+            <TextView android:textSize="@dimen/home_personal_movie_30px" android:textColor="#ff333333" android:gravity="center" android:id="@id/home_binge_watch_delete_item_tv" android:background="@drawable/home_binge_watch_feedback_text_bg" android:layout_width="@dimen/home_personal_movie_150px" android:layout_height="@dimen/home_personal_movie_60px" android:text="不追了" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+1.Build -> clean project
+这个清除缓存可以防止大部分的问题。
+
+2.Build -> rebuild project
+这个可以清理掉测试项配置与代码配置版本匹配问题。
+
+3.File -> invalidate caches
+
+4.删除手机上的apk
+这个可以清除掉一些手机app遗留的问题，如数据库表字段不匹配等。
+

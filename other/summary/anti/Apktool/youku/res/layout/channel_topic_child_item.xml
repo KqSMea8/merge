@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/channel_topic_left_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.taobao.uikit.extend.feature.view.TUrlImageView android:id="@id/channel_topic_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/channel_topic_top_waist_seal" android:layout_width="fill_parent" android:layout_height="@dimen/channel_topic_56px" />
+    <TextView android:textSize="@dimen/channel_topic_20px" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/channel_topic_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_topic_12px" android:layout_marginRight="@dimen/channel_topic_12px" android:lines="1" android:layout_alignParentRight="true" />
+    <RelativeLayout android:background="@drawable/channel_topic_bottom_waist_seal" android:paddingTop="@dimen/channel_topic_26px" android:paddingBottom="@dimen/channel_topic_18px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/channel_topic_28px" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/channel_topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_topic_18px" android:layout_marginRight="@dimen/channel_topic_18px" android:lines="1" />
+        <TextView android:textSize="@dimen/channel_topic_24px" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/channel_topic_subTitle" android:paddingTop="@dimen/channel_topic_10px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/channel_topic_18px" android:layout_marginRight="@dimen/channel_topic_18px" android:maxLines="2" android:layout_below="@id/channel_topic_title" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/channel_window_30px" android:paddingRight="@dimen/channel_window_30px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/channel_window_colums_2item_layout1" android:layout_width="0.0dip" android:layout_height="@dimen/channel_window_194px" android:layout_weight="1.0" layout="@layout/channel_window_child_item" />
+    <include android:id="@id/channel_window_colums_2item_layout2" android:layout_width="0.0dip" android:layout_height="@dimen/channel_window_194px" android:layout_marginLeft="@dimen/channel_window_18px" android:layout_weight="1.0" android:layout_toRightOf="@id/channel_window_colums_2item_layout1" layout="@layout/channel_window_child_item" />
+</LinearLayout>

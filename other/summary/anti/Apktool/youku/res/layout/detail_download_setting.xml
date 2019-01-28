@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/detail_cache_card_ad_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_cache_ad_icon_top" android:src="@drawable/detail_cache_card_ad_icon" />
+    <android.support.v7.widget.RecyclerView android:id="@id/download_setting_list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_cache_setting_height" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/download_setting_view" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_cache_setting_height">
+        <android.support.v7.widget.RecyclerView android:id="@id/download_def_list" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+        <TextView android:layout_gravity="center_vertical" android:background="#fff0f0f0" android:layout_width="1.0dip" android:layout_height="@dimen/detail_cache_card_download_def_line_height" />
+        <android.support.v7.widget.RecyclerView android:id="@id/download_language_list" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+    </LinearLayout>
+</LinearLayout>

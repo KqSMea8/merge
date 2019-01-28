@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_replay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_fragment_detail_replay_back_container" android:layout_width="fill_parent" android:layout_height="@dimen/plugin_fullscreen_top_view_height">
+        <ImageButton android:id="@id/ibtn_fragment_detail_replay_back" android:background="@android:color/transparent" android:layout_width="@dimen/player_back_btn_left_width" android:layout_height="fill_parent" android:src="@drawable/player_back_btn_left" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/plugin_xianfeng_small_top_view_title_textsize" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center|left" android:id="@id/tv_fragment_detail_replay_title" android:paddingLeft="@dimen/plugin_small_top_view_title_paddingleft" android:paddingRight="@dimen/plugin_small_top_view_title_paddingright" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/ibtn_fragment_detail_replay_back" style="@style/plugin_small_top_view_title" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/vp_fragment_detail_replay_videos" android:background="@drawable/layer_bg_item_frame_shell_all" android:layout_width="@dimen/replay_full_replay_videos_width" android:layout_height="@dimen/replay_full_replay_videos_height" android:layout_marginLeft="@dimen/replay_full_replay_videos_margin_left" android:layout_marginRight="@dimen/replay_full_replay_videos_margin_right" android:layout_below="@id/rl_fragment_detail_replay_back_container" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_fragment_detail_replay_pagectrl" android:layout_width="fill_parent" android:layout_height="@dimen/replay_full_replay_videos_page_ctrl_height" android:layout_below="@id/vp_fragment_detail_replay_videos" android:layout_alignLeft="@id/vp_fragment_detail_replay_videos" android:layout_alignRight="@id/vp_fragment_detail_replay_videos" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_fragment_detail_replay_interact" android:background="@drawable/layer_bg_interact_frame_shell" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/replay_full_replay_interact_margin_right" android:layout_toRightOf="@id/vp_fragment_detail_replay_videos" android:layout_alignTop="@id/vp_fragment_detail_replay_videos" android:layout_alignBottom="@id/vp_fragment_detail_replay_videos">
+        <LinearLayout android:gravity="center" android:id="@id/tv_fragment_detail_replay_cur_title_container" android:layout_width="fill_parent" android:layout_height="@dimen/replay_full_replay_cur_title_height">
+            <TextView android:id="@id/tv_fragment_detail_replay_cur_title" android:paddingLeft="@dimen/replay_replay_current_title_paddleft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" style="@style/ReplayText.Item.Title" />
+        </LinearLayout>
+        <com.youku.widget.YoukuImageView android:id="@id/iv_fragment_detail_replay_interact_image" android:background="@drawable/bg_detail_replay_vedio_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/replay_small_divide_width" android:layout_marginRight="@dimen/replay_small_divide_width" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:stretchColumns="2">
+            <TableRow android:weightSum="2.0" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/layer_bg_interact_frame_left_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/ibtn_fragment_detail_replay_up" android:src="@drawable/selector_detail_replay_up" style="@style/ReplayInteractBtn" />
+                    <TextView android:text="顶" style="@style/ReplayText.Interact" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/layer_bg_interact_frame_right_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/ibtn_fragment_detail_replay_share" android:src="@drawable/selector_detail_replay_share" style="@style/ReplayInteractBtn" />
+                    <TextView android:text="分享" style="@style/ReplayText.Interact" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:weightSum="2.0" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/layer_bg_interact_frame_left_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/ibtn_fragment_detail_replay_collect" android:src="@drawable/selector_detail_replay_collect" style="@style/ReplayInteractBtn" />
+                    <TextView android:text="收藏" style="@style/ReplayText.Interact" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/layer_bg_interact_frame_right_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/ibtn_fragment_detail_replay_replay" android:src="@drawable/selector_detail_replay_replay" style="@style/ReplayInteractBtn" />
+                    <TextView android:text="重播" style="@style/ReplayText.Interact" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/vp_fragment_detail_replay_videos" android:layout_alignTop="@id/vp_fragment_detail_replay_videos" android:layout_alignRight="@id/vp_fragment_detail_replay_videos" android:layout_alignBottom="@id/vp_fragment_detail_replay_videos">
+        <ProgressBar android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+        <TextView android:id="@id/loading_faile_replay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败" style="@style/plugin_loading_error_txt" />
+    </RelativeLayout>
+</RelativeLayout>

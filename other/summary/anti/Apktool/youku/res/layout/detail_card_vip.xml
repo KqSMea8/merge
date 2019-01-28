@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/detail_card_vertical_series_small_list_relativeLayout_height_core"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/detail_card_befor_tip_tv_left" android:paddingTop="@dimen/detail_card_zhuiju_text_padding_top" android:paddingRight="@dimen/detail_card_befor_tip_tv_left" android:paddingBottom="@dimen/detail_card_zhuiju_text_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/vipbanner_layout" android:background="@drawable/detail_card_vip_button_bg" android:layout_width="@dimen/detail_card_vip_width" android:layout_height="@dimen/detail_card_item_video_more_height_core" android:layout_centerInParent="true">
+            <ImageView android:id="@id/bg_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/detail_card_highlights_recycler_item_time_min_text_size" android:textColor="#ffffffff" android:id="@id/tv_viptips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员包季打折限时购，买多少送多少" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

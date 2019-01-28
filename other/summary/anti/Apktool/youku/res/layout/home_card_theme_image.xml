@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:channelcell="http://schemas.android.com/apk/res-auto">
+    <com.baseproject.basecard.widget.WithCornerMaskImageView android:id="@id/home_slider_theme_image_view" android:layout_width="fill_parent" android:layout_height="@dimen/home_slider_theme_banner_height" channelcell:ratio="normal_img" />
+    <View android:background="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="@dimen/home_card_item_space" />
+</LinearLayout>

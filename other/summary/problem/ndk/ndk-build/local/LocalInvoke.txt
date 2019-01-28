@@ -1,0 +1,31 @@
+1.创建调用本地方法的java文件，其中包含一个native方法，此方法用来调用C/C++方法。
+其中以静态方式加载库。
+
+2.模块的gradle中配置ndk选项。
+
+3.make project编译工程后，生成头文件。
+
+4.添加相应的cpp文件，cpp文件需包含3中生成的头文件。
+
+5.添加Android.mk和Application.mk文件。
+
+6.切换到Android视图，工程 -> 右键 -> Link C++ ,添加Adnroid.mk文件的指向。
+效果为在对应模块如app的gradle中生成：
+android {
+	...
+	externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+}
+
+7.直接运行工程。
+
+如果要生成可供其他人使用的库文件，可在jni目录(android.mk路径)下执行ndk-build即可生成libs和obj文件夹。
+如果要直接使用.so库文件，需要删除
+	externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }

@@ -1,0 +1,26 @@
+1.主线程中一定不要做耗时操作。
+如：
+btn_ok.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		Log.e(TAG, "onClick currentThread:" + Thread.currentThread());
+	}
+});
+OK按键的点击监听回调就是在主线程中，该打印可以看出此处打印位于主线程。
+
+2.耗时操作一定要丢给子线程操作。
+
+3.子线程中一定不要进行ui操作，如果需要，一定要通过handler通知主线程更新。
+
+4.看一处调用时处于主线程还是子线程。
+一是可以用打印Thread.currentThread()；
+二是跟踪函数调用流程。如果是从子线程的回调中回调过来，可以查看该回调是否处于子线程中，如果是，那么必定是处于子线程中。
+new Thread(new Runnable() {
+	@Override
+	public void run() {
+		...
+		listener.loginSuccess();
+		...
+	}
+}).start();
+如上，回调的loginSuccess()方法处于子线程中。

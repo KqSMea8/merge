@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/channel_movie_cut_642px" android:layout_height="@dimen/channel_movie_cut_360px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/player_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.taobao.uikit.extend.feature.view.TUrlImageView android:id="@id/movie_cut_feed_cover" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:uik_fade_in="true" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/movie_cut_feed_card_cover_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/movie_cut_feed_card_cover_play_icon" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_player_view_play_icon" android:scaleType="center" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/movie_cut_instance_player_container" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/movie_cut_float_img" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/movie_cut_mute_img" android:layout_width="@dimen/channel_movie_cut_56px" android:layout_height="@dimen/channel_movie_cut_56px" android:layout_marginLeft="@dimen/channel_movie_cut_566px" android:layout_marginTop="@dimen/channel_movie_cut_284px" />
+</FrameLayout>

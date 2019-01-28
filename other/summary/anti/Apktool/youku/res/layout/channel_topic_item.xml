@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/channel_topic_child_item1" android:layout_width="190.0dip" android:layout_height="340.0dip" layout="@layout/channel_topic_child_item" />
+    <include android:id="@id/channel_topic_child_item2" android:layout_width="wrap_content" android:layout_height="170.0dip" android:layout_marginLeft="@dimen/channel_topic_6px" android:layout_toRightOf="@id/channel_topic_child_item1" layout="@layout/channel_topic_child_item" />
+    <include android:id="@id/channel_topic_child_item3" android:layout_width="wrap_content" android:layout_height="167.0dip" android:layout_marginLeft="@dimen/channel_topic_6px" android:layout_marginTop="@dimen/channel_topic_6px" android:layout_toRightOf="@id/channel_topic_child_item1" android:layout_below="@id/channel_topic_child_item2" layout="@layout/channel_topic_child_item" />
+    <include android:id="@id/channel_topic_child_item4" android:layout_width="190.0dip" android:layout_height="170.0dip" android:layout_marginTop="@dimen/channel_topic_6px" android:layout_below="@id/channel_topic_child_item1" layout="@layout/channel_topic_child_item" />
+    <include android:id="@id/channel_topic_child_item5" android:layout_width="wrap_content" android:layout_height="170.0dip" android:layout_marginLeft="@dimen/channel_topic_6px" android:layout_marginTop="@dimen/channel_topic_6px" android:layout_toRightOf="@id/channel_topic_child_item1" android:layout_below="@id/channel_topic_child_item1" layout="@layout/channel_topic_child_item" />
+</RelativeLayout>

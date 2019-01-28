@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="channel_cinema_280px">160.0dip</dimen>
+    <dimen name="channel_cinema_420px">240.0dip</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/uc_corners_bg" android:layout_width="@dimen/uc_download_dialog_width" android:layout_height="@dimen/uc_download_dialog_height" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/uc_download_dialog_tv_tips_download_text" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_tips_download" android:layout_width="@dimen/uc_download_dialog_tv_tips_download_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uc_download_dialog_tv_tips_download_margintop" android:text="正在下载，稍后提醒您安装" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/uc_download_progress_dialog_tv_progress_txt" android:textColor="#ff00c853" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uc_download_dialog_tv_tips_download_text" android:layout_below="@id/tv_tips_download" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uc_download_dialog_tv_tips_download_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/know_layout" android:background="@drawable/uc_dowloand_install_button_bg" android:layout_width="@dimen/uc_download_progress_dialog_know_layout_width" android:layout_height="@dimen/uc_download_progress_dialog_know_layout_height">
+                <TextView android:textSize="@dimen/uc_download_dialog_tv_tips_download_text" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我知道了" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uc_download_dialog_tv_tips_download_margintop" android:layout_marginRight="@dimen/uc_download_dialog_tv_tips_download_margintop" android:layout_marginBottom="@dimen/uc_download_progress_dialog_progress_marginbottom" android:layout_above="@id/bottom_layout" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@id/progress_download" android:layout_width="@dimen/uc_download_progress_dialog_progress_download_width" android:layout_height="@dimen/uc_download_progress_dialog_progress_download_height" android:max="100" android:progressDrawable="@drawable/uc_dowloand_progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

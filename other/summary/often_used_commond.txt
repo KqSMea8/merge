@@ -1,0 +1,40 @@
+
+打开设置界面
+am start -n com.android.settings/com.android.settings.Settings
+
+卸载app：
+adb uninstall packageName
+
+安装app：
+adb push d:\...\工程名\app\build\outputs\apk\app-debug.apk /data/local/tmp/packageName
+
+adb shell pm install -r "/data/local/tmp/packageName"
+
+
+保存日志文件
+adb logcat -v time > d:\tmp\log.txt
+
+获取按键码值
+adb shell getevent
+
+1.打印以"tag_test"字符串为TAG的日志(可不带引号)
+adb logcat -s "tag_test"
+
+2.使用管道过滤日志
+adb logcat | grep tag_test
+
+
+-----------------------------------------------------
+
+查看占用端口
+netstat -ano | grep "5037"
+
+查看源中的软件包列表
+sudo gedit /etc/apt/sources.list
+
+压缩a.txt和b.txt到c.7z
+7za a c.7z a.txt b.txt
+
+解压缩c.7z到/home
+7za x c.7z -o /home
+

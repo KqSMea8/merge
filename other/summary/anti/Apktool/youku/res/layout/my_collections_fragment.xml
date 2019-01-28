@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/my_collection_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_createCollection" android:background="@drawable/other_person_gridview_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/my_collection_create_itme_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/create_icon" android:layout_width="@dimen/my_collection_create_itme_icon_size" android:layout_height="@dimen/my_collection_create_itme_icon_size" android:layout_marginLeft="@dimen/my_collection_create_margin_left" android:src="@drawable/collection_create_playlist_selector" />
+            <TextView android:textSize="@dimen/my_collection_create_item_text_size" android:textColor="@color/my_collections_create_text_selector" android:layout_gravity="center_vertical" android:id="@id/create_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_collection_create_item_margin" android:text="@string/create_collection_activity" />
+        </LinearLayout>
+        <View android:background="@color/collection_popupmenu_divider" android:layout_width="fill_parent" android:layout_height="@dimen/favorite_item_view_line_height" android:layout_alignParentBottom="true" />
+        <com.youku.widget.CompatSwipeRefreshLayout android:id="@id/mSwipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/my_collections_swipelist" android:background="@color/my_collection_background" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.youku.widget.CompatSwipeRefreshLayout>
+    </LinearLayout>
+    <include android:id="@id/my_collections_no_collections" android:visibility="gone" layout="@layout/my_collections_no_collections" />
+    <include android:id="@id/collection_loading_view" android:visibility="gone" layout="@layout/detail_loading" />
+    <include android:id="@id/my_collections_no_results" android:visibility="gone" layout="@layout/my_collections_no_results" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vip_guide_framelayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <WebView android:id="@id/vip_guide_webview" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.taobao.windvane.webview.WVWebView android:id="@id/vip_guide_wvwebview" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/vip_guide_loading_img" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/youku_loading_anim" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/vip_guide_title_bar" android:background="#00000000" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vip_guide_back_logo" android:layout_width="@dimen/player_back_btn_left_width" android:layout_height="wrap_content" android:src="@drawable/player_back_btn_left" />
+    </RelativeLayout>
+</RelativeLayout>

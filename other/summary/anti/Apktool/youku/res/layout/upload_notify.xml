@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notify_linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/notify_linearLayout2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/noitfy_icon" android:background="@mipmap/ic_launcher" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/notify_linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:ellipsize="end" android:id="@id/notify_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="视频1" android:singleLine="true" style="@style/NotificationTitle" />
+            <TextView android:id="@id/notify_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="正在上传" android:singleLine="true" style="@style/NotificationText" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/notify_processbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal" />
+</LinearLayout>

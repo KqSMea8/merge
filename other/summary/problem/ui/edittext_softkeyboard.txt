@@ -1,0 +1,45 @@
+EditText失去焦点 clearFocus();
+EditText去掉下划线
+android:background="@null"
+在android开发中 EditTextText是我们经常用到的，我们使用时会有一些小问题，当我们点击输入文字时，EditText中的光标和下划线会变成粉红色。
+解决方法很简单，我们只要在EditText中添加几个两个属性即可，
+
+光标颜色的属性为 ：
+android:textCursorDrawable="@null"，当值为@null时，颜色与textcolor一致，可以自己修改颜色。
+
+去除下划线为：
+android:background="@null"
+
+###############################################################################################################
+
+EditText防止软键盘自动弹出：
+
+
+###############################################################################################################
+
+Android软键盘弹出时把布局顶上去，控件乱套解决方法：
+方法一：在你的activity中的oncreate中setContentView之前写上这个代码
+getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+注意，这种设置可能导致一个后果，如果中间的列表内容过长，会让toolbar被推倒不显示的位置。
+
+方法二：在项目的AndroidManifest.xml文件中界面对应的<activity>里加入android:windowSoftInputMode="stateVisible|adjustResize"，这样会让屏幕整体上移。如果加上的是
+                android:windowSoftInputMode="adjustPan"这样键盘就会覆盖屏幕。
+方法三：把顶级的layout替换成ScrollView，或者说在顶级的Layout上面再加一层ScrollView的封装。这样就会把软键盘和输入框一起滚动了，软键盘会一直处于底部。
+
+#########################################################################################################
+popupwindow把软键盘挡住的解决办法：
+popupWindow.setInputMethodMode(PopupWindow.INPUT_METHOD_NEEDED);
+popupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+
+#########################################################################################################
+
+popwdindow中editText 默认是不弹出软件盘， 想弹出先popWindow.setFocusable(true)，然后//弹出软键盘
+InputMethodManager imm = (InputMethodManager) view.getContext().getSystemService(Service.INPUT_METHOD_SERVICE);  
+        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);  
+
+
+getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN
+                | WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+SOFT_INPUT_STATE_HIDDEN设置软键盘的状态为隐藏，如果不设置，默认弹出
+				
+				

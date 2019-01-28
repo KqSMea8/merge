@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ff000000" />
+    <size android:height="@dimen/channel_video_filter_state_text_point_size" android:width="@dimen/channel_video_filter_state_text_point_size" />
+</shape>

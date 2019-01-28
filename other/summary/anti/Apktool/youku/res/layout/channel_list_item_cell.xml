@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_list_item_cell_icon" android:layout_width="@dimen/channel_list_recycler_view_cell_icon_height_width" android:layout_height="@dimen/channel_list_recycler_view_cell_icon_height_width" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/channel_list_cell_title_text_size" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/channel_list_item_cell_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/channel_list_recycler_view_cell_title_top_margin" android:minHeight="@dimen/channel_list_recycler_view_cell_title_height" android:singleLine="true" android:maxLength="5" />
+</LinearLayout>

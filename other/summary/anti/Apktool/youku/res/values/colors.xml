@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="SwipeRefrshRingColor1">#ffee3e22</color>
+    <color name="SwipeRefrshRingColor2">#ff00a7e1</color>
+    <color name="abc_input_method_navigation_guard">@android:color/black</color>
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="accent_material_dark">@color/material_deep_teal_200</color>
+    <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="actionbar_menu_bg">#fff6f6f6</color>
+    <color name="airplay_cancel_text_color">#ff525252</color>
+    <color name="alibc_transparent">#00000000</color>
+    <color name="alibc_want_text_color">#ffffffff</color>
+    <color name="alibc_want_transparent">#00000000</color>
+    <color name="alpha_60_white">#99ffffff</color>
+    <color name="app_background">#ffe2e2e2</color>
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+    <color name="background_floating_material_light">@android:color/white</color>
+    <color name="background_green">#ff24d870</color>
+    <color name="background_material_dark">@color/material_grey_850</color>
+    <color name="background_material_light">@color/material_grey_50</color>
+    <color name="background_orange">#ffff9500</color>
+    <color name="background_red">#ffff0000</color>
+    <color name="baseuikit_common_white">#ffffffff</color>
+    <color name="baseuikit_fresh_bg_color">#ffff6f00</color>
+    <color name="bg_replay">#ff252525</color>
+    <color name="bg_replay_interact">#ff323232</color>
+    <color name="black">#ff000000</color>
+    <color name="black10unalpha">#1a000000</color>
+    <color name="black15unalpha">#26000000</color>
+    <color name="black20unalpha">#33000000</color>
+    <color name="black25unalpha">#40000000</color>
+    <color name="black30unalpha">#4d000000</color>
+    <color name="black35unalpha">#59000000</color>
+    <color name="black40unalpha">#66000000</color>
+    <color name="black45unalpha">#73000000</color>
+    <color name="black50unalpha">#80000000</color>
+    <color name="black55unalpha">#8c000000</color>
+    <color name="black5unalpha">#0d000000</color>
+    <color name="black60unalpha">#99000000</color>
+    <color name="black65unalpha">#a6000000</color>
+    <color name="black70unalpha">#b3000000</color>
+    <color name="black75unalpha">#bf000000</color>
+    <color name="black80unalpha">#cc000000</color>
+    <color name="black85unalpha">#d9000000</color>
+    <color name="black90unalpha">#e6000000</color>
+    <color name="black95unalpha">#f2000000</color>
+    <color name="black_gray">#ff888888</color>
+    <color name="black_item_background">#00000000</color>
+    <color name="black_vip_pay">#ff000000</color>
+    <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="bright_foreground_disabled_material_light">#80000000</color>
+    <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
+    <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_material_dark">@android:color/white</color>
+    <color name="bright_foreground_material_light">@android:color/black</color>
+    <color name="btn_myyouku_vip_open_normal">#cdff6000</color>
+    <color name="btn_myyouku_vip_open_pressed">#cdc84c01</color>
+    <color name="btn_vip_dialog_cancel_normal">#fffafafa</color>
+    <color name="btn_vip_dialog_cancel_pressed">#ffe7e7e7</color>
+    <color name="btn_vip_dialog_gopay_normal">#fffaece6</color>
+    <color name="btn_vip_dialog_gopay_pressed">#fffbd6c6</color>
+    <color name="btn_vip_dialog_ok_normal">#1500baff</color>
+    <color name="btn_vip_dialog_ok_pressed">#33049dd5</color>
+    <color name="btn_vipproduct_open_normal">#ffff5a00</color>
+    <color name="btn_vipproduct_open_pressed">#ffca4700</color>
+    <color name="button_bg">#ff21b3ff</color>
+    <color name="button_bg_1">#ff999999</color>
+    <color name="button_bg_2">#ffffd856</color>
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="cancel_text_color">#ff747474</color>
+    <color name="card_bottom_line_color">#ffc9c9c9</color>
+    <color name="card_title_color">#ff000000</color>
+    <color name="channel_bottom_line_color">#ffc9c9c9</color>
+    <color name="channel_boxtitle_text_group_color">#ff333333</color>
+    <color name="channel_footer_view_line">#ff999999</color>
+    <color name="channel_footer_view_text">#ff2692ff</color>
+    <color name="channel_footer_view_text_none">#ff666666</color>
+    <color name="channel_list_bg">#ffd4d4d4</color>
+    <color name="channel_movie_rank_fragment_item_comment">#fff99a13</color>
+    <color name="channel_movie_rank_fragment_item_date">#ff2692ff</color>
+    <color name="channel_movie_rank_fragment_item_gray">#ff999999</color>
+    <color name="channel_movie_rank_fragment_item_play">#fffb553f</color>
+    <color name="channel_movie_rank_fragment_item_score">#ffff8900</color>
+    <color name="channel_movie_rank_fragment_item_title">#ff333333</color>
+    <color name="channel_movie_rank_item_img_first_shadow">#64000000</color>
+    <color name="channel_movie_rank_item_title_first">#ffec8200</color>
+    <color name="channel_movie_rank_item_title_fourth">#ff009f00</color>
+    <color name="channel_movie_rank_item_title_second">#ff1a8fff</color>
+    <color name="channel_movie_rank_item_title_small">#ffb5b5b5</color>
+    <color name="channel_movie_rank_item_title_third">#fff40300</color>
+    <color name="channel_multi_tab_rank_image_default">#47ffffff</color>
+    <color name="channel_pop_bg">#33000000</color>
+    <color name="channel_purchase_tip1_color">#ffcbcbcb</color>
+    <color name="channel_purchase_tip2_color">#ff3bcaa7</color>
+    <color name="channel_sort_bg">#fff5f5f5</color>
+    <color name="channel_special_topic_count_text_color">#ff2692ff</color>
+    <color name="channel_tab_item_bg">#fffcfcfc</color>
+    <color name="chao_blue">#ff72bbff</color>
+    <color name="chao_default">#ffe4e4e4</color>
+    <color name="chao_orange">#ffee7831</color>
+    <color name="chao_purple">#ff8b71bc</color>
+    <color name="chao_red">#fff14f4f</color>
+    <color name="chao_rose">#ffff4e96</color>
+    <color name="chao_yellow">#ffffc95c</color>
+    <color name="coll_card_add_dialog_text_color">#ff333333</color>
+    <color name="coll_card_add_dialog_title_bg">#ff999999</color>
+    <color name="coll_card_add_dialog_title_color">#fff6f6f6</color>
+    <color name="coll_card_cache_font_color">#ff979797</color>
+    <color name="coll_card_divide_color">#ffe3e3e3</color>
+    <color name="coll_card_info_font_color">#ffc8c8c8</color>
+    <color name="coll_card_line_color">#ffeaeaea</color>
+    <color name="coll_card_progress_font_color">#ff666666</color>
+    <color name="coll_card_title_font_color">#ff333333</color>
+    <color name="coll_card_username_font_color">#ff4a4a4a</color>
+    <color name="collection_background_red">#ffff3a1b</color>
+    <color name="collection_card_add_video_tip_text_color">#ff666666</color>
+    <color name="collection_card_background">#ff2b2b2b</color>
+    <color name="collection_card_collection_name_color">#ffdbdbdb</color>
+    <color name="collection_card_created_time">#ff666666</color>
+    <color name="collection_card_creator_name_color">#ffdbdbdb</color>
+    <color name="collection_card_dock_bar_blue">#ff2fb3ff</color>
+    <color name="collection_card_now_playing_video">#ff30b4ff</color>
+    <color name="collection_card_progress_color">#ff30b4ff</color>
+    <color name="collection_card_video_bg_color">#fff5f5f5</color>
+    <color name="collection_card_video_name_color">#ff333333</color>
+    <color name="collection_card_video_now_playing_background_color">#fffafafa</color>
+    <color name="collection_card_video_play_count_color">#ff666666</color>
+    <color name="collection_center_line_color">#ffd9d9d9</color>
+    <color name="collection_create_hint_color">#ffd9d9d9</color>
+    <color name="collection_create_text_color">#ff333333</color>
+    <color name="collection_item_icon_container_color">#80000000</color>
+    <color name="collection_item_icon_text_color">#ffffffff</color>
+    <color name="collection_popupmenu_cut_color">#ffe6e6e6</color>
+    <color name="collection_popupmenu_divider">#ffd9d9d9</color>
+    <color name="collection_popupmenu_item_cancel_text_color">#ff666666</color>
+    <color name="collection_popupmenu_item_delete_text_color">#fffa533d</color>
+    <color name="collection_red_point_red">#fffc3c29</color>
+    <color name="collection_title_text_color_black">#ff333333</color>
+    <color name="collection_title_text_color_blue">#ff2fb3ff</color>
+    <color name="colorAccent">#ffff4081</color>
+    <color name="colorPrimary">#ff3f51b5</color>
+    <color name="colorPrimaryDark">#ff303f9f</color>
+    <color name="color_333333">#ff333333</color>
+    <color name="color_999999">#ff999999</color>
+    <color name="color_c8c8c8">#ffc8c8c8</color>
+    <color name="color_d4d4d4">#ffd4d4d4</color>
+    <color name="color_e4e4e4">#ffe4e4e4</color>
+    <color name="color_eaf7ff">#ffeaf7ff</color>
+    <color name="color_fafafa">#fffafafa</color>
+    <color name="cpv_default_color">#ff2196f3</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="design_bottom_navigation_shadow_color">#14000000</color>
+    <color name="design_fab_shadow_end_color">@android:color/transparent</color>
+    <color name="design_fab_shadow_mid_color">#14000000</color>
+    <color name="design_fab_shadow_start_color">#44000000</color>
+    <color name="design_fab_stroke_end_inner_color">#0a000000</color>
+    <color name="design_fab_stroke_end_outer_color">#0f000000</color>
+    <color name="design_fab_stroke_top_inner_color">#1affffff</color>
+    <color name="design_fab_stroke_top_outer_color">#2effffff</color>
+    <color name="design_snackbar_background_color">#ff323232</color>
+    <color name="design_textinput_error_color_dark">#ffff6e6e</color>
+    <color name="design_textinput_error_color_light">#ffd50000</color>
+    <color name="detail_background_color">#ffe2e2e2</color>
+    <color name="detail_backround">#fff0f0f0</color>
+    <color name="detail_cache_card_setting_select">#ff2692ff</color>
+    <color name="detail_card_bigwords_bg">#ff000000</color>
+    <color name="detail_card_bigwords_stroke">#ff282828</color>
+    <color name="detail_card_bigwords_text">#ff333333</color>
+    <color name="detail_card_highlights_color_round_point">#fff0f0f0</color>
+    <color name="detail_card_highlights_textcolor_normal">#ff333333</color>
+    <color name="detail_card_highlights_textcolor_selected">#ff2692ff</color>
+    <color name="detail_card_new_function_index_color">#ff2692ff</color>
+    <color name="detail_card_new_function_subtitle_textcolor">#ffadadad</color>
+    <color name="detail_card_palying_bg">#fffafafa</color>
+    <color name="detail_card_side_slip_full_core_no_select">#ff666666</color>
+    <color name="detail_card_side_slip_full_core_select">#ff2692ff</color>
+    <color name="detail_card_stills_conner_title_textcolor">#ff666666</color>
+    <color name="detail_card_stills_series_round_color">#ffffffff</color>
+    <color name="detail_card_subscribe_text_color_0">#ff3e92f7</color>
+    <color name="detail_card_subscribe_text_color_1">#ffffffff</color>
+    <color name="detail_function_left0">#ffe5ffea</color>
+    <color name="detail_function_left1">#fffaf1ff</color>
+    <color name="detail_function_left2">#ffedf9ff</color>
+    <color name="detail_function_left3">#ffffedeb</color>
+    <color name="detail_function_left4">#fffff9e2</color>
+    <color name="detail_function_left5">#ffdffffd</color>
+    <color name="detail_function_right0">#ffc5ffd0</color>
+    <color name="detail_function_right1">#fff2daff</color>
+    <color name="detail_function_right2">#ffc9ecff</color>
+    <color name="detail_function_right3">#ffffddd9</color>
+    <color name="detail_function_right4">#ffffefae</color>
+    <color name="detail_function_right5">#ffaafaff</color>
+    <color name="detail_item_content_background">#fff5f5f5</color>
+    <color name="dialog_bg">#e0000000</color>
+    <color name="dialog_login_activity_input_text_color">#ffdedede</color>
+    <color name="dialog_selector_bg_color">#ffe5e5e5</color>
+    <color name="dialog_window_background">#00000000</color>
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+    <color name="dim_foreground_disabled_material_light">#80323232</color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="divider">#fff0f0f0</color>
+    <color name="douban_score_color">#ff1ca925</color>
+    <color name="download_edit_layout_bg">#ff374552</color>
+    <color name="download_edit_splite_bg">#25ffffff</color>
+    <color name="download_empty_text_color">#ff999999</color>
+    <color name="download_gridview_folder_bg">#e657aeff</color>
+    <color name="download_gridview_size_color">#ffb9b9b9</color>
+    <color name="download_gridview_splite">#7fdcdcdc</color>
+    <color name="download_gridview_splite_bg">#ffefefef</color>
+    <color name="download_textview_splite_bg">#ffe7e7e7</color>
+    <color name="downloaded_layout_bg">#ffd8d8d8</color>
+    <color name="downloading_cutoff_rule">#ffdcdcdc</color>
+    <color name="downloading_delete_text_color">#ffff6c00</color>
+    <color name="downloading_exception_text_color">#fff46f6f</color>
+    <color name="downloading_layout_bg">#fffafafa</color>
+    <color name="downloading_name">#ffb9b9b9</color>
+    <color name="downloading_speed">#ff57aeff</color>
+    <color name="downloading_thumbnail_wait_bg">#80c1c1c1</color>
+    <color name="downloading_title_color">#ff444444</color>
+    <color name="explore_collections_video_title_color">#ffc8c8d4</color>
+    <color name="explore_page_outer_line">#ffececec</color>
+    <color name="explore_page_view_count_color">#ffaeaeae</color>
+    <color name="explore_subject_icon_background">#ff006acd</color>
+    <color name="explore_subject_icon_text_color">#ffffffff</color>
+    <color name="feedback_text">#ff333333</color>
+    <color name="fifty_percent_white">#80ffffff</color>
+    <color name="filter_item_text">#ff999999</color>
+    <color name="filter_text_selected">#ff2bb5fc</color>
+    <color name="filterbar_line_color">#ffcfcfcf</color>
+    <color name="filterbar_txt_color">#ff595959</color>
+    <color name="foreground_material_dark">@android:color/white</color>
+    <color name="foreground_material_light">@android:color/black</color>
+    <color name="freeflow_continue_color">#ff2fb3ff</color>
+    <color name="freeflow_continue_text_color">#ffff6600</color>
+    <color name="fullscreen_setting_view_background_color">#f32f2f2f</color>
+    <color name="gray">#ff888888</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="history_background">#fffafafa</color>
+    <color name="history_divide_line">#fff0f0f0</color>
+    <color name="history_edit_enable_color">#ff2fb3ff</color>
+    <color name="history_edit_unable_color">#ffc8c8c8</color>
+    <color name="history_item_text_bg_selected">#3000bff3</color>
+    <color name="history_mengceng_color">#cc333333</color>
+    <color name="history_record_num_color">#ffffffff</color>
+    <color name="history_text_all_selected">#ff333333</color>
+    <color name="history_text_delete_has_num">#fffa533d</color>
+    <color name="history_text_delete_no_num">#7ffa533d</color>
+    <color name="hold_blue">#ff33b5e5</color>
+    <color name="hold_blue_transparent">#6033b5e5</color>
+    <color name="home_bottom_deliver_line_bg">#ffebebeb</color>
+    <color name="home_card_star_item_hot">#fffd5300</color>
+    <color name="home_card_star_item_name">#ff333333</color>
+    <color name="home_collections_extend_bg">#fff5f5f5</color>
+    <color name="home_collections_extend_line_color">#ffd9d9d9</color>
+    <color name="home_extend_bg_color">#fffafafa</color>
+    <color name="home_history_view_bg_color">#ff269fff</color>
+    <color name="home_image_default">#fff5f5f5</color>
+    <color name="home_indicator_dot_blue">#9affffff</color>
+    <color name="home_indicator_dot_white">#4cffffff</color>
+    <color name="home_movie_rank_episode">#ff41331a</color>
+    <color name="home_movie_rank_episode_summary">@android:color/white</color>
+    <color name="home_movie_rank_movie">#ff071928</color>
+    <color name="home_movie_rank_movie_summary">#ffff8900</color>
+    <color name="home_movie_rank_variety">#ff280d2c</color>
+    <color name="home_movie_rank_variety_summary">@android:color/white</color>
+    <color name="home_movie_rank_vv">#ff999999</color>
+    <color name="home_page_bg">#ffdedede</color>
+    <color name="home_personnal_barrier_text_color">#ff2692ff</color>
+    <color name="home_personnal_commit_text_active">#ff333333</color>
+    <color name="home_personnal_commit_text_inactive">#ffd2d2d2</color>
+    <color name="home_personnal_interest_confirm_bg_normal">#fffcfcfc</color>
+    <color name="home_personnal_interest_confirm_bg_pressed">#fff5fafd</color>
+    <color name="home_personnal_replay_text_color">#ff2fb3ff</color>
+    <color name="home_rank_corner_bg">#b3000000</color>
+    <color name="home_rank_corner_bg_blue">#ff2fb3ff</color>
+    <color name="home_rank_corner_bg_orange">#fff66108</color>
+    <color name="home_rank_corner_bg_red">#ffee1a05</color>
+    <color name="home_rank_corner_bg_yellow">#fff1ad2b</color>
+    <color name="home_toolbar_menu_bg">#ffdbdbdb</color>
+    <color name="hotspot_tab_item_bg">#ffffffff</color>
+    <color name="img_bg">#fff5f5f5</color>
+    <color name="info_white_text">#ffffffff</color>
+    <color name="interaction_tab_bg_grey">#fffafafa</color>
+    <color name="interaction_tab_bg_normal">#fff5f5f5</color>
+    <color name="interaction_tab_bg_progress_grey">#ffc2c2c2</color>
+    <color name="interaction_tab_bg_recommend">#ff1a1a1a</color>
+    <color name="interaction_tab_title_color">#ffffffff</color>
+    <color name="interaction_tab_view_vote_blue">#ff3bb5fc</color>
+    <color name="interaction_tab_view_vote_broder_grey">#fff2f2f2</color>
+    <color name="interaction_tab_vote_blue">#ff2fb3ff</color>
+    <color name="interaction_tab_vote_red">#fffa533d</color>
+    <color name="item_corner_title_color">#ffffffff</color>
+    <color name="item_girdle_title_color">#b4ffffff</color>
+    <color name="item_main_title_color">#ff000000</color>
+    <color name="item_sub_title_color">#ff999999</color>
+    <color name="line">#ff999999</color>
+    <color name="line_replay_interact">#ff3b3b3b</color>
+    <color name="list_title">#ff333333</color>
+    <color name="lock_notify_background_color">#ff1e1e1e</color>
+    <color name="lock_notify_seq_color">#7fffffff</color>
+    <color name="lock_notify_title_color">#ffffffff</color>
+    <color name="lock_screen_date_color">#66ffffff</color>
+    <color name="lock_screen_seq_color">#7fffffff</color>
+    <color name="lock_screen_time_color">#ccffffff</color>
+    <color name="lock_screen_title_color">#ffffffff</color>
+    <color name="login_n_register_line_correct">#ff1b96d6</color>
+    <color name="login_n_register_line_wrong">#ffe36767</color>
+    <color name="login_regist_default_light_bule">#ff22b8ff</color>
+    <color name="login_regist_default_pressed_color">#ff0296dc</color>
+    <color name="login_regist_default_text_input">#ffdfdfdf</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+    <color name="more_page_item_line_color">#ff0495d6</color>
+    <color name="mtopsdk_checkcode_backgroud_Color">#ffeeeeee</color>
+    <color name="mtopsdk_checkcode_button_text_Color">#ffee8561</color>
+    <color name="mtopsdk_checkcode_edit_text_Color">#ff000000</color>
+    <color name="my_collection_background">#fff9fafa</color>
+    <color name="my_collection_default_background">#fff5f5f5</color>
+    <color name="my_collection_deleted">#ffd4d4d4</color>
+    <color name="my_collection_dialog_pressed">#ffececec</color>
+    <color name="my_collections_create_text_click_color">#ff30b4ff</color>
+    <color name="my_collections_create_text_color">#ff333333</color>
+    <color name="my_collections_deleted_text_color">#ff999999</color>
+    <color name="mycenter_fragment_bg">#ffd7d8d8</color>
+    <color name="mycenter_fragment_griditem_black_cover">#66000000</color>
+    <color name="mycenter_setting_divider">#ffe9e9e9</color>
+    <color name="mycenter_upload_video_default_image_bg">#fff5f5f5</color>
+    <color name="mycenter_upload_video_dialog_bg">#ba000000</color>
+    <color name="mycenter_upload_video_dialog_line_bottom">#24ffffff</color>
+    <color name="mycenter_upload_video_dialog_line_top">#24000000</color>
+    <color name="mycenter_upload_video_upload_btn_bg">#ffebebeb</color>
+    <color name="mycenter_upload_video_upload_btn_pressed">#ff6bb9dd</color>
+    <color name="myyouku_definition_hd_bg">#cd2bb5fc</color>
+    <color name="myyouku_definition_ud_bg">#b3af5afd</color>
+    <color name="navigation_text_color">#ffffffff</color>
+    <color name="no_result_text_colot">#ff999999</color>
+    <color name="normal_button_pressed">#ff2bb5fc</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="othersite_filter_listview_item_bgcolor">#e7000000</color>
+    <color name="pager_drawable">#fff0f0f0</color>
+    <color name="pay_card_line_color">#ffe5e5e5</color>
+    <color name="pay_card_pay_txt_normal">#fffb3b07</color>
+    <color name="pay_card_pay_txt_pressed">#ffcf4400</color>
+    <color name="pay_card_price_bg_normal">#ffffffff</color>
+    <color name="pay_card_price_bg_pressed">#ffffffff</color>
+    <color name="pay_card_price_bg_selected">#fffaece6</color>
+    <color name="pay_filter_listview_item_bgcolor">#e7000000</color>
+    <color name="personalized_float_cotrol_background">#e0181818</color>
+    <color name="personalized_float_view_tip_text_color_blue">#ff008ee0</color>
+    <color name="personalized_float_view_tip_text_color_gray">#ffbbbbbb</color>
+    <color name="persondirect_item_line_color">#ffd6d6d6</color>
+    <color name="pink_item_background">#fffff2f5</color>
+    <color name="play_state_tip_definition_color">#ff2692ff</color>
+    <color name="played_total">#ffb5b7b9</color>
+    <color name="player_controller_background">#bf000000</color>
+    <color name="player_controller_background_half_alpha">#7f000000</color>
+    <color name="player_gray">#ff888888</color>
+    <color name="player_panorama_round_background">#99000000</color>
+    <color name="player_vip_color">#ff000000</color>
+    <color name="playing_text">#ff89c4ff</color>
+    <color name="plugin_3g_tip_bottom_new_color">#ffb84902</color>
+    <color name="plugin_3g_tip_btn_purchaseFlow_color">#ffffe6dd</color>
+    <color name="plugin_collection_dialog_no_pressed">#ff252525</color>
+    <color name="plugin_collection_dialog_pressed">#e6141414</color>
+    <color name="plugin_collection_list_item_pressed">#e6141414</color>
+    <color name="plugin_collection_list_item_title_presed">#ff2fb3ff</color>
+    <color name="plugin_error_code">#ff575757</color>
+    <color name="plugin_fragment_swipe_color1">#ff0ba2ff</color>
+    <color name="plugin_fragment_swipe_color2">#ff3fb5fe</color>
+    <color name="plugin_fragment_swipe_color3">#ff65c4ff</color>
+    <color name="plugin_fragment_swipe_color4">#ff9cd9ff</color>
+    <color name="plugin_hover_btn_bg">#ff2fb3ff</color>
+    <color name="plugin_hover_img_bg">#ff303030</color>
+    <color name="popup_menu_text">#ff666666</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="pp_bg_ebebeb">#ffebebeb</color>
+    <color name="pp_bg_ffffff">#ffffffff</color>
+    <color name="pp_bg_primary">#ff2692ff</color>
+    <color name="pp_bg_title">#ffffffff</color>
+    <color name="pp_font_2295d4">#ff2295d4</color>
+    <color name="pp_font_2bb5fc">#ff2bb5fc</color>
+    <color name="pp_font_primary">#ff2692ff</color>
+    <color name="pp_font_title">#ff333333</color>
+    <color name="primary_dark_material_dark">@android:color/black</color>
+    <color name="primary_dark_material_light">@color/material_grey_600</color>
+    <color name="primary_material_dark">@color/material_grey_900</color>
+    <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="red_item_background">#ffc92e30</color>
+    <color name="refresh_header_background_color">#fff0f0f0</color>
+    <color name="result_view">#99000000</color>
+    <color name="right_interact_bg_color">#da222222</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="row_piece_line">#ffdcdcdc</color>
+    <color name="row_piece_name">#ff333333</color>
+    <color name="row_piece_subscribe">#ff2692ff</color>
+    <color name="row_piece_subscribe_followed_pressed">#ffc8c8c8</color>
+    <color name="row_piece_subscribe_text">#ffb5b5b5</color>
+    <color name="row_piece_time">#ff999999</color>
+    <color name="searchresult_filterbar_top_line_bg_color">#f3e2e2e2</color>
+    <color name="searchresult_item_spacing_color">#fff7f7f7</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="series_cache_card_grid_select_bg">#ffeaf7ff</color>
+    <color name="series_cache_card_grid_select_button_bg">#ff333333</color>
+    <color name="series_cache_card_grid_select_button_no_click_bg">#ffc8c8c8</color>
+    <color name="series_item_bg_blue_color">#ff19547c</color>
+    <color name="series_item_bg_txt_gray_color">#ff538cb0</color>
+    <color name="series_item_txt_blue_color">#ff15a4ff</color>
+    <color name="series_item_txt_gray_color">#ff666666</color>
+    <color name="series_item_txt_unable_color">#33ffffff</color>
+    <color name="series_item_txt_white_color">#ffd1d1d1</color>
+    <color name="setting_view_title_color">#ffffffff</color>
+    <color name="setting_view_title_line_color">#1affffff</color>
+    <color name="share_btn_text_color">#ff999999</color>
+    <color name="share_chooser_listview_divider_color">#ff494949</color>
+    <color name="ss1">#80435887</color>
+    <color name="ss2">#90435887</color>
+    <color name="ss3">#80858fb6</color>
+    <color name="ss4">#90858fb6</color>
+    <color name="standard_title_first">#ff333333</color>
+    <color name="standard_title_second">#ff555555</color>
+    <color name="standard_title_third">#ff909090</color>
+    <color name="startpage_ad_learnmore_bg">#cc000000</color>
+    <color name="stripe_middle">#c0000000</color>
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+    <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="tab_guess_videos_login_bg">#ff0183c6</color>
+    <color name="tab_guess_videos_login_bg_focus">#ff0473ac</color>
+    <color name="tab_guess_videos_login_text">#ffffffff</color>
+    <color name="tab_guess_videos_login_text_focus">#ff7eaec6</color>
+    <color name="tab_guess_videos_reason_bg">#cc383838</color>
+    <color name="tab_guess_videos_reason_padding_bg">#ff279eff</color>
+    <color name="tab_guess_videos_title_textcolor">#ff555555</color>
+    <color name="tab_indicator_normal">#ffffffff</color>
+    <color name="tab_indicator_pressed_color">#fff0f0f0</color>
+    <color name="tab_select_color">#fff0f0f0</color>
+    <color name="ten_percent_white">#16ffffff</color>
+    <color name="text_color_black">#ff000000</color>
+    <color name="text_color_blue">#ff2bb5fc</color>
+    <color name="text_color_blue_1">#ff29abe2</color>
+    <color name="text_color_blue_2">#ff1b96d6</color>
+    <color name="text_color_gray_1">#ffe2e2e2</color>
+    <color name="text_color_gray_12">#ffdddddd</color>
+    <color name="text_color_gray_13">#fff4f4f4</color>
+    <color name="text_color_gray_14">#ffb5b5b5</color>
+    <color name="text_color_gray_2">#ff909fa8</color>
+    <color name="text_color_gray_3">#ff999999</color>
+    <color name="text_color_gray_4">#ffbfbfbf</color>
+    <color name="text_color_gray_5">#ff8c8c8c</color>
+    <color name="text_color_gray_7">#ff666666</color>
+    <color name="text_color_gray_9">#ff333333</color>
+    <color name="text_color_red_1">#ffff5a5a</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="text_color_white_d">#ccffffff</color>
+    <color name="text_color_white_e">#80ffffff</color>
+    <color name="text_replay_item_playcount">#ff666666</color>
+    <color name="text_replay_item_title">#ffdedede</color>
+    <color name="ticket_sign_color">#ffa2a2a2</color>
+    <color name="ticket_sign_color_select">#ff4bb6fe</color>
+    <color name="toolbar">#ff3f3f3f</color>
+    <color name="toolbarTm">#e0000000</color>
+    <color name="toolbar_menu_bg">#ffdbdbdb</color>
+    <color name="top_tip_bg_color">#e52fb3ff</color>
+    <color name="topic_theme_black">#ff212121</color>
+    <color name="topic_theme_white">#fff8f8f8</color>
+    <color name="topic_toolbar_black">#a0000000</color>
+    <color name="topic_toolbar_pink">#a0f7d3dd</color>
+    <color name="topic_toolbar_red">#a0c1282a</color>
+    <color name="topic_toolbar_white">#a0ffffff</color>
+    <color name="topic_toolbar_yellow">#a0f4d542</color>
+    <color name="topic_tv_color">#ff2fb3ff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#10000000</color>
+    <color name="triangle_view_bg_color">#fffa6400</color>
+    <color name="tt_c0_a20">#ffff00ff</color>
+    <color name="tt_c0_a30">#ffff00ff</color>
+    <color name="tt_c0_a50">#ffff00ff</color>
+    <color name="tt_c2_a10">#ffff00ff</color>
+    <color name="tt_c8_a20">#ffff00ff</color>
+    <color name="tt_c8_a50">#ffff00ff</color>
+    <color name="tt_c8_a80">#ffff00ff</color>
+    <color name="twenty_percent_white">#32ffffff</color>
+    <color name="uik_A_orange">#ffffbb33</color>
+    <color name="uik_choice_divider">#ffdddddd</color>
+    <color name="uik_dialog_bg">#ffffffff</color>
+    <color name="uik_text_color">#ff000000</color>
+    <color name="usercenter_item_mark_color">#ff2fb3ff</color>
+    <color name="video_deleted_background">#ff414141</color>
+    <color name="video_deleted_title_color">#ff8b8e8e</color>
+    <color name="video_record_progress_bg">#ff2fb3ff</color>
+    <color name="video_record_progress_error_bg">#ffff0000</color>
+    <color name="viewfinder_frame">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#99000000</color>
+    <color name="vip_dialog_buy_fail">#ffe50000</color>
+    <color name="vip_dialog_buy_success">#ff2dad4e</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="vr_bg_color">#e6000000</color>
+    <color name="weex_nu_page_window_bg">#01000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white10unalpha">#1affffff</color>
+    <color name="white15unalpha">#26ffffff</color>
+    <color name="white20unalpha">#33ffffff</color>
+    <color name="white25unalpha">#4ffffff0</color>
+    <color name="white30unalpha">#4dffffff</color>
+    <color name="white35unalpha">#59ffffff</color>
+    <color name="white40unalpha">#66ffffff</color>
+    <color name="white45unalpha">#73ffffff</color>
+    <color name="white50unalpha">#8ffffff0</color>
+    <color name="white55unalpha">#8cffffff</color>
+    <color name="white5unalpha">#0dffffff</color>
+    <color name="white60unalpha">#99ffffff</color>
+    <color name="white65unalpha">#a6ffffff</color>
+    <color name="white70unalpha">#b3ffffff</color>
+    <color name="white75unalpha">#bfffffff</color>
+    <color name="white80unalpha">#ccffffff</color>
+    <color name="white85unalpha">#d9ffffff</color>
+    <color name="white90unalpha">#e6ffffff</color>
+    <color name="white95unalpha">#f2ffffff</color>
+    <color name="white_item_background">#0a000000</color>
+    <color name="yellow_item_background">#ffffed9c</color>
+    <color name="ykp_c1">#ff333333</color>
+    <color name="ykp_c10">#ff2692ff</color>
+    <color name="ykp_c11">#fff82a19</color>
+    <color name="ykp_c12">#ffb89a58</color>
+    <color name="ykp_c13">#ffff6600</color>
+    <color name="ykp_c2">#ff666666</color>
+    <color name="ykp_c3">#ff999999</color>
+    <color name="ykp_c4">#ffb5b5b5</color>
+    <color name="ykp_c5">#ffc8c8c8</color>
+    <color name="ykp_c6">#14000000</color>
+    <color name="ykp_c7">#ffffffff</color>
+    <color name="ykp_c8">#fff0f0f0</color>
+    <color name="ykp_c9">#fffafafa</color>
+    <color name="youku_base_project_click_toast_text_color">#ffffffff</color>
+    <color name="youku_base_project_click_toast_text_img_color">#ffb89a58</color>
+    <color name="youku_score_color">#ffe93c0f</color>
+    <color name="yp_vip_abnormal_alpha_60_white">#99ffffff</color>
+    <color name="yp_vip_abnormal_button_text_color">#99ff6600</color>
+    <color name="yp_vip_abnormal_text_color_youku">#ffff4e00</color>
+    <color name="zpd_subscribe_tip_color">#ffffffff</color>
+    <item type="color" name="null_0">null</item>
+    <item type="color" name="null_1">null</item>
+    <item type="color" name="null_2">null</item>
+    <item type="color" name="null_3">null</item>
+    <item type="color" name="null_4">null</item>
+    <item type="color" name="null_5">null</item>
+    <item type="color" name="null_6">null</item>
+    <item type="color" name="null_7">null</item>
+    <item type="color" name="null_8">null</item>
+    <item type="color" name="null_9">null</item>
+    <item type="color" name="null_a">null</item>
+    <item type="color" name="null_b">null</item>
+    <item type="color" name="null_c">null</item>
+    <item type="color" name="null_d">null</item>
+    <item type="color" name="null_e">null</item>
+    <item type="color" name="null_f">null</item>
+    <item type="color" name="null_10">null</item>
+    <item type="color" name="null_11">null</item>
+    <item type="color" name="null_12">null</item>
+    <item type="color" name="null_13">null</item>
+    <item type="color" name="null_14">null</item>
+    <item type="color" name="null_15">null</item>
+    <item type="color" name="null_16">null</item>
+    <item type="color" name="null_17">null</item>
+    <item type="color" name="null_18">null</item>
+    <item type="color" name="null_19">null</item>
+    <item type="color" name="null_1a">null</item>
+    <item type="color" name="null_1b">null</item>
+    <item type="color" name="null_1c">null</item>
+    <item type="color" name="null_1d">null</item>
+    <item type="color" name="null_1e">null</item>
+    <item type="color" name="null_1f">null</item>
+    <item type="color" name="null_20">null</item>
+    <item type="color" name="null_21">null</item>
+    <item type="color" name="null_22">null</item>
+    <item type="color" name="null_23">null</item>
+    <item type="color" name="null_24">null</item>
+    <item type="color" name="null_25">null</item>
+    <item type="color" name="null_26">null</item>
+    <item type="color" name="null_27">null</item>
+    <item type="color" name="null_28">null</item>
+    <item type="color" name="null_29">null</item>
+    <item type="color" name="null_2a">null</item>
+    <item type="color" name="null_2b">null</item>
+    <item type="color" name="null_2c">null</item>
+    <item type="color" name="null_2d">null</item>
+    <item type="color" name="null_2e">null</item>
+    <item type="color" name="null_2f">null</item>
+    <item type="color" name="null_30">null</item>
+    <item type="color" name="null_31">null</item>
+    <item type="color" name="null_32">null</item>
+    <item type="color" name="null_33">null</item>
+    <item type="color" name="null_34">null</item>
+    <item type="color" name="null_35">null</item>
+    <item type="color" name="null_36">null</item>
+    <item type="color" name="null_37">null</item>
+    <item type="color" name="null_38">null</item>
+    <item type="color" name="null_39">null</item>
+    <item type="color" name="null_3a">null</item>
+    <item type="color" name="null_3b">null</item>
+    <item type="color" name="null_3c">null</item>
+    <item type="color" name="null_3d">null</item>
+    <item type="color" name="null_3e">null</item>
+    <item type="color" name="null_3f">null</item>
+    <item type="color" name="null_40">null</item>
+    <item type="color" name="null_41">null</item>
+    <item type="color" name="null_42">null</item>
+    <item type="color" name="null_43">null</item>
+    <item type="color" name="null_44">null</item>
+    <item type="color" name="null_45">null</item>
+    <item type="color" name="null_46">null</item>
+    <item type="color" name="null_47">null</item>
+    <item type="color" name="null_48">null</item>
+    <item type="color" name="null_49">null</item>
+    <item type="color" name="null_4a">null</item>
+    <item type="color" name="null_4b">null</item>
+    <item type="color" name="null_4c">null</item>
+    <item type="color" name="null_4d">null</item>
+    <item type="color" name="null_4e">null</item>
+    <item type="color" name="null_4f">null</item>
+    <item type="color" name="null_50">null</item>
+    <item type="color" name="null_51">null</item>
+    <item type="color" name="null_52">null</item>
+    <item type="color" name="null_53">null</item>
+    <item type="color" name="null_54">null</item>
+    <item type="color" name="null_55">null</item>
+    <item type="color" name="null_56">null</item>
+    <item type="color" name="null_57">null</item>
+    <item type="color" name="null_58">null</item>
+    <item type="color" name="null_59">null</item>
+    <item type="color" name="null_5a">null</item>
+    <item type="color" name="null_5b">null</item>
+    <item type="color" name="null_5c">null</item>
+    <item type="color" name="null_5d">null</item>
+    <item type="color" name="null_5e">null</item>
+    <item type="color" name="null_5f">null</item>
+    <item type="color" name="null_60">null</item>
+    <item type="color" name="null_61">null</item>
+    <item type="color" name="null_62">null</item>
+    <item type="color" name="null_63">null</item>
+    <item type="color" name="null_64">null</item>
+    <item type="color" name="null_65">null</item>
+    <item type="color" name="null_66">null</item>
+    <item type="color" name="null_67">null</item>
+    <item type="color" name="null_68">null</item>
+    <item type="color" name="null_69">null</item>
+    <item type="color" name="null_6a">null</item>
+    <item type="color" name="null_6b">null</item>
+    <item type="color" name="null_6c">null</item>
+    <item type="color" name="null_6d">null</item>
+    <item type="color" name="null_6e">null</item>
+    <item type="color" name="null_6f">null</item>
+    <item type="color" name="null_70">null</item>
+    <item type="color" name="null_71">null</item>
+    <item type="color" name="null_72">null</item>
+    <item type="color" name="null_73">null</item>
+    <item type="color" name="null_74">null</item>
+    <item type="color" name="null_75">null</item>
+    <item type="color" name="null_76">null</item>
+    <item type="color" name="null_77">null</item>
+    <item type="color" name="null_78">null</item>
+    <item type="color" name="null_79">null</item>
+    <item type="color" name="null_7a">null</item>
+    <item type="color" name="null_7b">null</item>
+    <item type="color" name="null_7c">null</item>
+    <item type="color" name="null_7d">null</item>
+    <item type="color" name="null_7e">null</item>
+    <item type="color" name="null_7f">null</item>
+    <item type="color" name="null_80">null</item>
+    <item type="color" name="null_81">null</item>
+    <item type="color" name="null_82">null</item>
+    <item type="color" name="null_83">null</item>
+    <item type="color" name="null_84">null</item>
+    <item type="color" name="null_85">null</item>
+    <item type="color" name="null_86">null</item>
+    <item type="color" name="null_87">null</item>
+    <item type="color" name="null_88">null</item>
+    <item type="color" name="null_89">null</item>
+    <item type="color" name="null_8a">null</item>
+    <item type="color" name="null_8b">null</item>
+    <item type="color" name="null_8c">null</item>
+    <item type="color" name="null_8d">null</item>
+    <item type="color" name="null_8e">null</item>
+    <item type="color" name="null_8f">null</item>
+    <item type="color" name="null_90">null</item>
+    <item type="color" name="null_91">null</item>
+    <item type="color" name="null_92">null</item>
+    <item type="color" name="null_93">null</item>
+    <item type="color" name="null_94">null</item>
+    <item type="color" name="null_95">null</item>
+    <item type="color" name="null_96">null</item>
+    <item type="color" name="null_97">null</item>
+    <item type="color" name="null_98">null</item>
+    <item type="color" name="null_99">null</item>
+    <item type="color" name="null_9a">null</item>
+    <item type="color" name="null_9b">null</item>
+    <item type="color" name="null_9c">null</item>
+    <item type="color" name="null_9d">null</item>
+    <item type="color" name="null_9e">null</item>
+    <item type="color" name="null_9f">null</item>
+    <item type="color" name="null_a0">null</item>
+    <item type="color" name="null_a1">null</item>
+    <item type="color" name="null_a2">null</item>
+    <item type="color" name="null_a3">null</item>
+    <item type="color" name="null_a4">null</item>
+    <item type="color" name="null_a5">null</item>
+    <item type="color" name="null_a6">null</item>
+    <item type="color" name="null_a7">null</item>
+    <item type="color" name="null_a8">null</item>
+    <item type="color" name="null_a9">null</item>
+    <item type="color" name="null_aa">null</item>
+    <item type="color" name="null_ab">null</item>
+    <item type="color" name="null_ac">null</item>
+    <item type="color" name="null_ad">null</item>
+    <item type="color" name="null_ae">null</item>
+    <item type="color" name="null_af">null</item>
+    <item type="color" name="null_b0">null</item>
+    <item type="color" name="null_b1">null</item>
+    <item type="color" name="null_b2">null</item>
+    <item type="color" name="null_b3">null</item>
+    <item type="color" name="null_b4">null</item>
+    <item type="color" name="null_b5">null</item>
+    <item type="color" name="null_b6">null</item>
+    <item type="color" name="null_b7">null</item>
+    <item type="color" name="null_b8">null</item>
+    <item type="color" name="null_b9">null</item>
+    <item type="color" name="null_ba">null</item>
+    <item type="color" name="null_bb">null</item>
+    <item type="color" name="null_bc">null</item>
+    <item type="color" name="null_bd">null</item>
+    <item type="color" name="null_be">null</item>
+    <item type="color" name="null_bf">null</item>
+    <item type="color" name="null_c0">null</item>
+    <item type="color" name="null_c1">null</item>
+    <item type="color" name="null_c2">null</item>
+    <item type="color" name="null_c3">null</item>
+    <item type="color" name="null_c4">null</item>
+    <item type="color" name="null_c5">null</item>
+    <item type="color" name="null_c6">null</item>
+    <item type="color" name="null_c7">null</item>
+    <item type="color" name="null_c8">null</item>
+    <item type="color" name="null_c9">null</item>
+    <item type="color" name="null_ca">null</item>
+    <item type="color" name="null_cb">null</item>
+    <item type="color" name="null_cc">null</item>
+    <item type="color" name="null_cd">null</item>
+    <item type="color" name="null_ce">null</item>
+    <item type="color" name="null_cf">null</item>
+    <item type="color" name="null_d0">null</item>
+    <item type="color" name="null_d1">null</item>
+    <item type="color" name="null_d2">null</item>
+    <item type="color" name="null_d3">null</item>
+    <item type="color" name="null_d4">null</item>
+    <item type="color" name="null_d5">null</item>
+    <item type="color" name="null_d6">null</item>
+    <item type="color" name="null_d7">null</item>
+    <item type="color" name="null_d8">null</item>
+    <item type="color" name="null_d9">null</item>
+    <item type="color" name="null_da">null</item>
+    <item type="color" name="null_db">null</item>
+    <item type="color" name="null_dc">null</item>
+    <item type="color" name="null_dd">null</item>
+    <item type="color" name="null_de">null</item>
+    <item type="color" name="null_df">null</item>
+    <item type="color" name="null_e0">null</item>
+    <item type="color" name="null_e1">null</item>
+    <item type="color" name="null_e2">null</item>
+    <item type="color" name="null_e3">null</item>
+    <item type="color" name="null_e4">null</item>
+    <item type="color" name="null_e5">null</item>
+    <item type="color" name="null_e6">null</item>
+    <item type="color" name="null_e7">null</item>
+    <item type="color" name="null_e8">null</item>
+    <item type="color" name="null_e9">null</item>
+    <item type="color" name="null_ea">null</item>
+    <item type="color" name="null_eb">null</item>
+    <item type="color" name="null_ec">null</item>
+    <item type="color" name="null_ed">null</item>
+    <item type="color" name="null_ee">null</item>
+    <item type="color" name="null_ef">null</item>
+    <item type="color" name="null_f0">null</item>
+    <item type="color" name="null_f1">null</item>
+    <item type="color" name="null_f2">null</item>
+    <item type="color" name="null_f3">null</item>
+    <item type="color" name="null_f4">null</item>
+    <item type="color" name="null_f5">null</item>
+    <item type="color" name="null_f6">null</item>
+    <item type="color" name="null_f7">null</item>
+    <item type="color" name="null_f8">null</item>
+    <item type="color" name="null_f9">null</item>
+    <item type="color" name="null_fa">null</item>
+    <item type="color" name="null_fb">null</item>
+    <item type="color" name="null_fc">null</item>
+    <item type="color" name="null_fd">null</item>
+    <item type="color" name="null_fe">null</item>
+    <item type="color" name="null_ff">null</item>
+</resources>

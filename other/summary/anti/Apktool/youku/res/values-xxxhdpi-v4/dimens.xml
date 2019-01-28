@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_welcome_logo_height">218.0dip</dimen>
+    <dimen name="activity_welcome_logo_margintop">149.0dip</dimen>
+    <dimen name="activity_welcome_logo_width">432.0dip</dimen>
+    <dimen name="activity_welcome_version_margintop">183.0dip</dimen>
+    <dimen name="channel_list_cell_title_text_size">11.0dip</dimen>
+    <dimen name="bubble_tipsub_margin_left">125.0dip</dimen>
+    <dimen name="interaction_tab_margin_top">8.0dip</dimen>
+    <dimen name="plugin_fullscreen_guide_margin_left">305.0dip</dimen>
+</resources>

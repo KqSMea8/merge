@@ -1,0 +1,100 @@
+容易出错的地方：
+
+问题1：NoSuchMethodError
+static JNINativeMethod gMethods[] = {
+        {"sayHello", "()Ljava/lang/String;", reinterpret_cast<void*>(native_sayHello)}
+};
+原因1：其中"()Ljava/lang/String;"字符串末尾是带有英文分号的，如果漏掉，会报NoSuchMethodError。
+原因2：C++文件中注册了该方法，但是java文件中并没有声明这个方法，即java中声明的native方法中并没有public native void test(),但是C++文件中注册了这个方法。
+
+
+问题2：JNI DETECTED ERROR IN APPLICATION: illegal class name 'Ljava/util/ArrayList;'
+env->FindClass(const char* name)
+使用该方法时，可以使用如env->FindClass("[I");表示获取int[]类型。
+但是使用
+env->FindClass("Ljava/util/ArrayList;");获取ArrayList时会报错，
+须使用：
+env->FindClass("java/util/ArrayList");获取ArrayList才能成功。
+
+可见，使用基本数据类型时，可使用域描述符如"[I"；但是使用引用类型时，则会报错，需用使用包名+类名的形式如"java/util/ArrayList"。
+
+----------------------------------------------------------------------------------
+
+关于自定义类的域描述符：
+如：
+/com
+	/example
+		/My.java
+		/Invoke.java
+			void test(My my)
+
+public native void test(My my);
+
+对应的native_test方法为：
+JNIEXPORT void JNICALL native_test(JNIEnv *env, jobject obj, jobject jo) {
+	
+}
+
+方法签名如下：
+static JNINativeMethod gMethods[] = {
+	{"test",
+		"(Lcom/eliteai/seetaface/FileUtils;)V",
+		(void*)native_test}
+}
+可见，动态注册时，一定要知道所调用类的所在包。
+
+----------------------------------------------------------------------------------
+
+java中带_的名称转换规则：
+// java
+package net.example.ndk_test;
+
+// C
+Java_net_example_ndk_1test
+即在java原来的带_的名称中_后添加一个1。
+----------------------------------------------------------------------------------
+
+JNI注册方法有两种：
+
+一、静态注册：
+静态方式使用的是按照JNI的命名规范来查找native函数，JNI函数命名规则为： 
+Java_类全路径_方法名
+比如我们打算向com.jinwei.hellotest包中的MainActivity类注册名为sayHello的方法，那么，我们的函数命名就应该为：Java_com_jinwei_jnitesthello_MainActivity_sayHello。
+
+
+二、动态注册：
+了解动态注册就要涉及到System.loadLibrary函数的工作流程了，这个函数打开一个动态库后，会找到JNI_OnLoad这个函数的地址，然后调用这个函数，因此我们可以在这个函数中完成向JVM注册native方法的工作。 
+使用AndroidRuntime::registerNativeMethods真正完成native方法的注册
+
+两者使用区别：
+静态注册的方法，需要包含在extern "C" {}大括号中，不然会报No implementation found for xxx错误.
+动态注册的方法，可以不用包含在该大括号中。
+原因未明。
+
+经测试，JNIEXPORT和JNICALL预编译字符可以去掉，但最好都带上，如JNIEXPORT jint JNICALL映射java中int类型。
+
+最好不要重载函数。两个同函数名的方法，一个静态注册，一个动态注册，可以重载，但两个静态注册的函数就不行，因为extern "C"是按照C的规则进行编译的。两个动态注册的经测试也没成功，待深入验证。
+
+
+----------------------------------------------------------------------------------
+C++层向java层传递数组：
+C++的数组和java的数组是不同的数据类型，所以无法直接传递
+
+数据类型重点是boolean型是Z，long型是J
+
+在传递之前，要把C++的数组转换成java数组。
+C++:
+int32_t a[3] = {0,1,2};
+jintArray array = env->NewIntArray(3);
+env->SetIntArrayRegion(array, 0, 3, a);
+
+jclass jcl = env->GetObjectClass(ob);
+jmethodID mid = env->GetMethodID(jcl, "cToJava", "([III)V");
+env->CallVoidMethod(ob, mid,array,1,2);
+
+java函数：
+public void cToJava(int[] pixs,int width,int height) {
+    
+}
+
+

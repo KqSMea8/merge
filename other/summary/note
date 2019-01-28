@@ -1,0 +1,55 @@
+1.修复环境变量
+export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+2.添加进环境变量
+PATH=~/bin:$PATH
+即将～/bin:添加进环境变量$PATH中,环境变量中各路径用:分隔。
+
+3.查看环境变量
+echo $PATH
+
+安装wine工具
+安装命令：
+sudo add-apt-repository ppa:wine/wine-builds
+sudo apt-get update
+sudo apt-get install --install-recommends wine-staging
+sudo apt-get install winehq-staging
+卸载命令：
+sudo apt-get install ppa-purge
+sudo ppa-purge ppa:wine/wine-builds 
+
+
+##########################################################################################
+下载android源代码
+1.安装git工具：使用repo工具时会用到git
+sudo apt-get install git
+
+2.设置git的电子邮件和用户名
+git config --global user.email "你的电子邮件地址"
+git config --global user.name "你的名字"
+
+3.安装curl工具：类似于迅雷
+sudo apt-get install curl -y
+
+4.创建bin目录
+//新建一个bin目录
+mkdir ~/bin
+//将bin目录写入环境变量（这样你在任何目录下都可以访问）
+PATH=~/bin:$PATH
+//轮到curl工具了，我们使用curl工具下载repo，并将其放置到bin目录
+curl https://storage-googleapis.lug.ustc.edu.cn/git-repo-downloads/repo > ~/bin/repo
+有时候需要替换为：curl "http://php.webtutor.pl/en/wp-content/uploads/2011/09/repo" > ./repo
+//更改repo权限
+chmod a+x ~/bin/repo
+
+5.创建android源代码存放目录
+mkdir ~/android_src
+cd ~/android_src
+
+6.下载android源码
+初始化仓库：
+repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest
+接下来这一步就是从服务器取代码了，如果你只想下载特定的android版本，可以使用如下命令：
+repo init -u git://mirrors.ustc.edu.cn/aosp/platform/manifest -b Android版本
+下载源码(以后如果需要更新代码的话，可以再次运行这个命令。)：
+repo sync

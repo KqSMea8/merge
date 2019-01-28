@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_card_scg_recommend_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/card_title_height">
+        <ImageView android:id="@id/home_card_scg_recommend_title_img" android:layout_width="@dimen/home_personal_movie_64px" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_40px" />
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/home_card_scg_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" style="@style/card_title" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/home_card_scg_recommend_list" android:layout_width="fill_parent" android:layout_height="@dimen/home_card_scg_424px" android:layout_below="@id/home_card_scg_recommend_label" />
+</RelativeLayout>

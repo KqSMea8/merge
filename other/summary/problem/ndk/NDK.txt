@@ -1,0 +1,125 @@
+SDK Location:
+C:\Users\Administrator\AppData\Local\Android\Sdk
+
+JDK Location:
+C:\Program Files\Java\jdk1.8.0_152
+
+NDK Location:
+C:\Users\Administrator\AppData\Local\Android\Sdk\ndk-bundle
+
+--------------------------------------------------------------------------
+javah -jni
+一键根据java文件生成.h头文件
+
+Program:
+$JDKPath$bin\javah.exe
+（根据实际位置填写）
+
+Parameters:
+-classpath . -jni -d $ModuleFileDir$/src/main/jni $FileClass$
+
+Working directory:
+$ModuleFileDir$\src\main\java
+
+使用方式：选中java文件—>右键—>External Tools—>javah-jni，将生成jni文件夹以及文件夹下的 包名.类名的.h头文件 （名字过长，我们可以自己重命名）。 
+
+----------------------------------------------------------------------------
+ndk -build
+根据C/C++文件生成so文件
+
+Program:
+F:\apk\sdk\ndk-bundle\ndk-build.cmd
+这里配置的是ndk下的ndk-build.cmd的路径（根据实际情况填写）。 
+
+Working directory:
+$ModuleFileDir$\src\main\
+
+使用方式：选中C/C++文件—>右键—>ExternalTools—>ndk-build，将在main文件夹下生成libs文件夹以及多个so文件，我们可以移动至jniLibs目录下去。
+
+---------------------------------------------------------------------------------
+具体操作步骤：
+
+1.工程文件配置相关
+
+配置完NDK之后刷新，可以看到local.properties文件中：
+ndk.dir=C\:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk\\ndk-bundle
+sdk.dir=C\:\\Users\\Administrator\\AppData\\Local\\Android\\Sdk
+
+修改1：
+gradle.properties文件中添加:
+# 添加对旧版本的NDK设置
+android.useDeprecatedNdk=true
+
+修改2：
+模块build.gradle文件中添加：
+android {
+	...
+	defaultConfig {
+		...
+		ndk {
+            // 模块名称，即编译的.so文件名
+            moduleName "hello_jni"
+            // 使用STL标准库(默认情况下JNI中是无法使用STL标准库的)
+            stl "stlport_static"
+            // "log" 表示加入Android的调试日志，只要在导入#include <android/log.h>
+            // 就可使用__android_log_print方法打印日志到logcat中
+            ldLibs "log"
+        }
+		...
+	}
+	...
+}
+
+2.代码文件相关
+
+生成一个调用本地native方法的类JniTest.java文件。
+该类中声明了调用的方法名和需要加载的库文件。
+
+3.生成.so文件
+
+在JniTest.java文件上右键External Tools -> javah -jni,该操作之后会生成一个包含.h文件的
+jni文件夹。
+
+在此jni文件夹中新建三个文件。
+jnitest.cpp文件，该文件就是jni调用的方法所在。
+
+Android.mk文件：
+LOCAL_PATH := $(call my-dir)	// 设置当前的编译目录（Android.mk所在的目录）
+
+include $(CLEAR_VARS)			// 清除LOCAL_XX变量（LOCAL_PATH除外）
+LOCAL_MODULE := JNI_ANDROID_TEST	// 指定当前编译模块的名称
+LOCAL_SRC_FILES := jnitest.cpp		// 编译模块需要的源文件
+
+// 指定编译出的库类型，BUILD_SHARED_LIBRARY：动态库；BUILD_STATIC_LIBRARY：静态库， BUILD_EXECUTEABLE指：可执行文件
+include $(BUILD_SHARED_LIBRARY)		
+
+
+Application.mk文件中：
+APP_ABI := all
+
+APP_ABI有四种类型（默认armeabi），armeabi、armeabi-v7a、x86、mips，设置时以空格隔开，all表示所有。该文件中有个可选配置的APP_MODULES，类似于上面Android.mk文件中的LOCAL_MODULE，以空格隔开，且会覆盖掉Android.mk文件中的LOCAL_MODULE设置（比如Android.mk文件中的写了两个jni库的配置，LOCAL_MODULE := JNI1、LOCAL_MODULE := JNI2，而Application.mk中设置的APP_MODULES := JNI1，则只能生成JNI1的so文件，要生成JNI2的so文件的时候会报错，除非写成APP_MODULES := JNI1 JNI2，这里我们直接省略默认使用Android.mk中的）。
+
+代码文件写好后，在jnitest.cpp文件上右键External Tools -> ndk -build，该操作后会生成libs文件夹和obj文件夹。
+
+4.使用.so文件
+在工程中main目录下创建jniLibs文件夹，将libs文件中的内容复制到jniLibs文件夹下，注意不是复制libs文件夹而是复制其中的内容。
+删除jni文件夹、libs文件夹和obj文件夹。此时可运行工程。
+
+----------------------------------------------------------------------------------
+坑点：
+1.复制.so文件需要复制libs文件夹下的各个子文件，而不是复制libs文件夹到jniLibs文件夹下。
+
+2.加载.so文件时以模块名为准，例如lib_TEST1.so文件，其模块名为_TEST1,加载该库时应该：
+System.loadLibrary("_TEST1");
+即不带前缀lib和后缀.so
+
+3.cpp文件中的方法命名规则为：
+
+格式 = Java _包名 _ 类名_Java需要调用的方法名
+Java首字母必须大写
+对于包名，包名里的.要改成_，_要改成_1 
+
+最好直接从生成的.h文件的声明处直接复制过来，其声明是只声明类型，不带形参，需要手动添加。
+
+4.模块gradle处moduleName "_wang_Module"这个居然可以不对应上模块名，瞎写都可以，但最好对应模块名，养成习惯，防止不必要的错误。
+

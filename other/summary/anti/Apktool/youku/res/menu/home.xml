@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/actionbar_search_selector" android:id="@id/menu_search" android:orderInCategory="0" android:title="@string/search" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/actionbar_history_selector" android:id="@id/menu_history" android:orderInCategory="1" android:title="@string/play_history" android:showAsAction="ifRoom" />
+    <item android:id="@id/menu_download" android:orderInCategory="12" android:title="@string/menu_cache" android:showAsAction="never" />
+    <item android:id="@id/menu_saosao" android:orderInCategory="4" android:title="@string/saosao" android:showAsAction="never" />
+    <item android:id="@id/menu_refresh" android:visible="false" android:orderInCategory="5" android:title="@string/refresh" android:showAsAction="never" />
+    <item android:id="@id/menu_login" android:orderInCategory="6" android:title="@string/login" android:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:visible="false" android:orderInCategory="7" android:title="@string/settings" android:showAsAction="never" />
+    <item android:id="@id/menu_feedback" android:orderInCategory="8" android:title="@string/menu_feedback" android:showAsAction="never" />
+    <item android:id="@id/menu_survey" android:orderInCategory="9" android:title="问卷调查" android:showAsAction="never" />
+    <item android:orderInCategory="10" android:title="常用设置" android:showAsAction="never" />
+    <item android:id="@id/menu_rating" android:orderInCategory="11" android:title="@string/menu_rating" android:showAsAction="never" />
+    <item android:icon="@drawable/actionbar_recommend_selector" android:id="@id/menu_recommend" android:orderInCategory="2" android:title="@string/menu_recommend" android:showAsAction="ifRoom" />
+    <item android:id="@id/menu_logout" android:visible="false" android:orderInCategory="13" android:title="@string/logout" android:showAsAction="never" />
+</menu>

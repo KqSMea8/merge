@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.baseproject.basecard.widget.WithCornerMaskImageView android:id="@id/home_scg_group_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:is_right_corner="true" />
+    <TextView android:textSize="@dimen/home_scg_group_text_size" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/home_scg_group_text" android:paddingLeft="@dimen/home_scg_group_text_padding" android:paddingRight="@dimen/home_scg_group_text_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="2" />
+</merge>

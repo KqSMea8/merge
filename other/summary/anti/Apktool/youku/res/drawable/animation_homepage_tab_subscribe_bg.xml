@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="1" android:drawable="@drawable/subscribe_animation0" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation1" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation2" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation3" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation4" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation5" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation6" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation7" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation8" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation9" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation10" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation11" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation12" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation13" />
+    <item android:duration="@integer/homepage_tab_icon_animation_duration_time" android:drawable="@drawable/subscribe_animation14" />
+</animation-list>

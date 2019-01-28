@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/home_top_tool_bar_height_new" android:layout_marginRight="@dimen/home_tool_bar_filter_layout_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/home_tool_filter_bg" android:background="@drawable/home_top_tool_corner_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_tool_filter_layout" android:paddingRight="@dimen/home_tool_bar_filter_text_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/detail_fragment_title_bar" />
+    <RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.youku.widget.YoukuRecyclerView android:id="@id/douban_review_listview" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.youku.widget.YoukuRecyclerView android:id="@id/douban_comment_listview" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/layout_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/detail_card_no_result" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingview" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/next_loading" android:visibility="gone" android:layout_width="@dimen/detail_card_loading_width" android:layout_height="@dimen/detail_card_loading_width" android:indeterminateDrawable="@drawable/series_loading_progressbar" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ffc9c9c9" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

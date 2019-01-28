@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_no_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_icon_no_results" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/no_result_text_size" android:textColor="@color/no_result_text_colot" android:id="@id/tv_no_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未获取到内容，请点击图片重试" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fffafafa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_no_result_1" android:background="@drawable/channel_icon_no_results" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ucenter_padding_top" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/text_size_6" android:textColor="@color/no_result_text_colot" android:id="@id/tv_no_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_collections_no_result_toast" />
+        <TextView android:textSize="@dimen/text_size_6" android:textColor="@color/series_item_txt_blue_color" android:id="@id/tv_no_result_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_collections_no_result_p2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+Activity启动
+ 
+onCreate is invoke!!!
+onStart is invoke!!!
+onResume is invoke!!!
+
+按下返回键
+
+onPause is invoke!!!
+onStop is invoke!!!
+onDestroy is invoke!!!
+
+再次打开Acitivity
+
+onCreate is invoke!!!
+onStart is invoke!!!
+onResume is invoke!!!
+
+按home 键：
+
+onPause is invoke!!!
+onSaveInstanceState is invoke!!!
+onStop is invoke!!!
+
+再打开：
+
+onRestart is invoke!!!
+onStart is invoke!!!
+onResume is invoke!!!
+
+旋转
+
+onPause is invoke!!!
+ onSaveInstanceState is invoke!!!
+onStop is invoke!!!
+onDestroy is invoke!!!
+onCreate is invoke!!!
+onStart is invoke!!!
+ onRestoreInstanceState is invoke!!!
+onResume is invoke!!!
+
+跳转全屏Activity2
+
+onPause is invoke!!!
+onSaveInstanceState is invoke!!!
+onStop is invoke!!!
+
+回到Activity1
+
+onRestart is invoke!!!
+onStart is invoke!!!
+ onResume is invoke!!!

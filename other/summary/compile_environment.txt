@@ -1,0 +1,59 @@
+一 首先安装jdk
+android 4.4 之前的可以安装jdk1.6 ，但是android 5.0 以后要安装jdk 1.7
+（1） 安装jdk 1.6步骤如下
+	1 下载jdk包，解压，进入到存放目录
+	2  chmod a+x jdk-6u31-linux-x64.bin //解压
+	3  ./jdk-6u31-linux-x64.bin
+	4  sudo update-alternatives --install /usr/bin/jdk jdk /home/moping/tool/jdk45/jdk/jdk1.6.0_45 255
+	5 gedit ~/.bashrc
+	6export PATH=/home/moping/tool/jdk45/jdk/jdk1.6.0_45/bin:$PATH
+	7 source ~/.bashrc
+	8 java -version
+  （2）安装jdk1.7 如下
+        1 sudo apt-get -y install openjdk-7-jdk
+        2 update-java-alternatives-s java-1.7-openjdk-amd64
+    		编译一次5.0后会，找有找不到 jdk1.7的情况。
+		可以PATH=/home/tools/jdk/jdk1.6.0_45/bin:$PATH  或者更改你要编译的工程目录下  mbldemv.sh 脚本，把jdk三个路径更改为jdk1.6的路径
+配置所依赖的库              
+sudo apt-get install -y git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 g++-multilib mingw32 tofrodos libgl1-mesa-dev python-markdown libxml2-utils xsltproc zlib1g-dev:i386
+
+12.04并不是 libgl1-mesa-glx:i386, 而是要安装对应的quantal版本,查了下,对应的名字是:libgl1-mesa-glx-lts-quantal:i386.
+
+然后
+sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
+
+
+			                                到此，就可以开始编译工程了。
+############################################################################################################################################################
+二 环境安装
+	1、安装搜狗输入法
+
+	sudo apt-get remove fcitx*
+        sudo apt-get autoremove
+
+	ppa:fcitx-team/nightly
+	sudo apt-get install fcitx
+	sudo apt-add-repository ppa:richardgv/compton 
+	sudo apt-get update && sudo apt-get install compton
+	(到系统，语言中，输入设置为fcitx)
+	然后找到对应路径安装搜狗输入法
+	dpkg -i sogou.....
+	配置usr/share/doc/compton/compton.sample.conf 更改其中的shadow的值设置为false 重启生效
+	（安装copton是解决 屏幕黑块问题的，如果你重启过后还有黑块，手动启动 Applications -> Accessories -> compton 启动即可去掉黑块）
+	2、安装source insight
+	sudo apt-get install wine 
+	鼠标以wine方式运行Si3572Setup.exe安装即可，注册码：SI3US-361500-17409
+	3、安装qq
+	sudo apt-get install ia32-libs  (32位依赖库)
+	解压qq压缩包，安装f t qq即可 sudo dpkg -i
+	此版qq使用时，qq主界面运行时，点击desktop，双节qq图标，主界面不能弹出，平时使用时，不用qq主界面的时候点击最小化，使用时双击图标即可运行出qq主界面
+	4、eclipse安装
+	解压双击即可运行，在 .bashrc中配置adb
+	export ANDROID_HOME=/home/tools/adt-bundle-linux-x86_64-20130917/sdk
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+	若adb运行出错：error: insufficient permissions for device
+	5、其它软件安装
+	compare请按照compare目录下说明安装，下载工具SP_Flash_Tool_exe_linux_v5.1424运行flash_tool.sh时，以超级用户权限运行，不然不能下载
+	wizi笔记可直接运行
+	6、所有软件安装完成后， 更系统软件
+	

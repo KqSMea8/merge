@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baseproject.basecard.widget.WithCornerMaskImageView android:id="@id/home_video_land_item_img" android:background="@color/img_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home_card_default_img_70" android:scaleType="center" channelcell:ratio="normal_img"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:channelcell="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/detail_continue_play_card_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_blank" android:visibility="gone" android:layout_width="@dimen/detail_card_item_sideslip_card_left_blank" android:layout_height="fill_parent" android:src="@color/white" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutItem" android:background="@drawable/other_person_gridview_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_card_item_sideslip_card_padding" android:layout_marginRight="@dimen/detail_card_item_sideslip_card_padding" android:layout_toRightOf="@id/left_blank">
+        <FrameLayout android:id="@id/layout_bofang_image" android:background="@drawable/imagelayout_corners_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/icon_default_width" android:layout_height="@dimen/icon_default_width" android:src="@drawable/channel_not_loaded_icon_play" />
+            <com.youku.widget.YoukuRadiusCornerslmageView android:id="@id/video_image" android:layout_width="@dimen/detail_continue_play_card_img_width" android:layout_height="@dimen/detail_continue_play_card_img_height" android:scaleType="centerCrop" />
+            <LinearLayout android:id="@id/cardWillPlay" android:background="@drawable/detail_continue_play_card_small_bg" android:visibility="invisible" android:layout_width="@dimen/detail_continue_play_card_small_bg_width" android:layout_height="@dimen/detail_continue_play_card_small_bg_height" android:layout_marginLeft="@dimen/detail_continue_play_card_small_bg_margin_left_or_top" android:layout_marginTop="@dimen/detail_continue_play_card_small_bg_margin_left_or_top">
+                <TextView android:textSize="@dimen/detail_continue_play_card_small_bg_textsize" android:textColor="#ff2fb3ff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="接下来播放" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/detail_card_item_title_size" android:textColor="#ff333333" android:ellipsize="end" android:layout_gravity="center" android:id="@id/video_name" android:layout_width="@dimen/detail_continue_play_card_img_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/detail_continue_play_card_name_margin_top" android:text="dddd" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

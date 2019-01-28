@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/detail_card_highlights_recycler_item_round_point_radius" />
+    <solid android:color="@color/detail_card_highlights_color_round_point" />
+    <size android:height="@dimen/detail_card_highlights_recycler_item_round_point_size" android:width="@dimen/detail_card_highlights_recycler_item_round_point_size" />
+</shape>

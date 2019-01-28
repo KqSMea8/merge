@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/seriesBorderViewLayout" android:background="@drawable/plugin_collection_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/collectionBorderView" android:layout_width="fill_parent" android:layout_height="@dimen/collection_item_height">
+        <ImageView android:id="@id/collection_item_thumbnail" android:background="@color/plugin_hover_img_bg" android:layout_width="@dimen/collection_item_image_width" android:layout_height="@dimen/collection_item_image_height" android:layout_marginLeft="@dimen/collection_item_image_margin_left" android:layout_marginTop="@dimen/collection_item_margin_top_or_bottom" android:layout_marginBottom="@dimen/collection_item_margin_top_or_bottom" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/collection_item_margin_top_or_bottom" android:layout_marginBottom="@dimen/collection_item_margin_top_or_bottom">
+            <TextView android:id="@id/collection_item_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/collection_item_text_margin_left" style="@style/series_list_item_txt" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/collection_item_text_margin_left" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/collection_video_play_icon" android:background="@drawable/bofangliang" android:layout_width="@dimen/detail_card_bofangliang_v_collection" android:layout_height="@dimen/detail_card_bofangliang_v_collection" android:layout_marginTop="@dimen/collection_item_total_vv_image_top" />
+                <TextView android:textSize="@dimen/collection_item_total_vv_text_size" android:textColor="@color/text_color_gray_3" android:id="@id/collection_item_total_vv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/collection_item_total_vv_text_margin_left" android:layout_marginTop="@dimen/collection_item_total_vv_text_margin_top" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="#4c666666" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RelativeLayout>

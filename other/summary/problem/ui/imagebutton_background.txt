@@ -1,0 +1,25 @@
+两种写法。
+一：代码中
+imageButton.setOnTouchListener(new View.OnTouchListener(){              
+	public boolean onTouch(View v, MotionEvent event) {       
+		 //点击  
+		if(event.getAction() == MotionEvent.ACTION_DOWN){         
+		   //重新设置按下时的背景图片    
+		   ((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.ae));     
+		   Toast.makeText(MainActivity.this, "点击了", 0).show();  
+		}else if(event.getAction() == MotionEvent.ACTION_UP){ //松开        
+			//再修改为抬起时的正常图片    
+			((ImageButton)v).setImageDrawable(getResources().getDrawable(R.drawable.as));    
+			Toast.makeText(MainActivity.this, "松开了", 0).show();  
+		}    
+		return false;         
+	}         
+});    
+
+
+二：XML文件中
+
+android:background="@layout/image_btn_press"
+
+在ImageButtonk中指定background的属性值：@layout/image_btn_press，其中image_btn_press就是上面为该图片铵钮创建的XML配置文件，文件名不要写错了。同时，你也可以将image_btn_press.xml文件放到drawable的目录下，此时，就要将它的属性值修改为：@drawable/image_btn_press即可，也就是说指定它的XML文件的正确路经就行了。
+另外，需要特别注意的是：在ImageButton中，如果使用XML配置文件来设置图片的效果的话，就不要再指定它的android:src=""属性值了，否则图片的按下效果就出不来了。

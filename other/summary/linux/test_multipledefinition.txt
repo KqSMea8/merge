@@ -1,0 +1,60 @@
+----------------------------------------------------
+a.h
+#ifndef a__h
+#define a__h
+
+void a(void);
+
+void x(void);
+
+#endif
+----------------------------------------------------
+a.c
+#include <stdio.h>
+#include "a.h"
+
+void a(void) {
+	x();
+}
+
+void x(void) {
+	printf("--------------a-------------\n");
+}
+
+----------------------------------------------------
+b.h
+#ifndef b__h
+#define b__h
+
+void b(void);
+
+void x(void);
+
+#endif
+----------------------------------------------------
+b.c
+#include <stdio.h>
+#include "b.h"
+
+void b(void) {
+	x();
+}
+
+void x(void) {
+	printf("--------------b-------------\n");
+}
+----------------------------------------------------
+main.c
+#include <stdio.h>
+#include "a.h"
+#include "b.h"
+
+int main(int argc, int *argv[]) {
+	a();
+	b();
+}
+
+结论：
+此处会报multiple definition of 'x' 的错误，因为同一个函数名只能有一个。
+
+要么去掉b.h和b.c中的x函数，要么将这两个文件中的x函数用#ifnde a__h包起来。

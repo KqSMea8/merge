@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="#ff007aff" android:gravity="center" android:id="@id/btn_action_sheet_action" android:background="@drawable/actionsheet_button_cancel_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:textIsSelectable="false" />
+</FrameLayout>

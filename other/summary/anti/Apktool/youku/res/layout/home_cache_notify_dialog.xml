@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingTop="@dimen/home_personal_movie_20px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/home_personal_movie_30px" android:textColor="#ff666666" android:id="@id/home_cache_notify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_cache_notify_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/home_personal_movie_26px" android:textColor="#ff666666" android:id="@id/home_cache_notify_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_personal_movie_20px" android:layout_marginBottom="@dimen/home_personal_movie_20px" android:text="@string/home_cache_notify_content" android:layout_below="@id/home_cache_notify_title" android:layout_centerHorizontal="true" />
+    <View android:id="@id/home_cache_notify_line" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="@dimen/home_personal_movie_5px" android:layout_marginRight="@dimen/home_personal_movie_5px" android:layout_below="@id/home_cache_notify_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_60px" android:layout_below="@id/home_cache_notify_line">
+        <TextView android:textSize="@dimen/home_personal_movie_30px" android:textColor="#ff666666" android:gravity="center" android:id="@id/home_cache_notify_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="0.5" />
+        <View android:background="#fff0f0f0" android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_marginTop="@dimen/home_personal_movie_2px" android:layout_marginBottom="@dimen/home_personal_movie_2px" />
+        <TextView android:textSize="@dimen/home_personal_movie_30px" android:textColor="#ff666666" android:gravity="center" android:id="@id/home_cache_notify_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/home_cache_positive_play_go" android:layout_weight="0.5" />
+    </LinearLayout>
+</RelativeLayout>

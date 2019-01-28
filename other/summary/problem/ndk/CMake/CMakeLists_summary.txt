@@ -1,0 +1,229 @@
+几个常用的系统已经占用的预定义变量：
+CMAKE_LIBRARY_OUTPUT_DIRECTORY	cmake生成的库文件的输出路径
+
+常用宏：
+${PROJECT_SOURCE_DIR}	工程源目录，即app目录
+${CMAKE_SOURCE_DIR}		同上
+${ANDROID_ABI}			对应的abi目录，即arm64-v8a,armeabi-v7a,x86,x86_64目录。
+
+-------------------------------------------------------------------------
+/app
+	/build
+	/libs
+	/jni
+		/FaceDetection
+			/include
+				xxx.h
+			/src
+				xxx.cpp(xxx.cp中包含头文件xxx.h)
+		ImageProcessor.cpp
+	/src
+		/main
+			/java
+			/res
+		CMakeLists.txt
+
+-------------------------------------------------------------------------
+#CMakeLists配置
+
+#指定需要CMAKE的最小版本
+cmake_minimum_required(VERSION 3.4.1)
+
+#设置生成的so动态库最后输出的路径
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI})
+
+#设置头文件路径
+include_directories(jni/FaceDetection/include)
+
+add_library(
+	native-lib #(*1)
+	SHARED
+	src/main/cpp/native-lib.cpp
+	)
+			 
+target_link_libraries(
+	native-lib	#(*1)
+	log
+	)
+
+-------------------------------------------------------------------------
+库名称修改
+1.修改#(*1)处对应的两处名称。
+2.修改java文件中System.loadLibrary("native");所引用到的名称。
+
+C++文件名称修改
+1.修改C++文件名称。
+2.修改add_library函数中对应的C+++文件名称。
+
+---------------------------------------------------------------------------
+生成多个so文件
+最外层的CMakeLists文件(/app目录下,与build.gradle同级)
+/app/CMakeLists.txt
+cmake_minimum_required(VERSION 3.4.1)
+
+#设置生成的so动态库最后输出的路径
+定义变量CMAKE_LIBRARY_OUTPUT_DIRECTORY为${PROJECT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI}，即将系统占用的cmake库输出路径重定向到${PROJECT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI}。
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI})
+
+add_subdirectory(src/main/cpp/new)
+add_subdirectory(src/main/cpp/old)
+
+src/main/cpp/old目录下有oldFix.cpp源文件和对应的CMakeLists.txt(将生成libold.so库文件)。
+src/main/cpp/new目录下有newFix.cpp源文件和对应的CMakeLists.txt(将生成libnew.so库文件)。
+1.src/main/cpp/old/CMakeLists.txt
+#生成so动态库
+ADD_LIBRARY(
+    old
+    SHARED
+	// oldFix.cpp的路径是以对应的CMakeLists.txt为基准的。
+    oldFix.cpp)
+
+target_link_libraries(
+    old
+    log)
+2.src/main/cpp/new/CMakeLists.txt
+#生成so动态库
+ADD_LIBRARY(
+    new
+    SHARED
+    newFix.cpp)
+
+target_link_libraries(
+    new
+    log)
+--------------------------------------------------------------------------
+如果报undefined reference to 'cv::getTickCount()'
+表示没有找到cv::getTickCount()这个方法，此时需要加载动态库
+CMakeLists.txt中添加：
+
+# 设置opencv的动态库
+add_library(libopencv_java3 SHARED IMPORTED)
+set_target_properties(libopencv_java3 PROPERTIES IMPORTED_LOCATION
+            ${openCV}/sdk/native/libs/${ANDROID_ABI}/libopencv_java3.so)
+			
+target_link_libraries( # Specifies the target library.
+                       native-lib
+                       libopencv_java3 #添加这个库
+
+                       # Links the target library to the log library
+                       # included in the NDK.
+                       ${log-lib} )
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+
+总结：
+1.java文件中的native函数，只要没有调用到，就不会去检查是否有实现。
+
+2.最外层的CMakeLists.txt一定不要更换位置，即使app的build.gradle可以重新指定它的位置，也不要将最外层的该文件更换位置，不然会出现一系列的错误。
+
+3.不指定CPU类型的情况下，run app会生成对应类型的so文件，只有rebuild project才可以生成所有类型的so文件。
+
+4.CMakeLists.txt文件所指定的源文件路径是以自己的当前路径为基准的。
+
+5.路径分隔符一律用/，即linux中通用的路径分隔符。
+
+6.applicationId与包名不同，导致调用GetPrimitiveArrayCritical()时程序卡死。原因未明，待查。
+
+7.查看路径宏所代表的的意义：File -> Settings -> Tools -> External Tools -> "+"(新建) -> Insert Macro,即可查看这些宏所代表的意义。
+
+8.库文件默认生成路径：/app/build/intermediates/cmake/debug/obj/armeabi-v7a/xxx.so
+
+9.调用target_link_libraries(),才会生成对应的静态库或动态库。
+
+--------------------------------------------------------------------------
+
+file 命令
+
+命令简述：此命令提供了丰富的文件和目录的相关操作（这里仅说一下比较常用的）
+
+使用范例：
+
+# 目录的遍历
+
+# GLOB 用于产生一个文件（目录）路径列表并保存在variable 中
+
+# 文件路径列表中的每个文件的文件名都能匹配globbing expressions（非正则表达式，但是类似）
+
+# 如果指定了 RELATIVE 路径，那么返回的文件路径列表中的路径为相对于 RELATIVE 的路径
+
+# file(GLOB variable [RELATIVE path][globbing expressions]...)
+
+ 
+
+# 获取当前目录下的所有的文件（目录）的路径并保存到 ALL_FILE_PATH 变量中
+
+file(GLOB ALL_FILE_PATH ./*)
+
+# 获取当前目录下的 .h 文件的文件名并保存到ALL_H_FILE 变量中
+
+# 这里的变量CMAKE_CURRENT_LIST_DIR 表示正在处理的 CMakeLists.txt 文件的所在的目录的绝对路径（2.8.3 以及以后版本才支持）
+
+file(GLOB ALL_H_FILE RELATIVE${CMAKE_CURRENT_LIST_DIR} ${CMAKE_CURRENT_LIST_DIR}/*.h)
+
+--------------------------------------------------------------------------
+
+1.出错：
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+根据错误指向：
+  endif()
+  message(FATAL_ERROR "Invalid Android ABI: ${ANDROID_ABI}.${ANDROID_ABI_ERROR}")
+endif()
+知道abi未设置，设置后即可。
+externalNativeBuild {
+	cmake {
+		cppFlags "-frtti -fexceptions"
+		cppFlags ""
+		abiFilters "armeabi-v7a"
+	}
+}
+现不清楚为什么有时候abi未设置也可以。
+
+
+2.出错：
+java.lang.UnsatisfiedLinkError: dlopen failed: library "libopencv_java3.so" not found
+出现这个问题的原因是，从Adnroid7.0开始，Android系统将阻止应用动态链接非公开NDK库，
+解决方法有两种：
+第一：将targetSdkVersion改为<24。
+第二：拷贝libopencv_java3.so到项目中。
+
+-------------------------------------------------------------------------------
+file(GLOB ALL_CPP_SOURCE_FILE *.cpp)
+生成静态库：
+1.设置生成的路径，静态库和动态库的生成路径不同。
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/alib)
+
+2.添加生成静态库的文件
+add_library(testa STATIC ${ALL_CPP_SOURCE_FILE})
+
+#指定静态库的输出名称
+set_target_properties(testa PROPERTIES OUTPUT_NAME "testa")
+# 使动态库和静态库同时存在
+set_target_properties(native-lib PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+set_target_properties(testa PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+
+3.生成静态库：
+target_link_libraries(native-lib testa)
+
+----------------------------------------------------------
+使用静态库：如上生成的armeabi-v7a下的libtesta.a静态库。
+1.将该静态库复制到/app/src/main/jniLibs/armeabi-v7a下。
+
+2.对应的头文件放置到include文件夹中。
+
+3.CMakeLists.txt文件中设置包含该头文件，编译生成调用该静态库的动态库。
+
+4.
+#添加静态库的静态导入
+add_library(testa STATIC IMPORTED)
+#设置该静态库的属性，本地导入。
+set_target_properties(testa
+  PROPERTIES IMPORTED_LOCATION
+  ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libtesta.a)
+  
+5.将静态库和调用该静态库的动态库添加进link。
+target_link_libraries(native-lib testa ${log-lib} )
+
+

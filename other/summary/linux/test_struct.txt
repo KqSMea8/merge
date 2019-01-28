@@ -1,0 +1,5 @@
+typedef int (*CMD_FUNC)();
+struct ui_cmd_func {
+	int cmd;
+	CMD_FUNC func;
+};

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/channel_home_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/channel_home_header_top_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/channel_brand_card_title_height">
+        <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_icon_card_subscripts_blue" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/home_personal_movie_34px" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/channel_header_txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/sub_channel_home_item_top_title_left_margin" android:text="品牌广告" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/home_brand_text_size" android:textColor="#ff999999" android:gravity="center" android:id="@id/channel_brand_ad_mask" android:background="@drawable/channel_brand_mask_bg" android:visibility="gone" android:layout_width="@dimen/home_brand_width" android:layout_height="@dimen/home_brand_height" android:layout_marginRight="10.0dip" android:text="广告" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/channel_home_header_scroll_recyclerView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/channel_home_header_top_layout" />
+</RelativeLayout>

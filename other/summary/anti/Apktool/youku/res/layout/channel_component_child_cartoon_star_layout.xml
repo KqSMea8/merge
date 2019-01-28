@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/cartoon_star_item_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/child_cartoon_star_item" />
+        <android.support.v4.widget.Space android:layout_width="@dimen/channel_cartoon_star_item_margin" android:layout_height="fill_parent" />
+        <include android:id="@id/cartoon_star_item_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/child_cartoon_star_item" />
+        <android.support.v4.widget.Space android:layout_width="@dimen/channel_cartoon_star_item_margin" android:layout_height="fill_parent" />
+        <include android:id="@id/cartoon_star_item_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/child_cartoon_star_item" />
+    </LinearLayout>
+    <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="@dimen/home_personal_movie_34px" />
+</LinearLayout>

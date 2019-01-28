@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/home_card_star_item_marginRight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:layout_width="@dimen/home_card_star_item_width" android:layout_height="wrap_content">
+        <com.youku.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/home_card_star_item_img" android:layout_width="@dimen/home_card_star_item_img_width" android:layout_height="@dimen/home_card_star_item_img_width" android:src="@drawable/user_icon_default_avatar" />
+        <com.youku.widget.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/home_card_star_item_icon" android:layout_width="@dimen/home_card_star_item_img_width" android:layout_height="@dimen/home_card_star_item_img_width" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/home_card_star_item_num_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_star_item_num_marginTop">
+        <TextView android:layout_gravity="center|left|top" android:id="@id/home_card_star_item_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/home_card_star_item_num_textSize" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|left|top" android:id="@id/home_card_star_item_num" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/home_card_star_item_name_textSize" android:textColor="@color/home_card_star_item_name" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/home_card_star_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_star_item_name_marginTop" />
+    <TextView android:textSize="@dimen/home_card_star_item_hot_textSize" android:textColor="@color/home_card_star_item_hot" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/home_card_star_item_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_card_star_item_hot_marginTop" android:drawableLeft="@drawable/star_fire" android:drawablePadding="@dimen/home_card_star_item_hot_padding" />
+</LinearLayout>

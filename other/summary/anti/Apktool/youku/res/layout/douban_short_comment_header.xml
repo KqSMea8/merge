@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/side_slip_card_tlong_comment_bt_top">
+        <TextView android:textColor="@color/detail_card_side_slip_full_core_no_select" android:id="@id/long_comment_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="豆瓣长评" />
+        <TextView android:background="#ffebebeb" android:layout_width="1.0px" android:layout_height="@dimen/side_slip_card_tlong_comment_line_height" android:layout_marginLeft="@dimen/side_slip_card_tlong_comment_line_left" android:layout_marginTop="@dimen/comment_header_top" />
+        <TextView android:textStyle="bold" android:textColor="@color/detail_card_side_slip_full_core_select" android:id="@id/short_comment_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/side_slip_card_tlong_short_comment_bt_left" android:text="豆瓣短评" />
+    </LinearLayout>
+</LinearLayout>
